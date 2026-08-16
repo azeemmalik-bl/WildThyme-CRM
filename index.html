@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wild Thyme Document Library</title>
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <div class="app">
+    <header class="topbar">
+      <div class="home-header">
+        <a class="brand" href="#" title="Home">
+          <img src="assets/banner.jpg" alt="Wild Thyme" class="banner-img">
+        </a>
+        <p class="tagline">wild-thyme <span>by Philip Cole</span></p>
+      </div>
+      <a class="brand home-button" href="#" title="Back to homepage">🏠 Home</a>
+      <div class="search-wrap">
+        <input id="search" type="search" placeholder="Search all documents..." autocomplete="off">
+        <div id="search-results" class="search-results hidden"></div>
+      </div>
+    </header>
+
+    <div id="breadcrumb" class="breadcrumb"></div>
+
+    <main class="content">
+      <div id="grid" class="grid"></div>
+      <iframe id="viewer" name="viewer" title="Document viewer" class="hidden"></iframe>
+    </main>
+  </div>
+
+  <script src="assets/app.js"></script>
+</body>
+</html>

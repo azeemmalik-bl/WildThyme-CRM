@@ -1,0 +1,110 @@
+:root {
+	--wt-green: #4b7f2b;
+	--wt-green-dark: #345c1c;
+	--wt-green-light: #eaf3df;
+	--wt-cream: #faf9f5;
+}
+
+body {
+	font-family: 'Poppins', system-ui, -apple-system, "Segoe UI", sans-serif;
+	background-color: var(--wt-cream);
+	color: #2f3a25;
+}
+
+h1, h2, h3, h4, .navbar-brand, .display-font {
+	font-family: 'Playfair Display', Georgia, serif;
+}
+
+a {
+	color: var(--wt-green-dark);
+}
+a:hover {
+	color: var(--wt-green);
+}
+
+.navbar-wt {
+	background-color: var(--wt-green);
+}
+.navbar-wt .navbar-brand,
+.navbar-wt .nav-link {
+	color: #fff !important;
+}
+.navbar-wt .nav-link:hover,
+.navbar-wt .nav-link.active {
+	color: var(--wt-green-light) !important;
+	text-decoration: underline;
+}
+
+.hero {
+	background: linear-gradient(rgba(20,40,10,.45), rgba(20,40,10,.45)), url('Images/EuphorbiaCharaGreenLogo.jpg');
+	background-size: cover;
+	background-position: center;
+	color: #fff;
+	padding: 5rem 1rem;
+	text-align: center;
+}
+.hero h1 {
+	font-size: 3rem;
+	text-shadow: 0 2px 8px rgba(0,0,0,.4);
+}
+
+.page-hero {
+	background-color: var(--wt-green);
+	color: #fff;
+	padding: 2.5rem 1rem;
+	text-align: center;
+}
+
+.btn-wt {
+	background-color: var(--wt-green);
+	border-color: var(--wt-green);
+	color: #fff;
+}
+.btn-wt:hover {
+	background-color: var(--wt-green-dark);
+	border-color: var(--wt-green-dark);
+	color: #fff;
+}
+
+.card-wt {
+	border: none;
+	border-radius: .75rem;
+	overflow: hidden;
+	box-shadow: 0 2px 10px rgba(0,0,0,.08);
+	transition: transform .15s ease, box-shadow .15s ease;
+	height: 100%;
+}
+.card-wt:hover {
+	transform: translateY(-4px);
+	box-shadow: 0 8px 20px rgba(0,0,0,.15);
+}
+.card-wt img {
+	aspect-ratio: 4/3;
+	object-fit: cover;
+	width: 100%;
+}
+.card-wt .card-body {
+	background-color: #fff;
+}
+
+.gallery-shot {
+	border-radius: .5rem;
+	box-shadow: 0 2px 10px rgba(0,0,0,.1);
+	margin-bottom: .75rem;
+}
+
+.section-title {
+	color: var(--wt-green-dark);
+	margin-bottom: 1.5rem;
+}
+
+footer.site-footer {
+	background-color: var(--wt-green-dark);
+	color: #eaf3df;
+	padding: 2rem 1rem;
+	margin-top: 3rem;
+}
+footer.site-footer a {
+	color: #fff;
+	font-weight: 600;
+}

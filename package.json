@@ -1,0 +1,16 @@
+{
+  "name": "wildthyme",
+  "version": "1.0.0",
+  "description": "Wraps your client's existing HTML/image hierarchy in a single site: a persistent sidebar (auto-built from the folder structure), full-text search, and a viewer pane that loads the original HTML pages unmodified. The existing documents and their internal links are left completely as-is — nothing in `content/` is rewritten.",
+  "main": "build.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "cheerio": "^1.2.0"
+  }
+}

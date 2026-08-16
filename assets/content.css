@@ -1,0 +1,49 @@
+/* Shared styling for modernized legacy document pages. These render inside
+   the document-library shell's iframe viewer, which already provides
+   navigation/branding -- this stylesheet is deliberately topic-neutral
+   (the archive covers everything from Dickens to Bond films to travel
+   diaries), just clean modern typography and spacing. */
+
+body.legacy-content {
+	font-family: 'Georgia', 'Segoe UI', system-ui, serif;
+	background: #fdfcf9;
+	color: #262420;
+	line-height: 1.6;
+	padding: 1.5rem 1rem 3rem;
+	max-width: 1100px;
+	margin: 0 auto;
+}
+
+body.legacy-content h1, body.legacy-content h2, body.legacy-content h3,
+body.legacy-content h4, body.legacy-content h5 {
+	font-family: 'Segoe UI', system-ui, sans-serif;
+	color: #1f1d1a;
+}
+
+body.legacy-content a {
+	color: #2a5d8f;
+}
+body.legacy-content a:hover {
+	color: #17395c;
+}
+
+body.legacy-content img.img-fluid {
+	border-radius: .375rem;
+	box-shadow: 0 1px 6px rgba(0,0,0,.12);
+	margin: .25rem 0;
+}
+
+body.legacy-content .legacy-table {
+	margin-bottom: 1rem;
+}
+
+body.legacy-content hr {
+	margin: 2rem 0;
+	border-color: #ddd;
+}
+
+body.legacy-content blockquote {
+	border-left: 3px solid #ddd;
+	padding-left: 1rem;
+	color: #55524c;
+}

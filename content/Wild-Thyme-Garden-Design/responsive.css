@@ -1,0 +1,60 @@
+/* Responsive overlay for the Wild-Thyme Garden Design site.
+   Original layout, colors, fonts and images are untouched above the
+   breakpoints below -- this only takes effect on tablet/phone widths. */
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+table {
+	max-width: 100%;
+}
+
+/* Tablet and small screens: let the fixed-width layout tables (600-734px)
+   shrink to fit instead of forcing a horizontal scrollbar. */
+@media (max-width: 800px) {
+	table[width] {
+		width: 100% !important;
+	}
+	td[width], th[width] {
+		width: auto !important;
+	}
+}
+
+/* Phones: stack table-based layouts into a single column so multi-column
+   photo grids and nav rows become a readable vertical list. */
+@media (max-width: 480px) {
+	table, tbody, tr, td {
+		display: block !important;
+		width: 100% !important;
+	}
+	td {
+		text-align: center !important;
+	}
+
+	/* height="N" attributes on tr/td are only row-height *hints* under
+	   normal table layout -- the browser auto-expands them to fit the
+	   actual image/caption. Forcing display:block above breaks that
+	   auto-sizing, so the fixed height clips content and the next
+	   stacked block overlaps on top of it. Let height be automatic. */
+	table, tbody, tr, td {
+		height: auto !important;
+	}
+
+	/* The desktop design uses align="left"/"right" on paragraphs and divs
+	   to spread buttons across a multi-column layout. Once stacked into
+	   one column that reads as a scattered zig-zag, so re-center it. */
+	p, div {
+		text-align: center !important;
+	}
+	p[align], div[align] {
+		width: 100% !important;
+	}
+
+	/* Tighten the vertical rhythm between stacked buttons/images so the
+	   page doesn't read as mostly empty space on a phone. */
+	p {
+		margin: 0.4em auto !important;
+	}
+}

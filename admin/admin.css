@@ -100,6 +100,43 @@ body {
   background: #f0f4f8;
 }
 
+.tree-node {
+  list-style: none;
+}
+
+.tree-children {
+  list-style: none;
+  margin: 0;
+  padding-left: 1rem;
+}
+
+.tree-dir-btn,
+.tree-file-btn {
+  display: block;
+  width: 100%;
+  text-align: left;
+  background: none;
+  border: none;
+  padding: 0.35rem 0.25rem;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.tree-dir-btn {
+  font-weight: 600;
+  color: #17395c;
+}
+
+.tree-file-btn {
+  color: #333;
+  border-bottom: 1px solid #f2f2f2;
+}
+
+.tree-dir-btn:hover,
+.tree-file-btn:hover {
+  background: #f0f4f8;
+}
+
 .page-result-btn small {
   color: #777;
 }

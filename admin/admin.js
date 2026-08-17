@@ -3,6 +3,7 @@
 
   var state = {
     searchIndex: [],
+    navTree: [],
     currentFile: null,
     blocks: [],   // [{path, tag, section, text}]
     images: [],   // [{path, src, alt, resolvedDir, resolvedFilename}]
@@ -73,7 +74,7 @@
     els.userEmail.textContent = user.email;
     els.app.hidden = false;
     els.loggedOutMsg.hidden = true;
-    if (!state.searchIndex.length) loadSearchIndex();
+    if (!state.searchIndex.length) loadPickerData();
   }
 
   function showLoggedOut() {
@@ -102,13 +103,18 @@
 
   window.netlifyIdentity.init();
 
-  // ---- page picker (reuses the site's existing search index, no new indexing) ----
+  // ---- page picker: a folder tree (from the site's existing nav.json, same
+  // structure the public site browses) with a search box for quick filtering
+  // (from the site's existing search-index.json). No new indexing needed.
 
-  function loadSearchIndex() {
-    fetch('/assets/search-index.json')
-      .then(function (res) { return res.json(); })
-      .then(function (data) {
-        state.searchIndex = data;
+  function loadPickerData() {
+    Promise.all([
+      fetch('/assets/nav.json').then(function (res) { return res.json(); }),
+      fetch('/assets/search-index.json').then(function (res) { return res.json(); }),
+    ])
+      .then(function (results) {
+        state.navTree = results[0];
+        state.searchIndex = results[1];
         renderPageResults('');
       })
       .catch(function () {
@@ -120,14 +126,12 @@
     var q = query.trim().toLowerCase();
     els.pageResults.innerHTML = '';
 
-    // With ~21,000 pages, an empty query has no meaningful "first N" to show —
-    // whichever folder happens to sort first (alphabetically, per build.js)
-    // would look like the entire site. Require a search term instead.
+    // Empty box: browse the same folder tree the public site uses, so
+    // clicking a folder reveals its own pages instead of everything at once.
     if (!q) {
-      var hint = document.createElement('li');
-      hint.className = 'page-results-hint';
-      hint.textContent = 'Type at least 2 characters to search all ' + state.searchIndex.length + ' pages…';
-      els.pageResults.appendChild(hint);
+      state.navTree.forEach(function (node) {
+        els.pageResults.appendChild(renderTreeNode(node));
+      });
       return;
     }
     if (q.length < 2) return;
@@ -156,6 +160,53 @@
       li.appendChild(btn);
       els.pageResults.appendChild(li);
     });
+  }
+
+  // Builds one <li> for a nav.json node. Folders render collapsed with a
+  // toggle button; their children are only built the first time they're
+  // expanded, so opening the picker never has to render all ~21,000 pages'
+  // worth of DOM up front.
+  function renderTreeNode(node) {
+    var li = document.createElement('li');
+    li.className = 'tree-node';
+
+    if (node.type === 'dir') {
+      var btn = document.createElement('button');
+      btn.type = 'button';
+      btn.className = 'tree-dir-btn';
+      var setLabel = function (expanded) {
+        btn.textContent = (expanded ? '▾ ' : '▸ ') + node.name + ' (' + node.count + ')';
+      };
+      setLabel(false);
+
+      var childUl = document.createElement('ul');
+      childUl.className = 'tree-children';
+      childUl.hidden = true;
+      var built = false;
+
+      btn.addEventListener('click', function () {
+        if (!built) {
+          node.children.forEach(function (child) {
+            childUl.appendChild(renderTreeNode(child));
+          });
+          built = true;
+        }
+        childUl.hidden = !childUl.hidden;
+        setLabel(!childUl.hidden);
+      });
+
+      li.appendChild(btn);
+      li.appendChild(childUl);
+    } else {
+      var fileBtn = document.createElement('button');
+      fileBtn.type = 'button';
+      fileBtn.className = 'tree-file-btn';
+      fileBtn.textContent = node.name;
+      fileBtn.addEventListener('click', function () { openPage(node.file, node.name); });
+      li.appendChild(fileBtn);
+    }
+
+    return li;
   }
 
   els.pageSearch.addEventListener('input', function () {

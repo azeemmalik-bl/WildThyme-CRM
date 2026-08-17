@@ -5,6 +5,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Wild Thyme Document Library</title>
 <link rel="stylesheet" href="assets/styles.css">
+<script>
+  // Netlify Identity invite/recovery/confirmation emails link to the site's
+  // root URL with a token in the hash — but the login widget only lives on
+  // /admin/. Forward straight there so those links work without a manual fix.
+  if (/(?:^|&|#)(?:invite_token|recovery_token|confirmation_token|access_token)=/.test(location.hash)) {
+    location.replace('/admin/' + location.hash);
+  }
+</script>
 </head>
 <body>
   <div class="app">

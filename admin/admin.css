@@ -80,6 +80,12 @@ body {
   padding: 0;
 }
 
+.page-results-hint {
+  color: #777;
+  font-size: 0.9rem;
+  padding: 0.5rem 0.25rem;
+}
+
 .page-result-btn {
   width: 100%;
   text-align: left;

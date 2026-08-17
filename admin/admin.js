@@ -118,13 +118,34 @@
 
   function renderPageResults(query) {
     var q = query.trim().toLowerCase();
+    els.pageResults.innerHTML = '';
+
+    // With ~21,000 pages, an empty query has no meaningful "first N" to show —
+    // whichever folder happens to sort first (alphabetically, per build.js)
+    // would look like the entire site. Require a search term instead.
+    if (!q) {
+      var hint = document.createElement('li');
+      hint.className = 'page-results-hint';
+      hint.textContent = 'Type at least 2 characters to search all ' + state.searchIndex.length + ' pages…';
+      els.pageResults.appendChild(hint);
+      return;
+    }
+    if (q.length < 2) return;
+
     var matches = state.searchIndex
       .filter(function (doc) {
-        return !q || doc.title.toLowerCase().indexOf(q) !== -1 || doc.breadcrumb.toLowerCase().indexOf(q) !== -1;
+        return doc.title.toLowerCase().indexOf(q) !== -1 || doc.breadcrumb.toLowerCase().indexOf(q) !== -1;
       })
       .slice(0, 60);
 
-    els.pageResults.innerHTML = '';
+    if (matches.length === 0) {
+      var none = document.createElement('li');
+      none.className = 'page-results-hint';
+      none.textContent = 'No pages match "' + query.trim() + '".';
+      els.pageResults.appendChild(none);
+      return;
+    }
+
     matches.forEach(function (doc) {
       var li = document.createElement('li');
       var btn = document.createElement('button');

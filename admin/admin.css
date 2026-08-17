@@ -1,0 +1,198 @@
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  color: #222;
+  background: #f6f5f2;
+}
+
+.admin-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 1.25rem;
+  background: #17395c;
+  color: #fff;
+}
+
+.admin-header h1 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+#login-btn,
+#logout-btn {
+  background: #2a5d8f;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 0.4rem 0.9rem;
+  cursor: pointer;
+}
+
+#user-box {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 0.9rem;
+}
+
+#logged-out-msg {
+  text-align: center;
+  margin-top: 4rem;
+  color: #555;
+}
+
+#app {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 1rem;
+  padding: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#picker-pane {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 0.75rem;
+  max-height: calc(100vh - 6rem);
+  overflow-y: auto;
+}
+
+#page-search {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#page-results {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.page-result-btn {
+  width: 100%;
+  text-align: left;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #eee;
+  padding: 0.5rem 0.25rem;
+  cursor: pointer;
+}
+
+.page-result-btn:hover {
+  background: #f0f4f8;
+}
+
+.page-result-btn small {
+  color: #777;
+}
+
+#editor-pane {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 1rem 1.25rem;
+}
+
+#editor-placeholder {
+  color: #777;
+}
+
+.block-field {
+  margin-bottom: 1rem;
+}
+
+.block-label {
+  display: block;
+  font-size: 0.8rem;
+  color: #666;
+  margin-bottom: 0.25rem;
+}
+
+.block-field textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 0.95rem;
+}
+
+.image-field {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  border-top: 1px solid #eee;
+  padding: 0.75rem 0;
+}
+
+.image-thumb {
+  width: 120px;
+  max-height: 120px;
+  object-fit: cover;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+
+.image-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  flex: 1;
+}
+
+.image-controls label {
+  display: block;
+  font-size: 0.8rem;
+  color: #666;
+}
+
+.image-controls input[type="text"] {
+  display: block;
+  width: 100%;
+  margin-top: 0.25rem;
+  padding: 0.4rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.save-row {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1.25rem;
+  border-top: 1px solid #eee;
+  padding-top: 1rem;
+}
+
+#save-btn {
+  background: #2a7a4a;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 0.5rem 1.2rem;
+  cursor: pointer;
+  font-size: 0.95rem;
+}
+
+#save-btn:disabled {
+  opacity: 0.6;
+  cursor: default;
+}
+
+#status {
+  color: #a33;
+  margin: 0.5rem 0;
+}
+
+#save-status {
+  color: #2a7a4a;
+  font-size: 0.9rem;
+}

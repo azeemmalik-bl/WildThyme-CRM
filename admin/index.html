@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Edit Pages — WildThyme</title>
+<link rel="stylesheet" href="admin.css">
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+</head>
+<body>
+
+<header class="admin-header">
+  <h1>Edit Pages</h1>
+  <div id="auth-box">
+    <button id="login-btn" type="button">Log in</button>
+    <span id="user-box" hidden>
+      <span id="user-email"></span>
+      <button id="logout-btn" type="button">Log out</button>
+    </span>
+  </div>
+</header>
+
+<main id="app" hidden>
+  <section id="picker-pane">
+    <input id="page-search" type="search" placeholder="Search pages by title…" autocomplete="off">
+    <ul id="page-results"></ul>
+  </section>
+
+  <section id="editor-pane">
+    <p id="editor-placeholder">Pick a page on the left to edit its text and images.</p>
+    <div id="editor" hidden>
+      <h2 id="editor-title"></h2>
+      <div id="status" role="status"></div>
+
+      <div id="blocks"></div>
+      <div id="images"></div>
+
+      <div class="save-row">
+        <button id="save-btn" type="button">Save changes</button>
+        <span id="save-status"></span>
+      </div>
+    </div>
+  </section>
+</main>
+
+<p id="logged-out-msg" hidden>Please log in to edit pages.</p>
+
+<script src="admin.js"></script>
+</body>
+</html>

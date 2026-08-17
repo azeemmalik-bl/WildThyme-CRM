@@ -1,5 +1,9 @@
 * { box-sizing: border-box; }
 
+/* Elements with explicit `display` rules below (#user-box, #app, etc.) would
+   otherwise win over the native [hidden] attribute due to specificity. */
+[hidden] { display: none !important; }
+
 body {
   margin: 0;
   font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;

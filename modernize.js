@@ -54,9 +54,27 @@ function transform(html) {
     $(el).replaceWith($(el).contents());
   });
 
-  // Unwrap <font> entirely -- typography is now controlled by content.css.
+  // Unwrap <font>, but preserve color/face as an inline-equivalent span
+  // first. A <font color> override is very often the ONLY thing making that
+  // text visible against a body-level fallback color (a common legacy
+  // authoring pattern: body text="#FFFFFF" as a rarely-seen default, with
+  // real content color-corrected per span) -- dropping it silently turns
+  // visible text invisible. face carries real per-page typeface choices,
+  // which content.css's shared Georgia default can't reproduce on its own.
   $('font').each((_, el) => {
-    $(el).replaceWith($(el).contents());
+    const $el = $(el);
+    const color = $el.attr('color');
+    const face = $el.attr('face');
+    const styleParts = [];
+    if (color) styleParts.push(`color: ${color}`);
+    if (face) styleParts.push(`font-family: ${face}`);
+    if (styleParts.length === 0) {
+      $el.replaceWith($el.contents());
+      return;
+    }
+    const $span = $(`<span style="${styleParts.join('; ')}"></span>`);
+    $span.append($el.contents());
+    $el.replaceWith($span);
   });
 
   // <center> -> div.text-center (keeps the same visual intent as a real class).

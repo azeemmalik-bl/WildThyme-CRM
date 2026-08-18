@@ -197,13 +197,43 @@ body {
   margin-bottom: 0.25rem;
 }
 
-.block-field textarea {
-  width: 100%;
-  padding: 0.5rem;
-  border: 1px solid #ccc;
+.block-field {
+  border: 1px solid transparent;
   border-radius: 4px;
-  font-family: inherit;
-  font-size: 0.95rem;
+  padding: 0.4rem;
+  position: relative;
+}
+
+.block-field:hover {
+  border-color: #e0e0e0;
+  background: #fafafa;
+}
+
+.block-preview {
+  padding: 0.25rem 0;
+  min-height: 1.4em;
+}
+
+.block-quill-wrap {
+  background: #fff;
+  border-radius: 4px;
+}
+
+.block-edit-btn {
+  position: absolute;
+  top: 0.3rem;
+  right: 0.3rem;
+  background: #eef2f6;
+  border: 1px solid #ccd6df;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  padding: 0.15rem 0.5rem;
+  cursor: pointer;
+  color: #333;
+}
+
+.block-edit-btn:hover {
+  background: #dde6ee;
 }
 
 .image-field {

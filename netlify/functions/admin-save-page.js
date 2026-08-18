@@ -1,6 +1,7 @@
 const { requireUser } = require('./lib/auth');
 const { getFile, putFile, ConflictError } = require('./lib/github');
 const { collectEditables, applyEdits } = require('./lib/page-editor');
+const { sanitizeHtml } = require('./lib/sanitize-html');
 
 exports.handler = async (event, context) => {
   const user = requireUser(context);
@@ -30,7 +31,10 @@ exports.handler = async (event, context) => {
   if (!current) return json(404, { error: `File not found: ${file}` });
 
   const { $ } = collectEditables(current.content);
-  const { unmatchedEdits, unmatchedImages } = applyEdits($, edits, images);
+  // Never write client-supplied HTML into a page unsanitized -- this becomes
+  // part of a publicly served, committed file.
+  const sanitizedEdits = (edits || []).map((e) => ({ path: e.path, newHtml: sanitizeHtml(e.newHtml) }));
+  const { unmatchedEdits, unmatchedImages } = applyEdits($, sanitizedEdits, images);
   if (unmatchedEdits.length || unmatchedImages.length) {
     return json(409, {
       error: 'This page changed since you opened it, so your edits could not be safely placed. Please reload the page and try again.',

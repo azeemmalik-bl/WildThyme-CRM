@@ -5,9 +5,45 @@
     searchIndex: [],
     navTree: [],
     currentFile: null,
-    blocks: [],   // [{path, tag, section, text}]
-    images: [],   // [{path, src, alt, resolvedDir, resolvedFilename}]
+    blocks: [],       // [{path, tag, section, text, html, currentHtml}]
+    images: [],       // [{path, src, alt, resolvedDir, resolvedFilename}]
+    blockRefs: [],    // [{preview, quillWrap, editorEl, toolbarEl, editBtn, quillInstance}]
+    activeBlockIndex: null,
   };
+
+  // ---- rich text editor (Quill) setup ----
+  // Style-based attributors (not the default class-based ones) so Quill
+  // writes plain inline style="font-family:...;font-size:...;color:..."
+  // directly -- matching what lib/sanitize-html.js on the server expects,
+  // and what the final static page (no Quill CSS classes defined) needs to
+  // actually render correctly once saved.
+  var QuillFont = Quill.import('attributors/style/font');
+  QuillFont.whitelist = ['Georgia', 'Verdana', 'Times New Roman', 'Arial', 'American Typewriter', 'Cambria'];
+  Quill.register(QuillFont, true);
+
+  var QuillSize = Quill.import('attributors/style/size');
+  QuillSize.whitelist = ['12px', '14px', '16px', '18px', '24px', '32px', '48px'];
+  Quill.register(QuillSize, true);
+
+  var QuillColor = Quill.import('attributors/style/color');
+  Quill.register(QuillColor, true);
+
+  var QUILL_TOOLBAR_OPTIONS = [
+    ['bold', 'italic', 'underline'],
+    [{ font: QuillFont.whitelist }],
+    [{ size: QuillSize.whitelist }],
+    [{ color: [] }],
+  ];
+
+  // Quill always wraps its content in its own block-level <p>, even for a
+  // single line with no block-format buttons in the toolbar. The target
+  // element already provides the right outer tag (h2, li, blockquote...),
+  // so unwrap Quill's own single <p> wrapper before saving to avoid
+  // needlessly nesting a <p> inside it.
+  function unwrapSingleParagraph(html) {
+    var m = html.match(/^<p>([\s\S]*)<\/p>$/);
+    return m ? m[1] : html;
+  }
 
   var els = {
     loginBtn: document.getElementById('login-btn'),
@@ -226,7 +262,8 @@
       .then(handleJsonResponse)
       .then(function (data) {
         state.currentFile = file;
-        state.blocks = data.blocks;
+        state.blocks = data.blocks.map(function (b) { return Object.assign({}, b, { currentHtml: b.html }); });
+        state.activeBlockIndex = null;
         state.images = data.images.map(function (img) {
           var resolved = resolveRelative(dirname(file), img.src);
           return Object.assign({}, img, {
@@ -250,6 +287,8 @@
     els.blocks.innerHTML = '';
     els.images.innerHTML = '';
 
+    state.blockRefs = [];
+
     state.blocks.forEach(function (block, i) {
       var wrap = document.createElement('div');
       wrap.className = 'block-field';
@@ -259,11 +298,39 @@
       label.textContent = block.tag.toUpperCase() + (block.section ? ' — under "' + block.section + '"' : '');
       wrap.appendChild(label);
 
-      var textarea = document.createElement('textarea');
-      textarea.value = block.text;
-      textarea.dataset.index = String(i);
-      textarea.rows = Math.min(6, Math.max(2, Math.ceil(block.text.length / 60)));
-      wrap.appendChild(textarea);
+      var preview = document.createElement('div');
+      preview.className = 'block-preview';
+      preview.innerHTML = block.currentHtml;
+      wrap.appendChild(preview);
+
+      var quillWrap = document.createElement('div');
+      quillWrap.className = 'block-quill-wrap';
+      quillWrap.hidden = true;
+      var toolbarEl = document.createElement('div');
+      var editorEl = document.createElement('div');
+      quillWrap.appendChild(toolbarEl);
+      quillWrap.appendChild(editorEl);
+      wrap.appendChild(quillWrap);
+
+      var editBtn = document.createElement('button');
+      editBtn.type = 'button';
+      editBtn.className = 'block-edit-btn';
+      editBtn.textContent = 'Edit';
+      wrap.appendChild(editBtn);
+
+      state.blockRefs[i] = {
+        preview: preview,
+        quillWrap: quillWrap,
+        editorEl: editorEl,
+        toolbarEl: toolbarEl,
+        editBtn: editBtn,
+        quillInstance: null,
+      };
+
+      editBtn.addEventListener('click', function () {
+        if (state.activeBlockIndex === i) deactivateBlock(i);
+        else activateBlock(i);
+      });
 
       els.blocks.appendChild(wrap);
     });
@@ -306,6 +373,41 @@
     });
   }
 
+  // Only one block is ever "live" (an actual Quill editor + toolbar) at a
+  // time -- with a page having a dozen-plus blocks, a toolbar per block
+  // would be overwhelming. Every other block stays a static, already-
+  // formatted preview until clicked.
+  function activateBlock(i) {
+    if (state.activeBlockIndex !== null && state.activeBlockIndex !== i) {
+      deactivateBlock(state.activeBlockIndex);
+    }
+    state.activeBlockIndex = i;
+    var refs = state.blockRefs[i];
+    refs.preview.hidden = true;
+    refs.quillWrap.hidden = false;
+    refs.editBtn.textContent = 'Done';
+
+    var quill = new Quill(refs.editorEl, { theme: 'snow', modules: { toolbar: refs.toolbarEl } });
+    quill.clipboard.dangerouslyPasteHTML(state.blocks[i].currentHtml);
+    refs.quillInstance = quill;
+  }
+
+  function deactivateBlock(i) {
+    var refs = state.blockRefs[i];
+    if (!refs || !refs.quillInstance) return;
+
+    var html = unwrapSingleParagraph(refs.quillInstance.root.innerHTML);
+    state.blocks[i].currentHtml = html;
+    refs.quillInstance = null;
+    refs.editorEl.innerHTML = '';
+    refs.toolbarEl.innerHTML = '';
+    refs.preview.innerHTML = html;
+    refs.preview.hidden = false;
+    refs.quillWrap.hidden = true;
+    refs.editBtn.textContent = 'Edit';
+    if (state.activeBlockIndex === i) state.activeBlockIndex = null;
+  }
+
   function fileToBase64(file) {
     return new Promise(function (resolve, reject) {
       var reader = new FileReader();
@@ -320,10 +422,8 @@
 
   function collectTextEdits() {
     var edits = [];
-    els.blocks.querySelectorAll('textarea').forEach(function (ta) {
-      var i = Number(ta.dataset.index);
-      var block = state.blocks[i];
-      if (ta.value !== block.text) edits.push({ path: block.path, newText: ta.value });
+    state.blocks.forEach(function (block) {
+      if (block.currentHtml !== block.html) edits.push({ path: block.path, newHtml: block.currentHtml });
     });
     return edits;
   }
@@ -358,6 +458,10 @@
 
   els.saveBtn.addEventListener('click', function () {
     if (!state.currentFile) return;
+    // Sync whichever block is still being actively edited before reading
+    // its content, so a save right after typing doesn't miss it.
+    if (state.activeBlockIndex !== null) deactivateBlock(state.activeBlockIndex);
+
     els.saveBtn.disabled = true;
     setSaveStatus('Saving…');
 

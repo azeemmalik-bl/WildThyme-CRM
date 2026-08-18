@@ -100,6 +100,20 @@ function transform(html) {
     const $rows = $table.children('tr').length ? $table.children('tr') : $table.find('> tbody > tr');
     const $container = $('<div class="container-fluid legacy-table px-0"></div>');
 
+    // Legacy tables often repeat a "label - value" row shape many times
+    // (cast lists, crew lists, itineraries...), but only the first
+    // occurrence carries width="" attributes -- a common copy-paste-without-
+    // full-attributes authoring pattern. Scan for an exemplar set of
+    // proportions per cell-count up front, to reuse on sibling rows that
+    // share the same shape but lack their own width data.
+    const exemplarWidthsByCellCount = new Map();
+    $rows.each((_, rowEl) => {
+      const $cells = $(rowEl).children('td, th').filter((_, c) => !isCellEmpty($(c)));
+      if ($cells.length === 0 || exemplarWidthsByCellCount.has($cells.length)) return;
+      const widths = $cells.toArray().map((c) => parseInt($(c).attr('width'), 10));
+      if (widths.every((w) => Number.isFinite(w) && w > 0)) exemplarWidthsByCellCount.set($cells.length, widths);
+    });
+
     $rows.each((_, rowEl) => {
       const $row = $(rowEl);
       const $allCells = $row.children('td, th');
@@ -107,12 +121,28 @@ function transform(html) {
       const $cells = $allCells.filter((_, c) => !isCellEmpty($(c)));
       if ($cells.length === 0) return;
       const $bsRow = $('<div class="row gy-2"></div>');
-      $cells.each((_, cellEl) => {
+
+      // Prefer pixel `width` (this row's own, or borrowed from an exemplar
+      // sibling) over colspan when computing Bootstrap column proportions.
+      // colspan-only math treats a narrow "-" separator column the same as
+      // the wide name/role columns beside it -- splitting the row into equal
+      // thirds and wasting a third of the width on a single dash, which is
+      // exactly what made these lists look sparse and misaligned.
+      const ownWidths = $cells.toArray().map((c) => parseInt($(c).attr('width'), 10));
+      const ownHaveWidth = ownWidths.every((w) => Number.isFinite(w) && w > 0);
+      const widths = ownHaveWidth ? ownWidths : exemplarWidthsByCellCount.get($cells.length);
+      const totalWidth = widths ? widths.reduce((a, b) => a + b, 0) : 0;
+
+      $cells.each((i, cellEl) => {
         const $cell = $(cellEl);
-        const colspan = parseInt($cell.attr('colspan'), 10) || 1;
-        // Bootstrap 12-col grid, scaled by how many colspan-units this row has.
-        const totalUnits = $cells.toArray().reduce((sum, c) => sum + (parseInt($(c).attr('colspan'), 10) || 1), 0);
-        const span = Math.max(1, Math.round((colspan / totalUnits) * 12));
+        let span;
+        if (widths) {
+          span = Math.max(1, Math.round((widths[i] / totalWidth) * 12));
+        } else {
+          const colspan = parseInt($cell.attr('colspan'), 10) || 1;
+          const totalUnits = $cells.toArray().reduce((sum, c) => sum + (parseInt($(c).attr('colspan'), 10) || 1), 0);
+          span = Math.max(1, Math.round((colspan / totalUnits) * 12));
+        }
         const $col = $(`<div class="col-12 col-md-${span}"></div>`);
         $col.append($cell.contents());
         $bsRow.append($col);

@@ -43,8 +43,12 @@ function captureColors(html) {
   return colors;
 }
 
+// Returns null if the page was already patched by a prior run (has a style
+// attribute on body already) -- keeps this script safe to re-run without
+// piling up duplicate <style> blocks in <head> each time.
 function patchColorsOnly(liveHtml, colors) {
   const $ = cheerio.load(liveHtml, { decodeEntities: false });
+  if ($('body').attr('style')) return null;
   $('body').addClass('legacy-content');
 
   const styleParts = [];
@@ -75,6 +79,7 @@ function main() {
 
   let regenerated = 0;
   let colorPatched = 0;
+  let alreadyPatched = 0;
   let skippedNoColors = 0;
   let missingLive = [];
   let errors = [];
@@ -109,6 +114,10 @@ function main() {
       }
       const liveHtml = fs.readFileSync(livePath, 'utf8');
       const patched = patchColorsOnly(liveHtml, colors);
+      if (patched === null) {
+        alreadyPatched++;
+        continue;
+      }
       if (apply) fs.writeFileSync(livePath, patched, 'utf8');
       colorPatched++;
       log.push({ livePath, action: 'color-patched', colors });
@@ -129,6 +138,7 @@ function main() {
 
   console.log(`${apply ? 'Regenerated' : 'Would regenerate'} (auto-converted): ${regenerated}`);
   console.log(`${apply ? 'Color-patched' : 'Would color-patch'} (hand-rebuilt): ${colorPatched}`);
+  console.log(`Already patched by a prior run (left untouched): ${alreadyPatched}`);
   console.log(`Hand-rebuilt pages with no colors to restore (left untouched): ${skippedNoColors}`);
   console.log(`Missing live file (skipped): ${missingLive.length}`);
   console.log(`Errors: ${errors.length}`);

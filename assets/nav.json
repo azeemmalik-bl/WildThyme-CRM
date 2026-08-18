@@ -386,2410 +386,6 @@
   },
   {
     "type": "dir",
-    "name": "Poirot Casts",
-    "count": 144,
-    "children": [
-      {
-        "type": "file",
-        "name": "Poirot Casts Adventure Of Johnnie Waverly",
-        "file": "_ Poirot_Casts/Poirot_Casts_Adventure_of_Johnnie_Waverly.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Casts Adventure Of Johnnie Waverly.Modern",
-        "file": "_ Poirot_Casts/Poirot_Casts_Adventure_of_Johnnie_Waverly.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Casts Adventure Of The Clapham Cook",
-        "file": "_ Poirot_Casts/Poirot_Casts_Adventure_of_the_Clapham_Cook.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Casts Adventure Of The Clapham Cook.Modern",
-        "file": "_ Poirot_Casts/Poirot_Casts_Adventure_of_the_Clapham_Cook.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Casts After The Funeral",
-        "file": "_ Poirot_Casts/Poirot_Casts_After_the_Funeral.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Casts After The Funeral.Modern",
-        "file": "_ Poirot_Casts/Poirot_Casts_After_the_Funeral.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Casts Appointment With Death",
-        "file": "_ Poirot_Casts/Poirot_Casts_Appointment_with_Death.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Casts Appointment With Death.Modern",
-        "file": "_ Poirot_Casts/Poirot_Casts_Appointment_with_Death.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Casts Blank",
-        "file": "_ Poirot_Casts/Poirot_Casts_Blank.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Casts Blank.Modern",
-        "file": "_ Poirot_Casts/Poirot_Casts_Blank.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Casts Cards On The Table",
-        "file": "_ Poirot_Casts/Poirot_Casts_Cards_on_the_Table.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Casts Cards On The Table.Modern",
-        "file": "_ Poirot_Casts/Poirot_Casts_Cards_on_the_Table.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Casts Cat Among The Pigeons",
-        "file": "_ Poirot_Casts/Poirot_Casts_Cat_Among_the_Pigeons.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Casts Cat Among The Pigeons.Modern",
-        "file": "_ Poirot_Casts/Poirot_Casts_Cat_Among_the_Pigeons.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Casts Curtain Poirots Last Case",
-        "file": "_ Poirot_Casts/Poirot_Casts_Curtain_Poirots_Last_Case.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Casts Curtain Poirots Last Case.Modern",
-        "file": "_ Poirot_Casts/Poirot_Casts_Curtain_Poirots_Last_Case.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Casts Dead Mans Folly",
-        "file": "_ Poirot_Casts/Poirot_Casts_Dead_Mans_Folly.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Casts Dead Mans Folly.Modern",
-        "file": "_ Poirot_Casts/Poirot_Casts_Dead_Mans_Folly.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Casts Dead Mans Mirror",
-        "file": "_ Poirot_Casts/Poirot_Casts_Dead_Mans_Mirror.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Casts Dead Mans Mirror.Modern",
-        "file": "_ Poirot_Casts/Poirot_Casts_Dead_Mans_Mirror.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Casts Death In The Clouds",
-        "file": "_ Poirot_Casts/Poirot_Casts_Death_in_the_Clouds.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Casts Death In The Clouds.Modern",
-        "file": "_ Poirot_Casts/Poirot_Casts_Death_in_the_Clouds.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Casts Death On The Nile",
-        "file": "_ Poirot_Casts/Poirot_Casts_Death_on_the_Nile.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Casts Death On The Nile.Modern",
-        "file": "_ Poirot_Casts/Poirot_Casts_Death_on_the_Nile.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Casts Double Sin",
-        "file": "_ Poirot_Casts/Poirot_Casts_Double_Sin.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Casts Double Sin.Modern",
-        "file": "_ Poirot_Casts/Poirot_Casts_Double_Sin.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Casts Dumb Witness",
-        "file": "_ Poirot_Casts/Poirot_Casts_Dumb_Witness.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Casts Dumb Witness.Modern",
-        "file": "_ Poirot_Casts/Poirot_Casts_Dumb_Witness.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Casts Elephants Can Remember",
-        "file": "_ Poirot_Casts/Poirot_Casts_Elephants_Can_Remember.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Casts Elephants Can Remember.Modern",
-        "file": "_ Poirot_Casts/Poirot_Casts_Elephants_Can_Remember.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Casts Evil Under The Sun",
-        "file": "_ Poirot_Casts/Poirot_Casts_Evil_under_the_Sun.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Casts Evil Under The Sun.Modern",
-        "file": "_ Poirot_Casts/Poirot_Casts_Evil_under_the_Sun.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Casts Five Little Pigs",
-        "file": "_ Poirot_Casts/Poirot_Casts_Five_Little_Pigs.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Casts Five Little Pigs.Modern",
-        "file": "_ Poirot_Casts/Poirot_Casts_Five_Little_Pigs.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Casts Four And Twenty Blackbirds",
-        "file": "_ Poirot_Casts/Poirot_Casts_Four_and_Twenty_Blackbirds.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Casts Four And Twenty Blackbirds.Modern",
-        "file": "_ Poirot_Casts/Poirot_Casts_Four_and_Twenty_Blackbirds.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Casts Halloween Party",
-        "file": "_ Poirot_Casts/Poirot_Casts_Halloween_Party.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Casts Halloween Party.Modern",
-        "file": "_ Poirot_Casts/Poirot_Casts_Halloween_Party.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Casts Hercule Poirots Christmas",
-        "file": "_ Poirot_Casts/Poirot_Casts_Hercule_Poirots_Christmas.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Casts Hercule Poirots Christmas.Modern",
-        "file": "_ Poirot_Casts/Poirot_Casts_Hercule_Poirots_Christmas.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Casts Hickory Dickory Dock",
-        "file": "_ Poirot_Casts/Poirot_Casts_Hickory_Dickory_Dock.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Casts Hickory Dickory Dock.Modern",
-        "file": "_ Poirot_Casts/Poirot_Casts_Hickory_Dickory_Dock.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Casts How Does Your Garden Grow",
-        "file": "_ Poirot_Casts/Poirot_Casts_How_Does_Your_Garden_Grow.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "How Does Your Garden Grow — Poirot Casts",
-        "file": "_ Poirot_Casts/Poirot_Casts_How_Does_Your_Garden_Grow.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Casts Jewel Robbery At The Grand Metropolitan",
-        "file": "_ Poirot_Casts/Poirot_Casts_Jewel_Robbery_at_the_Grand_Metropolitan.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Jewel Robbery at the Grand Metropolitan — Poirot Casts",
-        "file": "_ Poirot_Casts/Poirot_Casts_Jewel_Robbery_at_the_Grand_Metropolitan.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Casts Lord Edgware Dies",
-        "file": "_ Poirot_Casts/Poirot_Casts_Lord_Edgware_Dies.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Lord Edgware Dies — Poirot Casts",
-        "file": "_ Poirot_Casts/Poirot_Casts_Lord_Edgware_Dies.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Casts Mrs McGintys Dead",
-        "file": "_ Poirot_Casts/Poirot_Casts_Mrs_McGintys_Dead.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Mrs McGinty's Dead — Poirot Casts",
-        "file": "_ Poirot_Casts/Poirot_Casts_Mrs_McGintys_Dead.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Casts Murder In Mesopotamia",
-        "file": "_ Poirot_Casts/Poirot_Casts_Murder_in_Mesopotamia.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Murder in Mesopotamia — Poirot Casts",
-        "file": "_ Poirot_Casts/Poirot_Casts_Murder_in_Mesopotamia.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Casts Murder In The Mews",
-        "file": "_ Poirot_Casts/Poirot_Casts_Murder_in_the_Mews.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Murder in the Mews — Poirot Casts",
-        "file": "_ Poirot_Casts/Poirot_Casts_Murder_in_the_Mews.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Casts Murder On The Links",
-        "file": "_ Poirot_Casts/Poirot_Casts_Murder_on_the_Links.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Murder on the Links — Poirot Casts",
-        "file": "_ Poirot_Casts/Poirot_Casts_Murder_on_the_Links.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Casts Murder On The Orient Express",
-        "file": "_ Poirot_Casts/Poirot_Casts_Murder_on_the_Orient_Express.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Murder on the Orient Express — Poirot Casts",
-        "file": "_ Poirot_Casts/Poirot_Casts_Murder_on_the_Orient_Express.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Casts One Two Buckle My Shoe",
-        "file": "_ Poirot_Casts/Poirot_Casts_One_Two_Buckle_My_Shoe.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "One, Two, Buckle My Shoe — Poirot Casts",
-        "file": "_ Poirot_Casts/Poirot_Casts_One_Two_Buckle_My_Shoe.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Casts Peril At End House",
-        "file": "_ Poirot_Casts/Poirot_Casts_Peril_at_End_House.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Peril at End House — Poirot Casts",
-        "file": "_ Poirot_Casts/Poirot_Casts_Peril_at_End_House.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Casts Problem At Sea",
-        "file": "_ Poirot_Casts/Poirot_Casts_Problem_at_Sea.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Casts Problem At Sea.Modern",
-        "file": "_ Poirot_Casts/Poirot_Casts_Problem_at_Sea.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Casts Sad Cypress",
-        "file": "_ Poirot_Casts/Poirot_Casts_Sad_Cypress.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Casts Sad Cypress.Modern",
-        "file": "_ Poirot_Casts/Poirot_Casts_Sad_Cypress.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Casts Taken At The Flood",
-        "file": "_ Poirot_Casts/Poirot_Casts_Taken_at_the_Flood.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Casts Taken At The Flood.Modern",
-        "file": "_ Poirot_Casts/Poirot_Casts_Taken_at_the_Flood.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Casts The ABC Murders",
-        "file": "_ Poirot_Casts/Poirot_Casts_The_ABC_Murders.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Casts The ABC Murders.Modern",
-        "file": "_ Poirot_Casts/Poirot_Casts_The_ABC_Murders.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Casts The Adventure Of The Cheap Flat",
-        "file": "_ Poirot_Casts/Poirot_Casts_The_Adventure_of_the_Cheap_Flat.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Casts The Adventure Of The Cheap Flat.Modern",
-        "file": "_ Poirot_Casts/Poirot_Casts_The_Adventure_of_the_Cheap_Flat.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Casts The Adventure Of The Egyptian Tomb",
-        "file": "_ Poirot_Casts/Poirot_Casts_The_Adventure_of_the_Egyptian_Tomb.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Casts The Adventure Of The Egyptian Tomb.Modern",
-        "file": "_ Poirot_Casts/Poirot_Casts_The_Adventure_of_the_Egyptian_Tomb.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Casts The Adventure Of The Italian Nobleman",
-        "file": "_ Poirot_Casts/Poirot_Casts_The_Adventure_of_the_Italian_Nobleman.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Casts The Adventure Of The Italian Nobleman.Modern",
-        "file": "_ Poirot_Casts/Poirot_Casts_The_Adventure_of_the_Italian_Nobleman.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Casts The Adventure Of The Western Star",
-        "file": "_ Poirot_Casts/Poirot_Casts_The_Adventure_of_the_Western_Star.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Casts The Adventure Of The Western Star.Modern",
-        "file": "_ Poirot_Casts/Poirot_Casts_The_Adventure_of_the_Western_Star.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Casts The Affair At The Victory Ball",
-        "file": "_ Poirot_Casts/Poirot_Casts_The_Affair_at_the_Victory_Ball.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Casts The Affair At The Victory Ball.Modern",
-        "file": "_ Poirot_Casts/Poirot_Casts_The_Affair_at_the_Victory_Ball.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Casts The Big Four",
-        "file": "_ Poirot_Casts/Poirot_Casts_The_Big_Four.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Casts The Big Four.Modern",
-        "file": "_ Poirot_Casts/Poirot_Casts_The_Big_Four.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Casts The Case Of The Missing Will",
-        "file": "_ Poirot_Casts/Poirot_Casts_The_Case_of_the_Missing_Will.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Casts The Case Of The Missing Will.Modern",
-        "file": "_ Poirot_Casts/Poirot_Casts_The_Case_of_the_Missing_Will.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Casts The Chocolate Box",
-        "file": "_ Poirot_Casts/Poirot_Casts_The_Chocolate_Box.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Casts The Chocolate Box.Modern",
-        "file": "_ Poirot_Casts/Poirot_Casts_The_Chocolate_Box.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Casts The Clocks",
-        "file": "_ Poirot_Casts/Poirot_Casts_The_Clocks.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Casts The Clocks.Modern",
-        "file": "_ Poirot_Casts/Poirot_Casts_The_Clocks.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Casts The Cornish Mystery",
-        "file": "_ Poirot_Casts/Poirot_Casts_The_Cornish_Mystery.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Casts The Cornish Mystery.Modern",
-        "file": "_ Poirot_Casts/Poirot_Casts_The_Cornish_Mystery.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Casts The Disappearance Of Mr.Davenheim",
-        "file": "_ Poirot_Casts/Poirot_Casts_The_Disappearance_of_Mr.Davenheim.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Casts The Disappearance Of Mr.Davenheim.Modern",
-        "file": "_ Poirot_Casts/Poirot_Casts_The_Disappearance_of_Mr.Davenheim.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Casts The Double Clue",
-        "file": "_ Poirot_Casts/Poirot_Casts_The_Double_Clue.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Casts The Double Clue.Modern",
-        "file": "_ Poirot_Casts/Poirot_Casts_The_Double_Clue.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Casts The Dream",
-        "file": "_ Poirot_Casts/Poirot_Casts_The_Dream.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Casts The Dream.Modern",
-        "file": "_ Poirot_Casts/Poirot_Casts_The_Dream.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Casts The Hollow",
-        "file": "_ Poirot_Casts/Poirot_Casts_The_Hollow.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Casts The Hollow.Modern",
-        "file": "_ Poirot_Casts/Poirot_Casts_The_Hollow.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Casts The Incredible Theft",
-        "file": "_ Poirot_Casts/Poirot_Casts_The_Incredible_Theft.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Casts The Incredible Theft.Modern",
-        "file": "_ Poirot_Casts/Poirot_Casts_The_Incredible_Theft.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Casts The Kidnapped Prime Minister",
-        "file": "_ Poirot_Casts/Poirot_Casts_The_Kidnapped_Prime_Minister.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Casts The Kidnapped Prime Minister.Modern",
-        "file": "_ Poirot_Casts/Poirot_Casts_The_Kidnapped_Prime_Minister.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Casts The King Of Clubs",
-        "file": "_ Poirot_Casts/Poirot_Casts_The_King_of_Clubs.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Casts The King Of Clubs.Modern",
-        "file": "_ Poirot_Casts/Poirot_Casts_The_King_of_Clubs.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Casts The Labours Of Hercules",
-        "file": "_ Poirot_Casts/Poirot_Casts_The_Labours_of_Hercules.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Casts The Labours Of Hercules.Modern",
-        "file": "_ Poirot_Casts/Poirot_Casts_The_Labours_of_Hercules.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Casts The Lost Mine",
-        "file": "_ Poirot_Casts/Poirot_Casts_The_Lost_Mine.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Casts The Lost Mine.Modern",
-        "file": "_ Poirot_Casts/Poirot_Casts_The_Lost_Mine.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Casts The Million Dollar Bond Robbery",
-        "file": "_ Poirot_Casts/Poirot_Casts_The_Million_Dollar_Bond_Robbery.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Casts The Million Dollar Bond Robbery.Modern",
-        "file": "_ Poirot_Casts/Poirot_Casts_The_Million_Dollar_Bond_Robbery.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Casts The Murder Of Roger Ackroyd",
-        "file": "_ Poirot_Casts/Poirot_Casts_The_Murder_of_Roger_Ackroyd.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Casts The Murder Of Roger Ackroyd.Modern",
-        "file": "_ Poirot_Casts/Poirot_Casts_The_Murder_of_Roger_Ackroyd.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Casts The Mysterious Affair At Styles",
-        "file": "_ Poirot_Casts/Poirot_Casts_The_Mysterious_Affair_at_Styles.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Casts The Mysterious Affair At Styles.Modern",
-        "file": "_ Poirot_Casts/Poirot_Casts_The_Mysterious_Affair_at_Styles.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Casts The Mystery Of Hunters Lodge",
-        "file": "_ Poirot_Casts/Poirot_Casts_The_Mystery_of_Hunters_Lodge.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Casts The Mystery Of Hunters Lodge.Modern",
-        "file": "_ Poirot_Casts/Poirot_Casts_The_Mystery_of_Hunters_Lodge.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Casts The Mystery Of The Blue Train",
-        "file": "_ Poirot_Casts/Poirot_Casts_The_Mystery_of_the_Blue_Train.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Casts The Mystery Of The Blue Train.Modern",
-        "file": "_ Poirot_Casts/Poirot_Casts_The_Mystery_of_the_Blue_Train.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Casts The Mystery Of The Spanish Chest",
-        "file": "_ Poirot_Casts/Poirot_Casts_The_Mystery_of_the_Spanish_Chest.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Casts The Mystery Of The Spanish Chest.Modern",
-        "file": "_ Poirot_Casts/Poirot_Casts_The_Mystery_of_the_Spanish_Chest.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Casts The Plymouth Express",
-        "file": "_ Poirot_Casts/Poirot_Casts_The_Plymouth_Express.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Casts The Plymouth Express.Modern",
-        "file": "_ Poirot_Casts/Poirot_Casts_The_Plymouth_Express.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Casts The Theft Of The Royal Ruby",
-        "file": "_ Poirot_Casts/Poirot_Casts_The_Theft_of_the_Royal_Ruby.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Casts The Theft Of The Royal Ruby.Modern",
-        "file": "_ Poirot_Casts/Poirot_Casts_The_Theft_of_the_Royal_Ruby.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Casts The Third Floor Flat",
-        "file": "_ Poirot_Casts/Poirot_Casts_The_Third_Floor_Flat.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Casts The Third Floor Flat.Modern",
-        "file": "_ Poirot_Casts/Poirot_Casts_The_Third_Floor_Flat.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Casts The Tragedy At Marsdon Manor",
-        "file": "_ Poirot_Casts/Poirot_Casts_The_Tragedy_at_Marsdon_Manor.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Casts The Tragedy At Marsdon Manor.Modern",
-        "file": "_ Poirot_Casts/Poirot_Casts_The_Tragedy_at_Marsdon_Manor.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Casts The Underdog",
-        "file": "_ Poirot_Casts/Poirot_Casts_The_Underdog.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Casts The Underdog.Modern",
-        "file": "_ Poirot_Casts/Poirot_Casts_The_Underdog.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Casts The Veiled Lady",
-        "file": "_ Poirot_Casts/Poirot_Casts_The_Veiled_Lady.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Casts The Veiled Lady.Modern",
-        "file": "_ Poirot_Casts/Poirot_Casts_The_Veiled_Lady.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Casts The Yellow Iris",
-        "file": "_ Poirot_Casts/Poirot_Casts_The_Yellow_Iris.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Casts The Yellow Iris.Modern",
-        "file": "_ Poirot_Casts/Poirot_Casts_The_Yellow_Iris.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Casts Third Girl",
-        "file": "_ Poirot_Casts/Poirot_Casts_Third_Girl.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Casts Third Girl.Modern",
-        "file": "_ Poirot_Casts/Poirot_Casts_Third_Girl.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Casts Three Act Tragedy",
-        "file": "_ Poirot_Casts/Poirot_Casts_Three_Act_Tragedy.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Casts Three Act Tragedy.Modern",
-        "file": "_ Poirot_Casts/Poirot_Casts_Three_Act_Tragedy.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Casts Triangle At Rhodes",
-        "file": "_ Poirot_Casts/Poirot_Casts_Triangle_at_Rhodes.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Casts Triangle At Rhodes.Modern",
-        "file": "_ Poirot_Casts/Poirot_Casts_Triangle_at_Rhodes.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Casts Wasps Nest",
-        "file": "_ Poirot_Casts/Poirot_Casts_Wasps_Nest.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Casts Wasps Nest.Modern",
-        "file": "_ Poirot_Casts/Poirot_Casts_Wasps_Nest.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Casts",
-        "file": "_ Poirot_Casts/Poirot_Casts.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Casts.Modern",
-        "file": "_ Poirot_Casts/Poirot_Casts.modern.html"
-      }
-    ],
-    "directFile": "_ Poirot_Casts/Poirot_Casts.html"
-  },
-  {
-    "type": "dir",
-    "name": "Poirot Editions",
-    "count": 144,
-    "children": [
-      {
-        "type": "file",
-        "name": "Poirot Editions Adventure Of Johnnie Waverly",
-        "file": "_ Poirot_Editions/Poirot_Editions_Adventure_of_Johnnie_Waverly.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Editions Adventure Of Johnnie Waverly.Modern",
-        "file": "_ Poirot_Editions/Poirot_Editions_Adventure_of_Johnnie_Waverly.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Editions Adventure Of The Clapham Cook",
-        "file": "_ Poirot_Editions/Poirot_Editions_Adventure_of_the_Clapham_Cook.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Editions Adventure Of The Clapham Cook.Modern",
-        "file": "_ Poirot_Editions/Poirot_Editions_Adventure_of_the_Clapham_Cook.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Editions Affair At The Victory Ball",
-        "file": "_ Poirot_Editions/Poirot_Editions_Affair_at_the_Victory_Ball.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Editions Affair At The Victory Ball.Modern",
-        "file": "_ Poirot_Editions/Poirot_Editions_Affair_at_the_Victory_Ball.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Editions After The Funeral",
-        "file": "_ Poirot_Editions/Poirot_Editions_After_the_Funeral.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Editions After The Funeral.Modern",
-        "file": "_ Poirot_Editions/Poirot_Editions_After_the_Funeral.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Editions Appointment With Death",
-        "file": "_ Poirot_Editions/Poirot_Editions_Appointment_With_Death.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Editions Appointment With Death.Modern",
-        "file": "_ Poirot_Editions/Poirot_Editions_Appointment_With_Death.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Editions Blank",
-        "file": "_ Poirot_Editions/Poirot_Editions_Blank.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Editions Blank.Modern",
-        "file": "_ Poirot_Editions/Poirot_Editions_Blank.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Editions Cards On The Table",
-        "file": "_ Poirot_Editions/Poirot_Editions_Cards_on_the_Table.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Editions Cards On The Table.Modern",
-        "file": "_ Poirot_Editions/Poirot_Editions_Cards_on_the_Table.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Editions Cat Among The Pigeons",
-        "file": "_ Poirot_Editions/Poirot_Editions_Cat_Among_the_Pigeons.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Editions Cat Among The Pigeons.Modern",
-        "file": "_ Poirot_Editions/Poirot_Editions_Cat_Among_the_Pigeons.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Editions Curtain Poirots Last Case",
-        "file": "_ Poirot_Editions/Poirot_Editions_Curtain_Poirots_Last_Case.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Editions Curtain Poirots Last Case.Modern",
-        "file": "_ Poirot_Editions/Poirot_Editions_Curtain_Poirots_Last_Case.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Editions Dead Mans Folly",
-        "file": "_ Poirot_Editions/Poirot_Editions_Dead_Mans_Folly.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Editions Dead Mans Folly.Modern",
-        "file": "_ Poirot_Editions/Poirot_Editions_Dead_Mans_Folly.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Editions Dead Mans Mirror",
-        "file": "_ Poirot_Editions/Poirot_Editions_Dead_Mans_Mirror.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Editions Dead Mans Mirror.Modern",
-        "file": "_ Poirot_Editions/Poirot_Editions_Dead_Mans_Mirror.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Editions Death In The Clouds",
-        "file": "_ Poirot_Editions/Poirot_Editions_Death_in_the_Clouds.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Editions Death In The Clouds.Modern",
-        "file": "_ Poirot_Editions/Poirot_Editions_Death_in_the_Clouds.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Editions Death On The Nile",
-        "file": "_ Poirot_Editions/Poirot_Editions_Death_on_the_Nile.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Editions Death On The Nile.Modern",
-        "file": "_ Poirot_Editions/Poirot_Editions_Death_on_the_Nile.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Editions Double Sin",
-        "file": "_ Poirot_Editions/Poirot_Editions_Double_Sin.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Editions Double Sin.Modern",
-        "file": "_ Poirot_Editions/Poirot_Editions_Double_Sin.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Editions Dumb Witness",
-        "file": "_ Poirot_Editions/Poirot_Editions_Dumb_Witness.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Editions Dumb Witness.Modern",
-        "file": "_ Poirot_Editions/Poirot_Editions_Dumb_Witness.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Editions Elephants Can Remember",
-        "file": "_ Poirot_Editions/Poirot_Editions_Elephants_Can_Remember.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Editions Elephants Can Remember.Modern",
-        "file": "_ Poirot_Editions/Poirot_Editions_Elephants_Can_Remember.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Editions Evil Under The Sun",
-        "file": "_ Poirot_Editions/Poirot_Editions_Evil_Under_The_Sun.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Editions Evil Under The Sun.Modern",
-        "file": "_ Poirot_Editions/Poirot_Editions_Evil_Under_The_Sun.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Editions Five Little Pigs",
-        "file": "_ Poirot_Editions/Poirot_Editions_Five_Little_Pigs.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Editions Five Little Pigs.Modern",
-        "file": "_ Poirot_Editions/Poirot_Editions_Five_Little_Pigs.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Editions Four And Twenty Blackbirds",
-        "file": "_ Poirot_Editions/Poirot_Editions_Four_and_Twenty_Blackbirds.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Editions Four And Twenty Blackbirds.Modern",
-        "file": "_ Poirot_Editions/Poirot_Editions_Four_and_Twenty_Blackbirds.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Editions Halloween Party",
-        "file": "_ Poirot_Editions/Poirot_Editions_Halloween_Party.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Editions Halloween Party.Modern",
-        "file": "_ Poirot_Editions/Poirot_Editions_Halloween_Party.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Editions Hercule Poirots Christmas",
-        "file": "_ Poirot_Editions/Poirot_Editions_Hercule_Poirots_Christmas.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Editions Hercule Poirots Christmas.Modern",
-        "file": "_ Poirot_Editions/Poirot_Editions_Hercule_Poirots_Christmas.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Editions Hickory Dickory Dock",
-        "file": "_ Poirot_Editions/Poirot_Editions_Hickory_Dickory_Dock.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Editions Hickory Dickory Dock.Modern",
-        "file": "_ Poirot_Editions/Poirot_Editions_Hickory_Dickory_Dock.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Editions How Does Your Garden Grow",
-        "file": "_ Poirot_Editions/Poirot_Editions_How_Does_Your_Garden_Grow.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Editions How Does Your Garden Grow.Modern",
-        "file": "_ Poirot_Editions/Poirot_Editions_How_Does_Your_Garden_Grow.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Editions Jewel Robbery At The Grand Metropolitan",
-        "file": "_ Poirot_Editions/Poirot_Editions_Jewel_Robbery_at_the_Grand_Metropolitan.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Editions Jewel Robbery At The Grand Metropolitan.Modern",
-        "file": "_ Poirot_Editions/Poirot_Editions_Jewel_Robbery_at_the_Grand_Metropolitan.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Editions Lord Edgware Dies",
-        "file": "_ Poirot_Editions/Poirot_Editions_Lord_Edgware_Dies.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Editions Lord Edgware Dies.Modern",
-        "file": "_ Poirot_Editions/Poirot_Editions_Lord_Edgware_Dies.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Editions Mrs McGintys Dead",
-        "file": "_ Poirot_Editions/Poirot_Editions_Mrs_McGintys_Dead.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Editions Mrs McGintys Dead.Modern",
-        "file": "_ Poirot_Editions/Poirot_Editions_Mrs_McGintys_Dead.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Editions Murder In Mesopotamia",
-        "file": "_ Poirot_Editions/Poirot_Editions_Murder_in_Mesopotamia.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Editions Murder In Mesopotamia.Modern",
-        "file": "_ Poirot_Editions/Poirot_Editions_Murder_in_Mesopotamia.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Editions Murder In The Mews",
-        "file": "_ Poirot_Editions/Poirot_Editions_Murder_in_the_Mews.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Editions Murder In The Mews.Modern",
-        "file": "_ Poirot_Editions/Poirot_Editions_Murder_in_the_Mews.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Editions Murder On The Links",
-        "file": "_ Poirot_Editions/Poirot_Editions_Murder_on_the_Links.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Editions Murder On The Links.Modern",
-        "file": "_ Poirot_Editions/Poirot_Editions_Murder_on_the_Links.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Editions Murder On The Orient Express",
-        "file": "_ Poirot_Editions/Poirot_Editions_Murder_on_the_Orient_Express.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Editions Murder On The Orient Express.Modern",
-        "file": "_ Poirot_Editions/Poirot_Editions_Murder_on_the_Orient_Express.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Editions One Two Buckle My Shoe",
-        "file": "_ Poirot_Editions/Poirot_Editions_One_Two_Buckle_My_Shoe.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Editions One Two Buckle My Shoe.Modern",
-        "file": "_ Poirot_Editions/Poirot_Editions_One_Two_Buckle_My_Shoe.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Editions Peril At End House",
-        "file": "_ Poirot_Editions/Poirot_Editions_Peril_at_End_House.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Editions Peril At End House.Modern",
-        "file": "_ Poirot_Editions/Poirot_Editions_Peril_at_End_House.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Editions Problem At Sea",
-        "file": "_ Poirot_Editions/Poirot_Editions_Problem_at_Sea.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Editions Problem At Sea.Modern",
-        "file": "_ Poirot_Editions/Poirot_Editions_Problem_at_Sea.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Editions Sad Cypress",
-        "file": "_ Poirot_Editions/Poirot_Editions_Sad_Cypress.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Editions Sad Cypress.Modern",
-        "file": "_ Poirot_Editions/Poirot_Editions_Sad_Cypress.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Editions Taken At The Flood",
-        "file": "_ Poirot_Editions/Poirot_Editions_Taken_at_the_Flood.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Editions Taken At The Flood.Modern",
-        "file": "_ Poirot_Editions/Poirot_Editions_Taken_at_the_Flood.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Editions The ABC Murders",
-        "file": "_ Poirot_Editions/Poirot_Editions_The_ABC_Murders.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Editions The ABC Murders.Modern",
-        "file": "_ Poirot_Editions/Poirot_Editions_The_ABC_Murders.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Editions The Adventure Of The Cheap Flat",
-        "file": "_ Poirot_Editions/Poirot_Editions_The_Adventure_of_the_Cheap_Flat.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Editions The Adventure Of The Cheap Flat.Modern",
-        "file": "_ Poirot_Editions/Poirot_Editions_The_Adventure_of_the_Cheap_Flat.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Editions The Adventure Of The Egyptian Tomb",
-        "file": "_ Poirot_Editions/Poirot_Editions_The_Adventure_of_the_Egyptian_Tomb.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Editions The Adventure Of The Egyptian Tomb.Modern",
-        "file": "_ Poirot_Editions/Poirot_Editions_The_Adventure_of_the_Egyptian_Tomb.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Editions The Adventure Of The Italian Nobleman",
-        "file": "_ Poirot_Editions/Poirot_Editions_The_Adventure_of_the_Italian_Nobleman.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Editions The Adventure Of The Italian Nobleman.Modern",
-        "file": "_ Poirot_Editions/Poirot_Editions_The_Adventure_of_the_Italian_Nobleman.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Editions The Adventure Of The Western Star",
-        "file": "_ Poirot_Editions/Poirot_Editions_The_Adventure_of_the_Western_Star.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Editions The Adventure Of The Western Star.Modern",
-        "file": "_ Poirot_Editions/Poirot_Editions_The_Adventure_of_the_Western_Star.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Editions The Big Four",
-        "file": "_ Poirot_Editions/Poirot_Editions_The_Big_Four.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Editions The Big Four.Modern",
-        "file": "_ Poirot_Editions/Poirot_Editions_The_Big_Four.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Editions The Case Of The Missing Will",
-        "file": "_ Poirot_Editions/Poirot_Editions_The_Case_of_the_Missing_Will.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Editions The Case Of The Missing Will.Modern",
-        "file": "_ Poirot_Editions/Poirot_Editions_The_Case_of_the_Missing_Will.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Editions The Chocolate Box",
-        "file": "_ Poirot_Editions/Poirot_Editions_The_Chocolate_Box.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Editions The Chocolate Box.Modern",
-        "file": "_ Poirot_Editions/Poirot_Editions_The_Chocolate_Box.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Editions The Clocks",
-        "file": "_ Poirot_Editions/Poirot_Editions_The_Clocks.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Editions The Clocks.Modern",
-        "file": "_ Poirot_Editions/Poirot_Editions_The_Clocks.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Editions The Cornish Mystery",
-        "file": "_ Poirot_Editions/Poirot_Editions_The_Cornish_Mystery.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Editions The Cornish Mystery.Modern",
-        "file": "_ Poirot_Editions/Poirot_Editions_The_Cornish_Mystery.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Editions The Disappearance Of Mr Davenheim",
-        "file": "_ Poirot_Editions/Poirot_Editions_The_Disappearance_of_Mr_Davenheim.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Editions The Disappearance Of Mr Davenheim.Modern",
-        "file": "_ Poirot_Editions/Poirot_Editions_The_Disappearance_of_Mr_Davenheim.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Editions The Double Clue",
-        "file": "_ Poirot_Editions/Poirot_Editions_The_Double_Clue.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Editions The Double Clue.Modern",
-        "file": "_ Poirot_Editions/Poirot_Editions_The_Double_Clue.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Editions The Dream",
-        "file": "_ Poirot_Editions/Poirot_Editions_The_Dream.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Editions The Dream.Modern",
-        "file": "_ Poirot_Editions/Poirot_Editions_The_Dream.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Editions The Hollow",
-        "file": "_ Poirot_Editions/Poirot_Editions_The_Hollow.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Editions The Hollow.Modern",
-        "file": "_ Poirot_Editions/Poirot_Editions_The_Hollow.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Editions The Incredible Theft",
-        "file": "_ Poirot_Editions/Poirot_Editions_The_Incredible_Theft.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Editions The Incredible Theft.Modern",
-        "file": "_ Poirot_Editions/Poirot_Editions_The_Incredible_Theft.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Editions The Kidnapped Prime Minister",
-        "file": "_ Poirot_Editions/Poirot_Editions_The_Kidnapped_Prime_Minister.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Editions The Kidnapped Prime Minister.Modern",
-        "file": "_ Poirot_Editions/Poirot_Editions_The_Kidnapped_Prime_Minister.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Editions The King Of Clubs",
-        "file": "_ Poirot_Editions/Poirot_Editions_The_King_of_Clubs.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Editions The King Of Clubs.Modern",
-        "file": "_ Poirot_Editions/Poirot_Editions_The_King_of_Clubs.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Editions The Labours Of Hercules",
-        "file": "_ Poirot_Editions/Poirot_Editions_The_Labours_of_Hercules.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Editions The Labours Of Hercules.Modern",
-        "file": "_ Poirot_Editions/Poirot_Editions_The_Labours_of_Hercules.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Editions The Lost Mine",
-        "file": "_ Poirot_Editions/Poirot_Editions_The_Lost_Mine.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Editions The Lost Mine.Modern",
-        "file": "_ Poirot_Editions/Poirot_Editions_The_Lost_Mine.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Editions The Million Dollar Bond Robbery",
-        "file": "_ Poirot_Editions/Poirot_Editions_The_Million_Dollar_Bond_Robbery.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Editions The Million Dollar Bond Robbery.Modern",
-        "file": "_ Poirot_Editions/Poirot_Editions_The_Million_Dollar_Bond_Robbery.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Editions The Murder Of Roger Ackroyd",
-        "file": "_ Poirot_Editions/Poirot_Editions_The_Murder_of_Roger_Ackroyd.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Editions The Murder Of Roger Ackroyd.Modern",
-        "file": "_ Poirot_Editions/Poirot_Editions_The_Murder_of_Roger_Ackroyd.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Editions The Mysterious Affair At Styles",
-        "file": "_ Poirot_Editions/Poirot_Editions_The_Mysterious-Affair_at_Styles.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Editions The Mysterious Affair At Styles.Modern",
-        "file": "_ Poirot_Editions/Poirot_Editions_The_Mysterious-Affair_at_Styles.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Editions The Mystery Of Hunters Lodge",
-        "file": "_ Poirot_Editions/Poirot_Editions_The_Mystery_of_Hunters_Lodge.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Editions The Mystery Of Hunters Lodge.Modern",
-        "file": "_ Poirot_Editions/Poirot_Editions_The_Mystery_of_Hunters_Lodge.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Editions The Mystery Of The Blue Train",
-        "file": "_ Poirot_Editions/Poirot_Editions_The_Mystery_of_the_Blue_Train.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Editions The Mystery Of The Blue Train.Modern",
-        "file": "_ Poirot_Editions/Poirot_Editions_The_Mystery_of_the_Blue_Train.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Editions The Mystery Of The Spanish Chest",
-        "file": "_ Poirot_Editions/Poirot_Editions_The_Mystery_of_the_Spanish_Chest.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Editions The Mystery Of The Spanish Chest.Modern",
-        "file": "_ Poirot_Editions/Poirot_Editions_The_Mystery_of_the_Spanish_Chest.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Editions The Plymouth Express",
-        "file": "_ Poirot_Editions/Poirot_Editions_The_Plymouth_Express.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Editions The Plymouth Express.Modern",
-        "file": "_ Poirot_Editions/Poirot_Editions_The_Plymouth_Express.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Editions The Theft Of The Royal Ruby",
-        "file": "_ Poirot_Editions/Poirot_Editions_The_Theft_of_the_Royal_Ruby.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Editions The Theft Of The Royal Ruby.Modern",
-        "file": "_ Poirot_Editions/Poirot_Editions_The_Theft_of_the_Royal_Ruby.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Editions The Third Floor Flat",
-        "file": "_ Poirot_Editions/Poirot_Editions_The_Third_Floor_Flat.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Editions The Third Floor Flat.Modern",
-        "file": "_ Poirot_Editions/Poirot_Editions_The_Third_Floor_Flat.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Editions The Tragedy At Marsdon Manor",
-        "file": "_ Poirot_Editions/Poirot_Editions_The_Tragedy_at_Marsdon_Manor.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Editions The Tragedy At Marsdon Manor.Modern",
-        "file": "_ Poirot_Editions/Poirot_Editions_The_Tragedy_at_Marsdon_Manor.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Editions The Underdog",
-        "file": "_ Poirot_Editions/Poirot_Editions_The_Underdog.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Editions The Underdog.Modern",
-        "file": "_ Poirot_Editions/Poirot_Editions_The_Underdog.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Editions The Veiled Lady",
-        "file": "_ Poirot_Editions/Poirot_Editions_The_Veiled_Lady.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Editions The Veiled Lady.Modern",
-        "file": "_ Poirot_Editions/Poirot_Editions_The_Veiled_Lady.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Editions The Yellow Iris",
-        "file": "_ Poirot_Editions/Poirot_Editions_The_Yellow_Iris.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Editions The Yellow Iris.Modern",
-        "file": "_ Poirot_Editions/Poirot_Editions_The_Yellow_Iris.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Editions Third Girl",
-        "file": "_ Poirot_Editions/Poirot_Editions_Third_Girl.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Editions Third Girl.Modern",
-        "file": "_ Poirot_Editions/Poirot_Editions_Third_Girl.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Editions Three Act Tragedy",
-        "file": "_ Poirot_Editions/Poirot_Editions_Three_Act_Tragedy.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Editions Three Act Tragedy.Modern",
-        "file": "_ Poirot_Editions/Poirot_Editions_Three_Act_Tragedy.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Editions Triangle At Rhodes",
-        "file": "_ Poirot_Editions/Poirot_Editions_Triangle_at_Rhodes.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Editions Triangle At Rhodes.Modern",
-        "file": "_ Poirot_Editions/Poirot_Editions_Triangle_at_Rhodes.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Editions Wasps Nest",
-        "file": "_ Poirot_Editions/Poirot_Editions_Wasps_Nest.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Editions Wasps Nest.Modern",
-        "file": "_ Poirot_Editions/Poirot_Editions_Wasps_Nest.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Editions",
-        "file": "_ Poirot_Editions/Poirot_Editions.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Editions.Modern",
-        "file": "_ Poirot_Editions/Poirot_Editions.modern.html"
-      }
-    ],
-    "directFile": "_ Poirot_Editions/Poirot_Editions.html"
-  },
-  {
-    "type": "dir",
-    "name": "Poirot Locations",
-    "count": 146,
-    "children": [
-      {
-        "type": "file",
-        "name": "Poirot Homepage",
-        "file": "_ Poirot_Locations/Poirot_Homepage.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Homepage.Modern",
-        "file": "_ Poirot_Locations/Poirot_Homepage.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Locations Adventure Of Johnnie Waverly",
-        "file": "_ Poirot_Locations/Poirot_Locations_Adventure_of_Johnnie_Waverly.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Locations Adventure Of Johnnie Waverly.Modern",
-        "file": "_ Poirot_Locations/Poirot_Locations_Adventure_of_Johnnie_Waverly.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Locations Adventure Of The Cheap Flat",
-        "file": "_ Poirot_Locations/Poirot_Locations_Adventure_of_the_Cheap_Flat.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Locations Adventure Of The Cheap Flat.Modern",
-        "file": "_ Poirot_Locations/Poirot_Locations_Adventure_of_the_Cheap_Flat.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Locations Adventure Of The Clapham Cook",
-        "file": "_ Poirot_Locations/Poirot_Locations_Adventure_of_the_Clapham_Cook.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Locations Adventure Of The Clapham Cook.Modern",
-        "file": "_ Poirot_Locations/Poirot_Locations_Adventure_of_the_Clapham_Cook.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Locations Adventure Of The Western Star",
-        "file": "_ Poirot_Locations/Poirot_Locations_Adventure_of_the_Western_Star.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Locations Adventure Of The Western Star.Modern",
-        "file": "_ Poirot_Locations/Poirot_Locations_Adventure_of_the_Western_Star.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Locations Affair At The Victory Ball",
-        "file": "_ Poirot_Locations/Poirot_Locations_Affair_at_the_Victory_Ball.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Locations Affair At The Victory Ball.Modern",
-        "file": "_ Poirot_Locations/Poirot_Locations_Affair_at_the_Victory_Ball.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Locations After The Funeral",
-        "file": "_ Poirot_Locations/Poirot_Locations_After_the_Funeral.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Locations After The Funeral.Modern",
-        "file": "_ Poirot_Locations/Poirot_Locations_After_the_Funeral.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Locations Appointment With Death",
-        "file": "_ Poirot_Locations/Poirot_Locations_Appointment_with_Death.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Locations Appointment With Death.Modern",
-        "file": "_ Poirot_Locations/Poirot_Locations_Appointment_with_Death.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Locations Blank",
-        "file": "_ Poirot_Locations/Poirot_Locations_Blank.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Locations Blank.Modern",
-        "file": "_ Poirot_Locations/Poirot_Locations_Blank.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Locations Cards 0n The Table",
-        "file": "_ Poirot_Locations/Poirot_Locations_Cards_0n_the_Table.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Locations Cards 0n The Table.Modern",
-        "file": "_ Poirot_Locations/Poirot_Locations_Cards_0n_the_Table.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Locations Cat Among The Pigeons",
-        "file": "_ Poirot_Locations/Poirot_Locations_Cat_Among_the_Pigeons.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Locations Cat Among The Pigeons.Modern",
-        "file": "_ Poirot_Locations/Poirot_Locations_Cat_Among_the_Pigeons.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Locations Curtain Poirots Last Case",
-        "file": "_ Poirot_Locations/Poirot_Locations_Curtain_Poirots_Last_Case.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Locations Curtain Poirots Last Case.Modern",
-        "file": "_ Poirot_Locations/Poirot_Locations_Curtain_Poirots_Last_Case.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Locations Dead Mans Folly",
-        "file": "_ Poirot_Locations/Poirot_Locations_Dead_Mans_Folly.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Locations Dead Mans Folly.Modern",
-        "file": "_ Poirot_Locations/Poirot_Locations_Dead_Mans_Folly.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Locations Dead Mans Mirror",
-        "file": "_ Poirot_Locations/Poirot_Locations_Dead_Mans_Mirror.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Locations Dead Mans Mirror.Modern",
-        "file": "_ Poirot_Locations/Poirot_Locations_Dead_Mans_Mirror.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Locations Death In The Clouds",
-        "file": "_ Poirot_Locations/Poirot_Locations_Death_in_the_Clouds.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Locations Death In The Clouds.Modern",
-        "file": "_ Poirot_Locations/Poirot_Locations_Death_in_the_Clouds.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Locations Death On The Nile",
-        "file": "_ Poirot_Locations/Poirot_Locations_Death_on_the_Nile.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Locations Death On The Nile.Modern",
-        "file": "_ Poirot_Locations/Poirot_Locations_Death_on_the_Nile.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Locations Double Sin",
-        "file": "_ Poirot_Locations/Poirot_Locations_Double_Sin.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Locations Double Sin.Modern",
-        "file": "_ Poirot_Locations/Poirot_Locations_Double_Sin.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Locations Dumb Witness",
-        "file": "_ Poirot_Locations/Poirot_Locations_Dumb_Witness.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Locations Dumb Witness.Modern",
-        "file": "_ Poirot_Locations/Poirot_Locations_Dumb_Witness.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Locations Elephants Can Remember",
-        "file": "_ Poirot_Locations/Poirot_Locations_Elephants_Can_Remember.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Locations Elephants Can Remember.Modern",
-        "file": "_ Poirot_Locations/Poirot_Locations_Elephants_Can_Remember.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Locations Evil Under The Sun",
-        "file": "_ Poirot_Locations/Poirot_Locations_Evil_Under_The_Sun.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Locations Evil Under The Sun.Modern",
-        "file": "_ Poirot_Locations/Poirot_Locations_Evil_Under_The_Sun.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Locations Five Little Pigs",
-        "file": "_ Poirot_Locations/Poirot_Locations_Five_Little_Pigs.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Locations Five Little Pigs.Modern",
-        "file": "_ Poirot_Locations/Poirot_Locations_Five_Little_Pigs.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Locations Four And Twenty Blackbirds",
-        "file": "_ Poirot_Locations/Poirot_Locations_Four_and_Twenty_Blackbirds.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Locations Four And Twenty Blackbirds.Modern",
-        "file": "_ Poirot_Locations/Poirot_Locations_Four_and_Twenty_Blackbirds.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Locations Halloween Party",
-        "file": "_ Poirot_Locations/Poirot_Locations_Halloween_Party.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Locations Halloween Party.Modern",
-        "file": "_ Poirot_Locations/Poirot_Locations_Halloween_Party.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Locations Hercule Poirots Christmas",
-        "file": "_ Poirot_Locations/Poirot_Locations_Hercule_Poirots_Christmas.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Locations Hercule Poirots Christmas.Modern",
-        "file": "_ Poirot_Locations/Poirot_Locations_Hercule_Poirots_Christmas.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Locations Hickory Dockory Dock",
-        "file": "_ Poirot_Locations/Poirot_Locations_Hickory_Dockory_Dock.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Locations Hickory Dockory Dock.Modern",
-        "file": "_ Poirot_Locations/Poirot_Locations_Hickory_Dockory_Dock.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Locations How Does Your Garden Grow",
-        "file": "_ Poirot_Locations/Poirot_Locations_How_Does_Your_Garden_Grow.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Locations How Does Your Garden Grow.Modern",
-        "file": "_ Poirot_Locations/Poirot_Locations_How_Does_Your_Garden_Grow.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Locations Jewel Robbery At The Grand Metropolitan",
-        "file": "_ Poirot_Locations/Poirot_Locations_Jewel_Robbery_at_the_Grand_Metropolitan.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Locations Jewel Robbery At The Grand Metropolitan.Modern",
-        "file": "_ Poirot_Locations/Poirot_Locations_Jewel_Robbery_at_the_Grand_Metropolitan.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Locations Lord Edgware Dies",
-        "file": "_ Poirot_Locations/Poirot_Locations_Lord_Edgware_Dies.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Locations Lord Edgware Dies.Modern",
-        "file": "_ Poirot_Locations/Poirot_Locations_Lord_Edgware_Dies.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Locations Mrs McGintys Dead",
-        "file": "_ Poirot_Locations/Poirot_Locations_Mrs_McGintys_Dead.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Locations Mrs McGintys Dead.Modern",
-        "file": "_ Poirot_Locations/Poirot_Locations_Mrs_McGintys_Dead.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Locations Murder In Mesopotamia",
-        "file": "_ Poirot_Locations/Poirot_Locations_Murder_in_Mesopotamia.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Locations Murder In Mesopotamia.Modern",
-        "file": "_ Poirot_Locations/Poirot_Locations_Murder_in_Mesopotamia.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Locations Murder In The Mews",
-        "file": "_ Poirot_Locations/Poirot_Locations_Murder_in_the _Mews.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Locations Murder In The Mews.Modern",
-        "file": "_ Poirot_Locations/Poirot_Locations_Murder_in_the _Mews.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Locations Murder Of Roger Ackroyd",
-        "file": "_ Poirot_Locations/Poirot_Locations_Murder_of_Roger_Ackroyd.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Locations Murder Of Roger Ackroyd.Modern",
-        "file": "_ Poirot_Locations/Poirot_Locations_Murder_of_Roger_Ackroyd.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Locations Murder On The Links",
-        "file": "_ Poirot_Locations/Poirot_Locations_Murder_on_the_Links.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Locations Murder On The Links.Modern",
-        "file": "_ Poirot_Locations/Poirot_Locations_Murder_on_the_Links.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Locations Murder On The Orient Express",
-        "file": "_ Poirot_Locations/Poirot_Locations_Murder_on_the_Orient_Express.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Locations Murder On The Orient Express.Modern",
-        "file": "_ Poirot_Locations/Poirot_Locations_Murder_on_the_Orient_Express.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Locations Mystery Of Hunters Lodge",
-        "file": "_ Poirot_Locations/Poirot_Locations_Mystery_of_Hunters_Lodge.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Locations Mystery Of Hunters Lodge.Modern",
-        "file": "_ Poirot_Locations/Poirot_Locations_Mystery_of_Hunters_Lodge.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Locations Mystery Of The Spanish Chest",
-        "file": "_ Poirot_Locations/Poirot_Locations_Mystery_of_the_Spanish_Chest.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Locations Mystery Of The Spanish Chest.Modern",
-        "file": "_ Poirot_Locations/Poirot_Locations_Mystery_of_the_Spanish_Chest.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Locations One Two Buckle My Shoe",
-        "file": "_ Poirot_Locations/Poirot_Locations_One_Two_Buckle_My_Shoe.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Locations One Two Buckle My Shoe.Modern",
-        "file": "_ Poirot_Locations/Poirot_Locations_One_Two_Buckle_My_Shoe.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Locations Peril At End House",
-        "file": "_ Poirot_Locations/Poirot_Locations_Peril_at_End_House.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Locations Peril At End House.Modern",
-        "file": "_ Poirot_Locations/Poirot_Locations_Peril_at_End_House.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Locations Problem At Sea",
-        "file": "_ Poirot_Locations/Poirot_Locations_Problem_at_Sea.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Locations Problem At Sea.Modern",
-        "file": "_ Poirot_Locations/Poirot_Locations_Problem_at_Sea.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Locations Sad Cypress",
-        "file": "_ Poirot_Locations/Poirot_Locations_Sad_Cypress.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Locations Sad Cypress.Modern",
-        "file": "_ Poirot_Locations/Poirot_Locations_Sad_Cypress.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Locations Taken At The Flood",
-        "file": "_ Poirot_Locations/Poirot_Locations_Taken_at_the_Flood.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Locations Taken At The Flood.Modern",
-        "file": "_ Poirot_Locations/Poirot_Locations_Taken_at_the_Flood.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Locations The ABC Murders",
-        "file": "_ Poirot_Locations/Poirot_Locations_The_ABC_Murders.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Locations The ABC Murders.Modern",
-        "file": "_ Poirot_Locations/Poirot_Locations_The_ABC_Murders.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Locations The Adventure Of The Egyptian Tomb",
-        "file": "_ Poirot_Locations/Poirot_Locations_The_Adventure_of_the_Egyptian_Tomb.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Locations The Adventure Of The Egyptian Tomb.Modern",
-        "file": "_ Poirot_Locations/Poirot_Locations_The_Adventure_of_the_Egyptian_Tomb.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Locations The Adventure Of The Italian Nobleman",
-        "file": "_ Poirot_Locations/Poirot_Locations_The_Adventure_of_the_Italian_Nobleman.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Locations The Adventure Of The Italian Nobleman.Modern",
-        "file": "_ Poirot_Locations/Poirot_Locations_The_Adventure_of_the_Italian_Nobleman.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Locations The Big Four",
-        "file": "_ Poirot_Locations/Poirot_Locations_The_Big_Four.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Locations The Big Four.Modern",
-        "file": "_ Poirot_Locations/Poirot_Locations_The_Big_Four.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Locations The Case Of The Missing Will",
-        "file": "_ Poirot_Locations/Poirot_Locations_The_Case_of_the_Missing_Will.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Locations The Case Of The Missing Will.Modern",
-        "file": "_ Poirot_Locations/Poirot_Locations_The_Case_of_the_Missing_Will.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Locations The Chocolate Box",
-        "file": "_ Poirot_Locations/Poirot_Locations_The_Chocolate_Box.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Locations The Chocolate Box.Modern",
-        "file": "_ Poirot_Locations/Poirot_Locations_The_Chocolate_Box.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Locations The Clocks",
-        "file": "_ Poirot_Locations/Poirot_Locations_The_Clocks.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Locations The Clocks.Modern",
-        "file": "_ Poirot_Locations/Poirot_Locations_The_Clocks.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Locations The Cornish Mystery",
-        "file": "_ Poirot_Locations/Poirot_Locations_The_Cornish_Mystery.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Locations The Cornish Mystery.Modern",
-        "file": "_ Poirot_Locations/Poirot_Locations_The_Cornish_Mystery.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Locations The Disappearance Of Mr.Davenheim",
-        "file": "_ Poirot_Locations/Poirot_Locations_The_Disappearance_of_Mr.Davenheim.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Locations The Disappearance Of Mr.Davenheim.Modern",
-        "file": "_ Poirot_Locations/Poirot_Locations_The_Disappearance_of_Mr.Davenheim.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Locations The Double Clue",
-        "file": "_ Poirot_Locations/Poirot_Locations_The_Double_Clue.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Locations The Double Clue.Modern",
-        "file": "_ Poirot_Locations/Poirot_Locations_The_Double_Clue.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Locations The Dream",
-        "file": "_ Poirot_Locations/Poirot_Locations_The_Dream.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Locations The Dream.Modern",
-        "file": "_ Poirot_Locations/Poirot_Locations_The_Dream.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Locations The Hollow",
-        "file": "_ Poirot_Locations/Poirot_Locations_The_Hollow.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Locations The Hollow.Modern",
-        "file": "_ Poirot_Locations/Poirot_Locations_The_Hollow.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Locations The Incredible Theft",
-        "file": "_ Poirot_Locations/Poirot_Locations_The_Incredible_Theft.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Locations The Incredible Theft.Modern",
-        "file": "_ Poirot_Locations/Poirot_Locations_The_Incredible_Theft.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Locations The Kidnapped Prime Minister",
-        "file": "_ Poirot_Locations/Poirot_Locations_The_Kidnapped_Prime_Minister.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Locations The Kidnapped Prime Minister.Modern",
-        "file": "_ Poirot_Locations/Poirot_Locations_The_Kidnapped_Prime_Minister.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Locations The King Of Clubs",
-        "file": "_ Poirot_Locations/Poirot_Locations_The_King_of_Clubs.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Locations The King Of Clubs.Modern",
-        "file": "_ Poirot_Locations/Poirot_Locations_The_King_of_Clubs.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Locations The Labours Of Hercules",
-        "file": "_ Poirot_Locations/Poirot_Locations_The_Labours_of_Hercules.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Locations The Labours Of Hercules.Modern",
-        "file": "_ Poirot_Locations/Poirot_Locations_The_Labours_of_Hercules.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Locations The Lost Mine",
-        "file": "_ Poirot_Locations/Poirot_Locations_The_Lost_Mine.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Locations The Lost Mine.Modern",
-        "file": "_ Poirot_Locations/Poirot_Locations_The_Lost_Mine.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Locations The Million Dollar Bond Robbery",
-        "file": "_ Poirot_Locations/Poirot_Locations_The_Million_Dollar_Bond_Robbery.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Locations The Million Dollar Bond Robbery.Modern",
-        "file": "_ Poirot_Locations/Poirot_Locations_The_Million_Dollar_Bond_Robbery.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Locations The Mysterious Affair At Styles",
-        "file": "_ Poirot_Locations/Poirot_Locations_The_Mysterious_Affair_at_Styles.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Locations The Mysterious Affair At Styles.Modern",
-        "file": "_ Poirot_Locations/Poirot_Locations_The_Mysterious_Affair_at_Styles.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Locations The Mystery Of The Blue Train",
-        "file": "_ Poirot_Locations/Poirot_Locations_The_Mystery_of_the_Blue_Train.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Locations The Mystery Of The Blue Train.Modern",
-        "file": "_ Poirot_Locations/Poirot_Locations_The_Mystery_of_the_Blue_Train.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Locations The Plymouth Express",
-        "file": "_ Poirot_Locations/Poirot_Locations_The_Plymouth_Express.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Locations The Plymouth Express.Modern",
-        "file": "_ Poirot_Locations/Poirot_Locations_The_Plymouth_Express.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Locations The Theft Of The Royal Ruby",
-        "file": "_ Poirot_Locations/Poirot_Locations_The_Theft_of_The_Royal_Ruby.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Locations The Theft Of The Royal Ruby.Modern",
-        "file": "_ Poirot_Locations/Poirot_Locations_The_Theft_of_The_Royal_Ruby.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Locations The Third Floor Flat",
-        "file": "_ Poirot_Locations/Poirot_Locations_The_Third_Floor_Flat.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Locations The Third Floor Flat.Modern",
-        "file": "_ Poirot_Locations/Poirot_Locations_The_Third_Floor_Flat.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Locations The Tragedy At Marsdon Manor",
-        "file": "_ Poirot_Locations/Poirot_Locations_The_Tragedy_at_Marsdon_Manor.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Locations The Tragedy At Marsdon Manor.Modern",
-        "file": "_ Poirot_Locations/Poirot_Locations_The_Tragedy_at_Marsdon_Manor.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Locations The Underdog",
-        "file": "_ Poirot_Locations/Poirot_Locations_The_Underdog.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Locations The Underdog.Modern",
-        "file": "_ Poirot_Locations/Poirot_Locations_The_Underdog.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Locations The Veiled Lady",
-        "file": "_ Poirot_Locations/Poirot_Locations_The_Veiled_Lady.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Locations The Veiled Lady.Modern",
-        "file": "_ Poirot_Locations/Poirot_Locations_The_Veiled_Lady.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Locations The Yellow Iris",
-        "file": "_ Poirot_Locations/Poirot_Locations_The_Yellow_Iris.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Locations The Yellow Iris.Modern",
-        "file": "_ Poirot_Locations/Poirot_Locations_The_Yellow_Iris.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Locations Third Girl",
-        "file": "_ Poirot_Locations/Poirot_Locations_Third_Girl.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Locations Third Girl.Modern",
-        "file": "_ Poirot_Locations/Poirot_Locations_Third_Girl.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Locations Three Act Tragedy",
-        "file": "_ Poirot_Locations/Poirot_Locations_Three_Act_Tragedy.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Locations Three Act Tragedy.Modern",
-        "file": "_ Poirot_Locations/Poirot_Locations_Three_Act_Tragedy.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Locations Triangle At Rhodes",
-        "file": "_ Poirot_Locations/Poirot_Locations_Triangle_at_Rhodes.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Locations Triangle At Rhodes.Modern",
-        "file": "_ Poirot_Locations/Poirot_Locations_Triangle_at_Rhodes.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Locations Wasps Nest",
-        "file": "_ Poirot_Locations/Poirot_Locations_Wasps_Nest.html",
-        "hidden": true
-      },
-      {
-        "type": "file",
-        "name": "Poirot Locations Wasps Nest.Modern",
-        "file": "_ Poirot_Locations/Poirot_Locations_Wasps_Nest.modern.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Locations",
-        "file": "_ Poirot_Locations/Poirot_Locations.html"
-      },
-      {
-        "type": "file",
-        "name": "Poirot Locations.Modern",
-        "file": "_ Poirot_Locations/Poirot_Locations.modern.html"
-      }
-    ],
-    "directFile": "_ Poirot_Locations/Poirot_Locations.html"
-  },
-  {
-    "type": "dir",
     "name": "Almodovar",
     "count": 49,
     "children": [
@@ -6348,23 +3944,6 @@
       }
     ],
     "directFile": "_China_1994/1.Beijing.html"
-  },
-  {
-    "type": "dir",
-    "name": "Chips",
-    "count": 2,
-    "children": [
-      {
-        "type": "file",
-        "name": "Chips",
-        "file": "_Chips/Chips.html"
-      },
-      {
-        "type": "file",
-        "name": "Chips.Modern",
-        "file": "_Chips/Chips.modern.html"
-      }
-    ]
   },
   {
     "type": "dir",
@@ -11863,6 +9442,2410 @@
   },
   {
     "type": "dir",
+    "name": "Poirot Casts",
+    "count": 144,
+    "children": [
+      {
+        "type": "file",
+        "name": "Poirot Casts Adventure Of Johnnie Waverly",
+        "file": "_Poirot_Casts/Poirot_Casts_Adventure_of_Johnnie_Waverly.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Casts Adventure Of Johnnie Waverly.Modern",
+        "file": "_Poirot_Casts/Poirot_Casts_Adventure_of_Johnnie_Waverly.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Casts Adventure Of The Clapham Cook",
+        "file": "_Poirot_Casts/Poirot_Casts_Adventure_of_the_Clapham_Cook.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Casts Adventure Of The Clapham Cook.Modern",
+        "file": "_Poirot_Casts/Poirot_Casts_Adventure_of_the_Clapham_Cook.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Casts After The Funeral",
+        "file": "_Poirot_Casts/Poirot_Casts_After_the_Funeral.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Casts After The Funeral.Modern",
+        "file": "_Poirot_Casts/Poirot_Casts_After_the_Funeral.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Casts Appointment With Death",
+        "file": "_Poirot_Casts/Poirot_Casts_Appointment_with_Death.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Casts Appointment With Death.Modern",
+        "file": "_Poirot_Casts/Poirot_Casts_Appointment_with_Death.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Casts Blank",
+        "file": "_Poirot_Casts/Poirot_Casts_Blank.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Casts Blank.Modern",
+        "file": "_Poirot_Casts/Poirot_Casts_Blank.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Casts Cards On The Table",
+        "file": "_Poirot_Casts/Poirot_Casts_Cards_on_the_Table.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Casts Cards On The Table.Modern",
+        "file": "_Poirot_Casts/Poirot_Casts_Cards_on_the_Table.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Casts Cat Among The Pigeons",
+        "file": "_Poirot_Casts/Poirot_Casts_Cat_Among_the_Pigeons.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Casts Cat Among The Pigeons.Modern",
+        "file": "_Poirot_Casts/Poirot_Casts_Cat_Among_the_Pigeons.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Casts Curtain Poirots Last Case",
+        "file": "_Poirot_Casts/Poirot_Casts_Curtain_Poirots_Last_Case.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Casts Curtain Poirots Last Case.Modern",
+        "file": "_Poirot_Casts/Poirot_Casts_Curtain_Poirots_Last_Case.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Casts Dead Mans Folly",
+        "file": "_Poirot_Casts/Poirot_Casts_Dead_Mans_Folly.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Casts Dead Mans Folly.Modern",
+        "file": "_Poirot_Casts/Poirot_Casts_Dead_Mans_Folly.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Casts Dead Mans Mirror",
+        "file": "_Poirot_Casts/Poirot_Casts_Dead_Mans_Mirror.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Casts Dead Mans Mirror.Modern",
+        "file": "_Poirot_Casts/Poirot_Casts_Dead_Mans_Mirror.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Casts Death In The Clouds",
+        "file": "_Poirot_Casts/Poirot_Casts_Death_in_the_Clouds.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Casts Death In The Clouds.Modern",
+        "file": "_Poirot_Casts/Poirot_Casts_Death_in_the_Clouds.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Casts Death On The Nile",
+        "file": "_Poirot_Casts/Poirot_Casts_Death_on_the_Nile.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Casts Death On The Nile.Modern",
+        "file": "_Poirot_Casts/Poirot_Casts_Death_on_the_Nile.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Casts Double Sin",
+        "file": "_Poirot_Casts/Poirot_Casts_Double_Sin.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Casts Double Sin.Modern",
+        "file": "_Poirot_Casts/Poirot_Casts_Double_Sin.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Casts Dumb Witness",
+        "file": "_Poirot_Casts/Poirot_Casts_Dumb_Witness.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Casts Dumb Witness.Modern",
+        "file": "_Poirot_Casts/Poirot_Casts_Dumb_Witness.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Casts Elephants Can Remember",
+        "file": "_Poirot_Casts/Poirot_Casts_Elephants_Can_Remember.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Casts Elephants Can Remember.Modern",
+        "file": "_Poirot_Casts/Poirot_Casts_Elephants_Can_Remember.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Casts Evil Under The Sun",
+        "file": "_Poirot_Casts/Poirot_Casts_Evil_under_the_Sun.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Casts Evil Under The Sun.Modern",
+        "file": "_Poirot_Casts/Poirot_Casts_Evil_under_the_Sun.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Casts Five Little Pigs",
+        "file": "_Poirot_Casts/Poirot_Casts_Five_Little_Pigs.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Casts Five Little Pigs.Modern",
+        "file": "_Poirot_Casts/Poirot_Casts_Five_Little_Pigs.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Casts Four And Twenty Blackbirds",
+        "file": "_Poirot_Casts/Poirot_Casts_Four_and_Twenty_Blackbirds.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Casts Four And Twenty Blackbirds.Modern",
+        "file": "_Poirot_Casts/Poirot_Casts_Four_and_Twenty_Blackbirds.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Casts Halloween Party",
+        "file": "_Poirot_Casts/Poirot_Casts_Halloween_Party.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Casts Halloween Party.Modern",
+        "file": "_Poirot_Casts/Poirot_Casts_Halloween_Party.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Casts Hercule Poirots Christmas",
+        "file": "_Poirot_Casts/Poirot_Casts_Hercule_Poirots_Christmas.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Casts Hercule Poirots Christmas.Modern",
+        "file": "_Poirot_Casts/Poirot_Casts_Hercule_Poirots_Christmas.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Casts Hickory Dickory Dock",
+        "file": "_Poirot_Casts/Poirot_Casts_Hickory_Dickory_Dock.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Casts Hickory Dickory Dock.Modern",
+        "file": "_Poirot_Casts/Poirot_Casts_Hickory_Dickory_Dock.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Casts How Does Your Garden Grow",
+        "file": "_Poirot_Casts/Poirot_Casts_How_Does_Your_Garden_Grow.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "How Does Your Garden Grow — Poirot Casts",
+        "file": "_Poirot_Casts/Poirot_Casts_How_Does_Your_Garden_Grow.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Casts Jewel Robbery At The Grand Metropolitan",
+        "file": "_Poirot_Casts/Poirot_Casts_Jewel_Robbery_at_the_Grand_Metropolitan.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Jewel Robbery at the Grand Metropolitan — Poirot Casts",
+        "file": "_Poirot_Casts/Poirot_Casts_Jewel_Robbery_at_the_Grand_Metropolitan.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Casts Lord Edgware Dies",
+        "file": "_Poirot_Casts/Poirot_Casts_Lord_Edgware_Dies.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Lord Edgware Dies — Poirot Casts",
+        "file": "_Poirot_Casts/Poirot_Casts_Lord_Edgware_Dies.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Casts Mrs McGintys Dead",
+        "file": "_Poirot_Casts/Poirot_Casts_Mrs_McGintys_Dead.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Mrs McGinty's Dead — Poirot Casts",
+        "file": "_Poirot_Casts/Poirot_Casts_Mrs_McGintys_Dead.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Casts Murder In Mesopotamia",
+        "file": "_Poirot_Casts/Poirot_Casts_Murder_in_Mesopotamia.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Murder in Mesopotamia — Poirot Casts",
+        "file": "_Poirot_Casts/Poirot_Casts_Murder_in_Mesopotamia.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Casts Murder In The Mews",
+        "file": "_Poirot_Casts/Poirot_Casts_Murder_in_the_Mews.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Murder in the Mews — Poirot Casts",
+        "file": "_Poirot_Casts/Poirot_Casts_Murder_in_the_Mews.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Casts Murder On The Links",
+        "file": "_Poirot_Casts/Poirot_Casts_Murder_on_the_Links.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Murder on the Links — Poirot Casts",
+        "file": "_Poirot_Casts/Poirot_Casts_Murder_on_the_Links.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Casts Murder On The Orient Express",
+        "file": "_Poirot_Casts/Poirot_Casts_Murder_on_the_Orient_Express.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Murder on the Orient Express — Poirot Casts",
+        "file": "_Poirot_Casts/Poirot_Casts_Murder_on_the_Orient_Express.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Casts One Two Buckle My Shoe",
+        "file": "_Poirot_Casts/Poirot_Casts_One_Two_Buckle_My_Shoe.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "One, Two, Buckle My Shoe — Poirot Casts",
+        "file": "_Poirot_Casts/Poirot_Casts_One_Two_Buckle_My_Shoe.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Casts Peril At End House",
+        "file": "_Poirot_Casts/Poirot_Casts_Peril_at_End_House.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Peril at End House — Poirot Casts",
+        "file": "_Poirot_Casts/Poirot_Casts_Peril_at_End_House.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Casts Problem At Sea",
+        "file": "_Poirot_Casts/Poirot_Casts_Problem_at_Sea.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Casts Problem At Sea.Modern",
+        "file": "_Poirot_Casts/Poirot_Casts_Problem_at_Sea.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Casts Sad Cypress",
+        "file": "_Poirot_Casts/Poirot_Casts_Sad_Cypress.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Casts Sad Cypress.Modern",
+        "file": "_Poirot_Casts/Poirot_Casts_Sad_Cypress.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Casts Taken At The Flood",
+        "file": "_Poirot_Casts/Poirot_Casts_Taken_at_the_Flood.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Casts Taken At The Flood.Modern",
+        "file": "_Poirot_Casts/Poirot_Casts_Taken_at_the_Flood.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Casts The ABC Murders",
+        "file": "_Poirot_Casts/Poirot_Casts_The_ABC_Murders.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Casts The ABC Murders.Modern",
+        "file": "_Poirot_Casts/Poirot_Casts_The_ABC_Murders.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Casts The Adventure Of The Cheap Flat",
+        "file": "_Poirot_Casts/Poirot_Casts_The_Adventure_of_the_Cheap_Flat.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Casts The Adventure Of The Cheap Flat.Modern",
+        "file": "_Poirot_Casts/Poirot_Casts_The_Adventure_of_the_Cheap_Flat.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Casts The Adventure Of The Egyptian Tomb",
+        "file": "_Poirot_Casts/Poirot_Casts_The_Adventure_of_the_Egyptian_Tomb.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Casts The Adventure Of The Egyptian Tomb.Modern",
+        "file": "_Poirot_Casts/Poirot_Casts_The_Adventure_of_the_Egyptian_Tomb.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Casts The Adventure Of The Italian Nobleman",
+        "file": "_Poirot_Casts/Poirot_Casts_The_Adventure_of_the_Italian_Nobleman.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Casts The Adventure Of The Italian Nobleman.Modern",
+        "file": "_Poirot_Casts/Poirot_Casts_The_Adventure_of_the_Italian_Nobleman.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Casts The Adventure Of The Western Star",
+        "file": "_Poirot_Casts/Poirot_Casts_The_Adventure_of_the_Western_Star.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Casts The Adventure Of The Western Star.Modern",
+        "file": "_Poirot_Casts/Poirot_Casts_The_Adventure_of_the_Western_Star.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Casts The Affair At The Victory Ball",
+        "file": "_Poirot_Casts/Poirot_Casts_The_Affair_at_the_Victory_Ball.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Casts The Affair At The Victory Ball.Modern",
+        "file": "_Poirot_Casts/Poirot_Casts_The_Affair_at_the_Victory_Ball.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Casts The Big Four",
+        "file": "_Poirot_Casts/Poirot_Casts_The_Big_Four.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Casts The Big Four.Modern",
+        "file": "_Poirot_Casts/Poirot_Casts_The_Big_Four.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Casts The Case Of The Missing Will",
+        "file": "_Poirot_Casts/Poirot_Casts_The_Case_of_the_Missing_Will.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Casts The Case Of The Missing Will.Modern",
+        "file": "_Poirot_Casts/Poirot_Casts_The_Case_of_the_Missing_Will.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Casts The Chocolate Box",
+        "file": "_Poirot_Casts/Poirot_Casts_The_Chocolate_Box.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Casts The Chocolate Box.Modern",
+        "file": "_Poirot_Casts/Poirot_Casts_The_Chocolate_Box.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Casts The Clocks",
+        "file": "_Poirot_Casts/Poirot_Casts_The_Clocks.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Casts The Clocks.Modern",
+        "file": "_Poirot_Casts/Poirot_Casts_The_Clocks.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Casts The Cornish Mystery",
+        "file": "_Poirot_Casts/Poirot_Casts_The_Cornish_Mystery.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Casts The Cornish Mystery.Modern",
+        "file": "_Poirot_Casts/Poirot_Casts_The_Cornish_Mystery.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Casts The Disappearance Of Mr.Davenheim",
+        "file": "_Poirot_Casts/Poirot_Casts_The_Disappearance_of_Mr.Davenheim.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Casts The Disappearance Of Mr.Davenheim.Modern",
+        "file": "_Poirot_Casts/Poirot_Casts_The_Disappearance_of_Mr.Davenheim.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Casts The Double Clue",
+        "file": "_Poirot_Casts/Poirot_Casts_The_Double_Clue.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Casts The Double Clue.Modern",
+        "file": "_Poirot_Casts/Poirot_Casts_The_Double_Clue.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Casts The Dream",
+        "file": "_Poirot_Casts/Poirot_Casts_The_Dream.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Casts The Dream.Modern",
+        "file": "_Poirot_Casts/Poirot_Casts_The_Dream.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Casts The Hollow",
+        "file": "_Poirot_Casts/Poirot_Casts_The_Hollow.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Casts The Hollow.Modern",
+        "file": "_Poirot_Casts/Poirot_Casts_The_Hollow.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Casts The Incredible Theft",
+        "file": "_Poirot_Casts/Poirot_Casts_The_Incredible_Theft.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Casts The Incredible Theft.Modern",
+        "file": "_Poirot_Casts/Poirot_Casts_The_Incredible_Theft.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Casts The Kidnapped Prime Minister",
+        "file": "_Poirot_Casts/Poirot_Casts_The_Kidnapped_Prime_Minister.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Casts The Kidnapped Prime Minister.Modern",
+        "file": "_Poirot_Casts/Poirot_Casts_The_Kidnapped_Prime_Minister.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Casts The King Of Clubs",
+        "file": "_Poirot_Casts/Poirot_Casts_The_King_of_Clubs.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Casts The King Of Clubs.Modern",
+        "file": "_Poirot_Casts/Poirot_Casts_The_King_of_Clubs.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Casts The Labours Of Hercules",
+        "file": "_Poirot_Casts/Poirot_Casts_The_Labours_of_Hercules.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Casts The Labours Of Hercules.Modern",
+        "file": "_Poirot_Casts/Poirot_Casts_The_Labours_of_Hercules.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Casts The Lost Mine",
+        "file": "_Poirot_Casts/Poirot_Casts_The_Lost_Mine.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Casts The Lost Mine.Modern",
+        "file": "_Poirot_Casts/Poirot_Casts_The_Lost_Mine.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Casts The Million Dollar Bond Robbery",
+        "file": "_Poirot_Casts/Poirot_Casts_The_Million_Dollar_Bond_Robbery.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Casts The Million Dollar Bond Robbery.Modern",
+        "file": "_Poirot_Casts/Poirot_Casts_The_Million_Dollar_Bond_Robbery.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Casts The Murder Of Roger Ackroyd",
+        "file": "_Poirot_Casts/Poirot_Casts_The_Murder_of_Roger_Ackroyd.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Casts The Murder Of Roger Ackroyd.Modern",
+        "file": "_Poirot_Casts/Poirot_Casts_The_Murder_of_Roger_Ackroyd.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Casts The Mysterious Affair At Styles",
+        "file": "_Poirot_Casts/Poirot_Casts_The_Mysterious_Affair_at_Styles.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Casts The Mysterious Affair At Styles.Modern",
+        "file": "_Poirot_Casts/Poirot_Casts_The_Mysterious_Affair_at_Styles.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Casts The Mystery Of Hunters Lodge",
+        "file": "_Poirot_Casts/Poirot_Casts_The_Mystery_of_Hunters_Lodge.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Casts The Mystery Of Hunters Lodge.Modern",
+        "file": "_Poirot_Casts/Poirot_Casts_The_Mystery_of_Hunters_Lodge.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Casts The Mystery Of The Blue Train",
+        "file": "_Poirot_Casts/Poirot_Casts_The_Mystery_of_the_Blue_Train.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Casts The Mystery Of The Blue Train.Modern",
+        "file": "_Poirot_Casts/Poirot_Casts_The_Mystery_of_the_Blue_Train.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Casts The Mystery Of The Spanish Chest",
+        "file": "_Poirot_Casts/Poirot_Casts_The_Mystery_of_the_Spanish_Chest.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Casts The Mystery Of The Spanish Chest.Modern",
+        "file": "_Poirot_Casts/Poirot_Casts_The_Mystery_of_the_Spanish_Chest.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Casts The Plymouth Express",
+        "file": "_Poirot_Casts/Poirot_Casts_The_Plymouth_Express.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Casts The Plymouth Express.Modern",
+        "file": "_Poirot_Casts/Poirot_Casts_The_Plymouth_Express.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Casts The Theft Of The Royal Ruby",
+        "file": "_Poirot_Casts/Poirot_Casts_The_Theft_of_the_Royal_Ruby.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Casts The Theft Of The Royal Ruby.Modern",
+        "file": "_Poirot_Casts/Poirot_Casts_The_Theft_of_the_Royal_Ruby.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Casts The Third Floor Flat",
+        "file": "_Poirot_Casts/Poirot_Casts_The_Third_Floor_Flat.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Casts The Third Floor Flat.Modern",
+        "file": "_Poirot_Casts/Poirot_Casts_The_Third_Floor_Flat.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Casts The Tragedy At Marsdon Manor",
+        "file": "_Poirot_Casts/Poirot_Casts_The_Tragedy_at_Marsdon_Manor.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Casts The Tragedy At Marsdon Manor.Modern",
+        "file": "_Poirot_Casts/Poirot_Casts_The_Tragedy_at_Marsdon_Manor.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Casts The Underdog",
+        "file": "_Poirot_Casts/Poirot_Casts_The_Underdog.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Casts The Underdog.Modern",
+        "file": "_Poirot_Casts/Poirot_Casts_The_Underdog.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Casts The Veiled Lady",
+        "file": "_Poirot_Casts/Poirot_Casts_The_Veiled_Lady.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Casts The Veiled Lady.Modern",
+        "file": "_Poirot_Casts/Poirot_Casts_The_Veiled_Lady.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Casts The Yellow Iris",
+        "file": "_Poirot_Casts/Poirot_Casts_The_Yellow_Iris.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Casts The Yellow Iris.Modern",
+        "file": "_Poirot_Casts/Poirot_Casts_The_Yellow_Iris.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Casts Third Girl",
+        "file": "_Poirot_Casts/Poirot_Casts_Third_Girl.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Casts Third Girl.Modern",
+        "file": "_Poirot_Casts/Poirot_Casts_Third_Girl.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Casts Three Act Tragedy",
+        "file": "_Poirot_Casts/Poirot_Casts_Three_Act_Tragedy.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Casts Three Act Tragedy.Modern",
+        "file": "_Poirot_Casts/Poirot_Casts_Three_Act_Tragedy.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Casts Triangle At Rhodes",
+        "file": "_Poirot_Casts/Poirot_Casts_Triangle_at_Rhodes.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Casts Triangle At Rhodes.Modern",
+        "file": "_Poirot_Casts/Poirot_Casts_Triangle_at_Rhodes.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Casts Wasps Nest",
+        "file": "_Poirot_Casts/Poirot_Casts_Wasps_Nest.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Casts Wasps Nest.Modern",
+        "file": "_Poirot_Casts/Poirot_Casts_Wasps_Nest.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Casts",
+        "file": "_Poirot_Casts/Poirot_Casts.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Casts.Modern",
+        "file": "_Poirot_Casts/Poirot_Casts.modern.html"
+      }
+    ],
+    "directFile": "_Poirot_Casts/Poirot_Casts.html"
+  },
+  {
+    "type": "dir",
+    "name": "Poirot Editions",
+    "count": 144,
+    "children": [
+      {
+        "type": "file",
+        "name": "Poirot Editions Adventure Of Johnnie Waverly",
+        "file": "_Poirot_Editions/Poirot_Editions_Adventure_of_Johnnie_Waverly.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Editions Adventure Of Johnnie Waverly.Modern",
+        "file": "_Poirot_Editions/Poirot_Editions_Adventure_of_Johnnie_Waverly.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Editions Adventure Of The Clapham Cook",
+        "file": "_Poirot_Editions/Poirot_Editions_Adventure_of_the_Clapham_Cook.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Editions Adventure Of The Clapham Cook.Modern",
+        "file": "_Poirot_Editions/Poirot_Editions_Adventure_of_the_Clapham_Cook.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Editions Affair At The Victory Ball",
+        "file": "_Poirot_Editions/Poirot_Editions_Affair_at_the_Victory_Ball.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Editions Affair At The Victory Ball.Modern",
+        "file": "_Poirot_Editions/Poirot_Editions_Affair_at_the_Victory_Ball.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Editions After The Funeral",
+        "file": "_Poirot_Editions/Poirot_Editions_After_the_Funeral.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Editions After The Funeral.Modern",
+        "file": "_Poirot_Editions/Poirot_Editions_After_the_Funeral.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Editions Appointment With Death",
+        "file": "_Poirot_Editions/Poirot_Editions_Appointment_With_Death.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Editions Appointment With Death.Modern",
+        "file": "_Poirot_Editions/Poirot_Editions_Appointment_With_Death.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Editions Blank",
+        "file": "_Poirot_Editions/Poirot_Editions_Blank.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Editions Blank.Modern",
+        "file": "_Poirot_Editions/Poirot_Editions_Blank.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Editions Cards On The Table",
+        "file": "_Poirot_Editions/Poirot_Editions_Cards_on_the_Table.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Editions Cards On The Table.Modern",
+        "file": "_Poirot_Editions/Poirot_Editions_Cards_on_the_Table.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Editions Cat Among The Pigeons",
+        "file": "_Poirot_Editions/Poirot_Editions_Cat_Among_the_Pigeons.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Editions Cat Among The Pigeons.Modern",
+        "file": "_Poirot_Editions/Poirot_Editions_Cat_Among_the_Pigeons.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Editions Curtain Poirots Last Case",
+        "file": "_Poirot_Editions/Poirot_Editions_Curtain_Poirots_Last_Case.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Editions Curtain Poirots Last Case.Modern",
+        "file": "_Poirot_Editions/Poirot_Editions_Curtain_Poirots_Last_Case.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Editions Dead Mans Folly",
+        "file": "_Poirot_Editions/Poirot_Editions_Dead_Mans_Folly.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Editions Dead Mans Folly.Modern",
+        "file": "_Poirot_Editions/Poirot_Editions_Dead_Mans_Folly.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Editions Dead Mans Mirror",
+        "file": "_Poirot_Editions/Poirot_Editions_Dead_Mans_Mirror.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Editions Dead Mans Mirror.Modern",
+        "file": "_Poirot_Editions/Poirot_Editions_Dead_Mans_Mirror.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Editions Death In The Clouds",
+        "file": "_Poirot_Editions/Poirot_Editions_Death_in_the_Clouds.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Editions Death In The Clouds.Modern",
+        "file": "_Poirot_Editions/Poirot_Editions_Death_in_the_Clouds.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Editions Death On The Nile",
+        "file": "_Poirot_Editions/Poirot_Editions_Death_on_the_Nile.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Editions Death On The Nile.Modern",
+        "file": "_Poirot_Editions/Poirot_Editions_Death_on_the_Nile.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Editions Double Sin",
+        "file": "_Poirot_Editions/Poirot_Editions_Double_Sin.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Editions Double Sin.Modern",
+        "file": "_Poirot_Editions/Poirot_Editions_Double_Sin.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Editions Dumb Witness",
+        "file": "_Poirot_Editions/Poirot_Editions_Dumb_Witness.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Editions Dumb Witness.Modern",
+        "file": "_Poirot_Editions/Poirot_Editions_Dumb_Witness.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Editions Elephants Can Remember",
+        "file": "_Poirot_Editions/Poirot_Editions_Elephants_Can_Remember.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Editions Elephants Can Remember.Modern",
+        "file": "_Poirot_Editions/Poirot_Editions_Elephants_Can_Remember.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Editions Evil Under The Sun",
+        "file": "_Poirot_Editions/Poirot_Editions_Evil_Under_The_Sun.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Editions Evil Under The Sun.Modern",
+        "file": "_Poirot_Editions/Poirot_Editions_Evil_Under_The_Sun.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Editions Five Little Pigs",
+        "file": "_Poirot_Editions/Poirot_Editions_Five_Little_Pigs.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Editions Five Little Pigs.Modern",
+        "file": "_Poirot_Editions/Poirot_Editions_Five_Little_Pigs.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Editions Four And Twenty Blackbirds",
+        "file": "_Poirot_Editions/Poirot_Editions_Four_and_Twenty_Blackbirds.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Editions Four And Twenty Blackbirds.Modern",
+        "file": "_Poirot_Editions/Poirot_Editions_Four_and_Twenty_Blackbirds.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Editions Halloween Party",
+        "file": "_Poirot_Editions/Poirot_Editions_Halloween_Party.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Editions Halloween Party.Modern",
+        "file": "_Poirot_Editions/Poirot_Editions_Halloween_Party.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Editions Hercule Poirots Christmas",
+        "file": "_Poirot_Editions/Poirot_Editions_Hercule_Poirots_Christmas.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Editions Hercule Poirots Christmas.Modern",
+        "file": "_Poirot_Editions/Poirot_Editions_Hercule_Poirots_Christmas.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Editions Hickory Dickory Dock",
+        "file": "_Poirot_Editions/Poirot_Editions_Hickory_Dickory_Dock.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Editions Hickory Dickory Dock.Modern",
+        "file": "_Poirot_Editions/Poirot_Editions_Hickory_Dickory_Dock.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Editions How Does Your Garden Grow",
+        "file": "_Poirot_Editions/Poirot_Editions_How_Does_Your_Garden_Grow.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Editions How Does Your Garden Grow.Modern",
+        "file": "_Poirot_Editions/Poirot_Editions_How_Does_Your_Garden_Grow.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Editions Jewel Robbery At The Grand Metropolitan",
+        "file": "_Poirot_Editions/Poirot_Editions_Jewel_Robbery_at_the_Grand_Metropolitan.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Editions Jewel Robbery At The Grand Metropolitan.Modern",
+        "file": "_Poirot_Editions/Poirot_Editions_Jewel_Robbery_at_the_Grand_Metropolitan.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Editions Lord Edgware Dies",
+        "file": "_Poirot_Editions/Poirot_Editions_Lord_Edgware_Dies.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Editions Lord Edgware Dies.Modern",
+        "file": "_Poirot_Editions/Poirot_Editions_Lord_Edgware_Dies.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Editions Mrs McGintys Dead",
+        "file": "_Poirot_Editions/Poirot_Editions_Mrs_McGintys_Dead.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Editions Mrs McGintys Dead.Modern",
+        "file": "_Poirot_Editions/Poirot_Editions_Mrs_McGintys_Dead.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Editions Murder In Mesopotamia",
+        "file": "_Poirot_Editions/Poirot_Editions_Murder_in_Mesopotamia.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Editions Murder In Mesopotamia.Modern",
+        "file": "_Poirot_Editions/Poirot_Editions_Murder_in_Mesopotamia.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Editions Murder In The Mews",
+        "file": "_Poirot_Editions/Poirot_Editions_Murder_in_the_Mews.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Editions Murder In The Mews.Modern",
+        "file": "_Poirot_Editions/Poirot_Editions_Murder_in_the_Mews.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Editions Murder On The Links",
+        "file": "_Poirot_Editions/Poirot_Editions_Murder_on_the_Links.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Editions Murder On The Links.Modern",
+        "file": "_Poirot_Editions/Poirot_Editions_Murder_on_the_Links.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Editions Murder On The Orient Express",
+        "file": "_Poirot_Editions/Poirot_Editions_Murder_on_the_Orient_Express.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Editions Murder On The Orient Express.Modern",
+        "file": "_Poirot_Editions/Poirot_Editions_Murder_on_the_Orient_Express.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Editions One Two Buckle My Shoe",
+        "file": "_Poirot_Editions/Poirot_Editions_One_Two_Buckle_My_Shoe.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Editions One Two Buckle My Shoe.Modern",
+        "file": "_Poirot_Editions/Poirot_Editions_One_Two_Buckle_My_Shoe.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Editions Peril At End House",
+        "file": "_Poirot_Editions/Poirot_Editions_Peril_at_End_House.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Editions Peril At End House.Modern",
+        "file": "_Poirot_Editions/Poirot_Editions_Peril_at_End_House.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Editions Problem At Sea",
+        "file": "_Poirot_Editions/Poirot_Editions_Problem_at_Sea.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Editions Problem At Sea.Modern",
+        "file": "_Poirot_Editions/Poirot_Editions_Problem_at_Sea.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Editions Sad Cypress",
+        "file": "_Poirot_Editions/Poirot_Editions_Sad_Cypress.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Editions Sad Cypress.Modern",
+        "file": "_Poirot_Editions/Poirot_Editions_Sad_Cypress.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Editions Taken At The Flood",
+        "file": "_Poirot_Editions/Poirot_Editions_Taken_at_the_Flood.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Editions Taken At The Flood.Modern",
+        "file": "_Poirot_Editions/Poirot_Editions_Taken_at_the_Flood.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Editions The ABC Murders",
+        "file": "_Poirot_Editions/Poirot_Editions_The_ABC_Murders.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Editions The ABC Murders.Modern",
+        "file": "_Poirot_Editions/Poirot_Editions_The_ABC_Murders.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Editions The Adventure Of The Cheap Flat",
+        "file": "_Poirot_Editions/Poirot_Editions_The_Adventure_of_the_Cheap_Flat.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Editions The Adventure Of The Cheap Flat.Modern",
+        "file": "_Poirot_Editions/Poirot_Editions_The_Adventure_of_the_Cheap_Flat.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Editions The Adventure Of The Egyptian Tomb",
+        "file": "_Poirot_Editions/Poirot_Editions_The_Adventure_of_the_Egyptian_Tomb.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Editions The Adventure Of The Egyptian Tomb.Modern",
+        "file": "_Poirot_Editions/Poirot_Editions_The_Adventure_of_the_Egyptian_Tomb.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Editions The Adventure Of The Italian Nobleman",
+        "file": "_Poirot_Editions/Poirot_Editions_The_Adventure_of_the_Italian_Nobleman.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Editions The Adventure Of The Italian Nobleman.Modern",
+        "file": "_Poirot_Editions/Poirot_Editions_The_Adventure_of_the_Italian_Nobleman.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Editions The Adventure Of The Western Star",
+        "file": "_Poirot_Editions/Poirot_Editions_The_Adventure_of_the_Western_Star.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Editions The Adventure Of The Western Star.Modern",
+        "file": "_Poirot_Editions/Poirot_Editions_The_Adventure_of_the_Western_Star.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Editions The Big Four",
+        "file": "_Poirot_Editions/Poirot_Editions_The_Big_Four.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Editions The Big Four.Modern",
+        "file": "_Poirot_Editions/Poirot_Editions_The_Big_Four.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Editions The Case Of The Missing Will",
+        "file": "_Poirot_Editions/Poirot_Editions_The_Case_of_the_Missing_Will.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Editions The Case Of The Missing Will.Modern",
+        "file": "_Poirot_Editions/Poirot_Editions_The_Case_of_the_Missing_Will.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Editions The Chocolate Box",
+        "file": "_Poirot_Editions/Poirot_Editions_The_Chocolate_Box.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Editions The Chocolate Box.Modern",
+        "file": "_Poirot_Editions/Poirot_Editions_The_Chocolate_Box.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Editions The Clocks",
+        "file": "_Poirot_Editions/Poirot_Editions_The_Clocks.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Editions The Clocks.Modern",
+        "file": "_Poirot_Editions/Poirot_Editions_The_Clocks.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Editions The Cornish Mystery",
+        "file": "_Poirot_Editions/Poirot_Editions_The_Cornish_Mystery.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Editions The Cornish Mystery.Modern",
+        "file": "_Poirot_Editions/Poirot_Editions_The_Cornish_Mystery.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Editions The Disappearance Of Mr Davenheim",
+        "file": "_Poirot_Editions/Poirot_Editions_The_Disappearance_of_Mr_Davenheim.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Editions The Disappearance Of Mr Davenheim.Modern",
+        "file": "_Poirot_Editions/Poirot_Editions_The_Disappearance_of_Mr_Davenheim.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Editions The Double Clue",
+        "file": "_Poirot_Editions/Poirot_Editions_The_Double_Clue.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Editions The Double Clue.Modern",
+        "file": "_Poirot_Editions/Poirot_Editions_The_Double_Clue.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Editions The Dream",
+        "file": "_Poirot_Editions/Poirot_Editions_The_Dream.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Editions The Dream.Modern",
+        "file": "_Poirot_Editions/Poirot_Editions_The_Dream.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Editions The Hollow",
+        "file": "_Poirot_Editions/Poirot_Editions_The_Hollow.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Editions The Hollow.Modern",
+        "file": "_Poirot_Editions/Poirot_Editions_The_Hollow.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Editions The Incredible Theft",
+        "file": "_Poirot_Editions/Poirot_Editions_The_Incredible_Theft.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Editions The Incredible Theft.Modern",
+        "file": "_Poirot_Editions/Poirot_Editions_The_Incredible_Theft.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Editions The Kidnapped Prime Minister",
+        "file": "_Poirot_Editions/Poirot_Editions_The_Kidnapped_Prime_Minister.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Editions The Kidnapped Prime Minister.Modern",
+        "file": "_Poirot_Editions/Poirot_Editions_The_Kidnapped_Prime_Minister.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Editions The King Of Clubs",
+        "file": "_Poirot_Editions/Poirot_Editions_The_King_of_Clubs.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Editions The King Of Clubs.Modern",
+        "file": "_Poirot_Editions/Poirot_Editions_The_King_of_Clubs.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Editions The Labours Of Hercules",
+        "file": "_Poirot_Editions/Poirot_Editions_The_Labours_of_Hercules.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Editions The Labours Of Hercules.Modern",
+        "file": "_Poirot_Editions/Poirot_Editions_The_Labours_of_Hercules.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Editions The Lost Mine",
+        "file": "_Poirot_Editions/Poirot_Editions_The_Lost_Mine.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Editions The Lost Mine.Modern",
+        "file": "_Poirot_Editions/Poirot_Editions_The_Lost_Mine.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Editions The Million Dollar Bond Robbery",
+        "file": "_Poirot_Editions/Poirot_Editions_The_Million_Dollar_Bond_Robbery.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Editions The Million Dollar Bond Robbery.Modern",
+        "file": "_Poirot_Editions/Poirot_Editions_The_Million_Dollar_Bond_Robbery.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Editions The Murder Of Roger Ackroyd",
+        "file": "_Poirot_Editions/Poirot_Editions_The_Murder_of_Roger_Ackroyd.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Editions The Murder Of Roger Ackroyd.Modern",
+        "file": "_Poirot_Editions/Poirot_Editions_The_Murder_of_Roger_Ackroyd.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Editions The Mysterious Affair At Styles",
+        "file": "_Poirot_Editions/Poirot_Editions_The_Mysterious-Affair_at_Styles.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Editions The Mysterious Affair At Styles.Modern",
+        "file": "_Poirot_Editions/Poirot_Editions_The_Mysterious-Affair_at_Styles.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Editions The Mystery Of Hunters Lodge",
+        "file": "_Poirot_Editions/Poirot_Editions_The_Mystery_of_Hunters_Lodge.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Editions The Mystery Of Hunters Lodge.Modern",
+        "file": "_Poirot_Editions/Poirot_Editions_The_Mystery_of_Hunters_Lodge.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Editions The Mystery Of The Blue Train",
+        "file": "_Poirot_Editions/Poirot_Editions_The_Mystery_of_the_Blue_Train.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Editions The Mystery Of The Blue Train.Modern",
+        "file": "_Poirot_Editions/Poirot_Editions_The_Mystery_of_the_Blue_Train.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Editions The Mystery Of The Spanish Chest",
+        "file": "_Poirot_Editions/Poirot_Editions_The_Mystery_of_the_Spanish_Chest.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Editions The Mystery Of The Spanish Chest.Modern",
+        "file": "_Poirot_Editions/Poirot_Editions_The_Mystery_of_the_Spanish_Chest.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Editions The Plymouth Express",
+        "file": "_Poirot_Editions/Poirot_Editions_The_Plymouth_Express.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Editions The Plymouth Express.Modern",
+        "file": "_Poirot_Editions/Poirot_Editions_The_Plymouth_Express.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Editions The Theft Of The Royal Ruby",
+        "file": "_Poirot_Editions/Poirot_Editions_The_Theft_of_the_Royal_Ruby.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Editions The Theft Of The Royal Ruby.Modern",
+        "file": "_Poirot_Editions/Poirot_Editions_The_Theft_of_the_Royal_Ruby.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Editions The Third Floor Flat",
+        "file": "_Poirot_Editions/Poirot_Editions_The_Third_Floor_Flat.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Editions The Third Floor Flat.Modern",
+        "file": "_Poirot_Editions/Poirot_Editions_The_Third_Floor_Flat.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Editions The Tragedy At Marsdon Manor",
+        "file": "_Poirot_Editions/Poirot_Editions_The_Tragedy_at_Marsdon_Manor.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Editions The Tragedy At Marsdon Manor.Modern",
+        "file": "_Poirot_Editions/Poirot_Editions_The_Tragedy_at_Marsdon_Manor.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Editions The Underdog",
+        "file": "_Poirot_Editions/Poirot_Editions_The_Underdog.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Editions The Underdog.Modern",
+        "file": "_Poirot_Editions/Poirot_Editions_The_Underdog.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Editions The Veiled Lady",
+        "file": "_Poirot_Editions/Poirot_Editions_The_Veiled_Lady.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Editions The Veiled Lady.Modern",
+        "file": "_Poirot_Editions/Poirot_Editions_The_Veiled_Lady.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Editions The Yellow Iris",
+        "file": "_Poirot_Editions/Poirot_Editions_The_Yellow_Iris.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Editions The Yellow Iris.Modern",
+        "file": "_Poirot_Editions/Poirot_Editions_The_Yellow_Iris.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Editions Third Girl",
+        "file": "_Poirot_Editions/Poirot_Editions_Third_Girl.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Editions Third Girl.Modern",
+        "file": "_Poirot_Editions/Poirot_Editions_Third_Girl.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Editions Three Act Tragedy",
+        "file": "_Poirot_Editions/Poirot_Editions_Three_Act_Tragedy.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Editions Three Act Tragedy.Modern",
+        "file": "_Poirot_Editions/Poirot_Editions_Three_Act_Tragedy.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Editions Triangle At Rhodes",
+        "file": "_Poirot_Editions/Poirot_Editions_Triangle_at_Rhodes.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Editions Triangle At Rhodes.Modern",
+        "file": "_Poirot_Editions/Poirot_Editions_Triangle_at_Rhodes.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Editions Wasps Nest",
+        "file": "_Poirot_Editions/Poirot_Editions_Wasps_Nest.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Editions Wasps Nest.Modern",
+        "file": "_Poirot_Editions/Poirot_Editions_Wasps_Nest.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Editions",
+        "file": "_Poirot_Editions/Poirot_Editions.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Editions.Modern",
+        "file": "_Poirot_Editions/Poirot_Editions.modern.html"
+      }
+    ],
+    "directFile": "_Poirot_Editions/Poirot_Editions.html"
+  },
+  {
+    "type": "dir",
+    "name": "Poirot Locations",
+    "count": 146,
+    "children": [
+      {
+        "type": "file",
+        "name": "Poirot Homepage",
+        "file": "_Poirot_Locations/Poirot_Homepage.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Homepage.Modern",
+        "file": "_Poirot_Locations/Poirot_Homepage.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Locations Adventure Of Johnnie Waverly",
+        "file": "_Poirot_Locations/Poirot_Locations_Adventure_of_Johnnie_Waverly.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Locations Adventure Of Johnnie Waverly.Modern",
+        "file": "_Poirot_Locations/Poirot_Locations_Adventure_of_Johnnie_Waverly.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Locations Adventure Of The Cheap Flat",
+        "file": "_Poirot_Locations/Poirot_Locations_Adventure_of_the_Cheap_Flat.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Locations Adventure Of The Cheap Flat.Modern",
+        "file": "_Poirot_Locations/Poirot_Locations_Adventure_of_the_Cheap_Flat.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Locations Adventure Of The Clapham Cook",
+        "file": "_Poirot_Locations/Poirot_Locations_Adventure_of_the_Clapham_Cook.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Locations Adventure Of The Clapham Cook.Modern",
+        "file": "_Poirot_Locations/Poirot_Locations_Adventure_of_the_Clapham_Cook.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Locations Adventure Of The Western Star",
+        "file": "_Poirot_Locations/Poirot_Locations_Adventure_of_the_Western_Star.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Locations Adventure Of The Western Star.Modern",
+        "file": "_Poirot_Locations/Poirot_Locations_Adventure_of_the_Western_Star.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Locations Affair At The Victory Ball",
+        "file": "_Poirot_Locations/Poirot_Locations_Affair_at_the_Victory_Ball.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Locations Affair At The Victory Ball.Modern",
+        "file": "_Poirot_Locations/Poirot_Locations_Affair_at_the_Victory_Ball.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Locations After The Funeral",
+        "file": "_Poirot_Locations/Poirot_Locations_After_the_Funeral.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Locations After The Funeral.Modern",
+        "file": "_Poirot_Locations/Poirot_Locations_After_the_Funeral.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Locations Appointment With Death",
+        "file": "_Poirot_Locations/Poirot_Locations_Appointment_with_Death.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Locations Appointment With Death.Modern",
+        "file": "_Poirot_Locations/Poirot_Locations_Appointment_with_Death.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Locations Blank",
+        "file": "_Poirot_Locations/Poirot_Locations_Blank.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Locations Blank.Modern",
+        "file": "_Poirot_Locations/Poirot_Locations_Blank.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Locations Cards 0n The Table",
+        "file": "_Poirot_Locations/Poirot_Locations_Cards_0n_the_Table.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Locations Cards 0n The Table.Modern",
+        "file": "_Poirot_Locations/Poirot_Locations_Cards_0n_the_Table.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Locations Cat Among The Pigeons",
+        "file": "_Poirot_Locations/Poirot_Locations_Cat_Among_the_Pigeons.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Locations Cat Among The Pigeons.Modern",
+        "file": "_Poirot_Locations/Poirot_Locations_Cat_Among_the_Pigeons.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Locations Curtain Poirots Last Case",
+        "file": "_Poirot_Locations/Poirot_Locations_Curtain_Poirots_Last_Case.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Locations Curtain Poirots Last Case.Modern",
+        "file": "_Poirot_Locations/Poirot_Locations_Curtain_Poirots_Last_Case.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Locations Dead Mans Folly",
+        "file": "_Poirot_Locations/Poirot_Locations_Dead_Mans_Folly.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Locations Dead Mans Folly.Modern",
+        "file": "_Poirot_Locations/Poirot_Locations_Dead_Mans_Folly.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Locations Dead Mans Mirror",
+        "file": "_Poirot_Locations/Poirot_Locations_Dead_Mans_Mirror.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Locations Dead Mans Mirror.Modern",
+        "file": "_Poirot_Locations/Poirot_Locations_Dead_Mans_Mirror.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Locations Death In The Clouds",
+        "file": "_Poirot_Locations/Poirot_Locations_Death_in_the_Clouds.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Locations Death In The Clouds.Modern",
+        "file": "_Poirot_Locations/Poirot_Locations_Death_in_the_Clouds.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Locations Death On The Nile",
+        "file": "_Poirot_Locations/Poirot_Locations_Death_on_the_Nile.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Locations Death On The Nile.Modern",
+        "file": "_Poirot_Locations/Poirot_Locations_Death_on_the_Nile.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Locations Double Sin",
+        "file": "_Poirot_Locations/Poirot_Locations_Double_Sin.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Locations Double Sin.Modern",
+        "file": "_Poirot_Locations/Poirot_Locations_Double_Sin.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Locations Dumb Witness",
+        "file": "_Poirot_Locations/Poirot_Locations_Dumb_Witness.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Locations Dumb Witness.Modern",
+        "file": "_Poirot_Locations/Poirot_Locations_Dumb_Witness.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Locations Elephants Can Remember",
+        "file": "_Poirot_Locations/Poirot_Locations_Elephants_Can_Remember.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Locations Elephants Can Remember.Modern",
+        "file": "_Poirot_Locations/Poirot_Locations_Elephants_Can_Remember.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Locations Evil Under The Sun",
+        "file": "_Poirot_Locations/Poirot_Locations_Evil_Under_The_Sun.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Locations Evil Under The Sun.Modern",
+        "file": "_Poirot_Locations/Poirot_Locations_Evil_Under_The_Sun.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Locations Five Little Pigs",
+        "file": "_Poirot_Locations/Poirot_Locations_Five_Little_Pigs.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Locations Five Little Pigs.Modern",
+        "file": "_Poirot_Locations/Poirot_Locations_Five_Little_Pigs.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Locations Four And Twenty Blackbirds",
+        "file": "_Poirot_Locations/Poirot_Locations_Four_and_Twenty_Blackbirds.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Locations Four And Twenty Blackbirds.Modern",
+        "file": "_Poirot_Locations/Poirot_Locations_Four_and_Twenty_Blackbirds.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Locations Halloween Party",
+        "file": "_Poirot_Locations/Poirot_Locations_Halloween_Party.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Locations Halloween Party.Modern",
+        "file": "_Poirot_Locations/Poirot_Locations_Halloween_Party.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Locations Hercule Poirots Christmas",
+        "file": "_Poirot_Locations/Poirot_Locations_Hercule_Poirots_Christmas.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Locations Hercule Poirots Christmas.Modern",
+        "file": "_Poirot_Locations/Poirot_Locations_Hercule_Poirots_Christmas.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Locations Hickory Dockory Dock",
+        "file": "_Poirot_Locations/Poirot_Locations_Hickory_Dockory_Dock.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Locations Hickory Dockory Dock.Modern",
+        "file": "_Poirot_Locations/Poirot_Locations_Hickory_Dockory_Dock.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Locations How Does Your Garden Grow",
+        "file": "_Poirot_Locations/Poirot_Locations_How_Does_Your_Garden_Grow.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Locations How Does Your Garden Grow.Modern",
+        "file": "_Poirot_Locations/Poirot_Locations_How_Does_Your_Garden_Grow.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Locations Jewel Robbery At The Grand Metropolitan",
+        "file": "_Poirot_Locations/Poirot_Locations_Jewel_Robbery_at_the_Grand_Metropolitan.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Locations Jewel Robbery At The Grand Metropolitan.Modern",
+        "file": "_Poirot_Locations/Poirot_Locations_Jewel_Robbery_at_the_Grand_Metropolitan.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Locations Lord Edgware Dies",
+        "file": "_Poirot_Locations/Poirot_Locations_Lord_Edgware_Dies.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Locations Lord Edgware Dies.Modern",
+        "file": "_Poirot_Locations/Poirot_Locations_Lord_Edgware_Dies.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Locations Mrs McGintys Dead",
+        "file": "_Poirot_Locations/Poirot_Locations_Mrs_McGintys_Dead.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Locations Mrs McGintys Dead.Modern",
+        "file": "_Poirot_Locations/Poirot_Locations_Mrs_McGintys_Dead.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Locations Murder In Mesopotamia",
+        "file": "_Poirot_Locations/Poirot_Locations_Murder_in_Mesopotamia.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Locations Murder In Mesopotamia.Modern",
+        "file": "_Poirot_Locations/Poirot_Locations_Murder_in_Mesopotamia.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Locations Murder In The Mews",
+        "file": "_Poirot_Locations/Poirot_Locations_Murder_in_the _Mews.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Locations Murder In The Mews.Modern",
+        "file": "_Poirot_Locations/Poirot_Locations_Murder_in_the _Mews.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Locations Murder Of Roger Ackroyd",
+        "file": "_Poirot_Locations/Poirot_Locations_Murder_of_Roger_Ackroyd.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Locations Murder Of Roger Ackroyd.Modern",
+        "file": "_Poirot_Locations/Poirot_Locations_Murder_of_Roger_Ackroyd.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Locations Murder On The Links",
+        "file": "_Poirot_Locations/Poirot_Locations_Murder_on_the_Links.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Locations Murder On The Links.Modern",
+        "file": "_Poirot_Locations/Poirot_Locations_Murder_on_the_Links.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Locations Murder On The Orient Express",
+        "file": "_Poirot_Locations/Poirot_Locations_Murder_on_the_Orient_Express.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Locations Murder On The Orient Express.Modern",
+        "file": "_Poirot_Locations/Poirot_Locations_Murder_on_the_Orient_Express.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Locations Mystery Of Hunters Lodge",
+        "file": "_Poirot_Locations/Poirot_Locations_Mystery_of_Hunters_Lodge.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Locations Mystery Of Hunters Lodge.Modern",
+        "file": "_Poirot_Locations/Poirot_Locations_Mystery_of_Hunters_Lodge.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Locations Mystery Of The Spanish Chest",
+        "file": "_Poirot_Locations/Poirot_Locations_Mystery_of_the_Spanish_Chest.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Locations Mystery Of The Spanish Chest.Modern",
+        "file": "_Poirot_Locations/Poirot_Locations_Mystery_of_the_Spanish_Chest.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Locations One Two Buckle My Shoe",
+        "file": "_Poirot_Locations/Poirot_Locations_One_Two_Buckle_My_Shoe.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Locations One Two Buckle My Shoe.Modern",
+        "file": "_Poirot_Locations/Poirot_Locations_One_Two_Buckle_My_Shoe.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Locations Peril At End House",
+        "file": "_Poirot_Locations/Poirot_Locations_Peril_at_End_House.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Locations Peril At End House.Modern",
+        "file": "_Poirot_Locations/Poirot_Locations_Peril_at_End_House.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Locations Problem At Sea",
+        "file": "_Poirot_Locations/Poirot_Locations_Problem_at_Sea.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Locations Problem At Sea.Modern",
+        "file": "_Poirot_Locations/Poirot_Locations_Problem_at_Sea.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Locations Sad Cypress",
+        "file": "_Poirot_Locations/Poirot_Locations_Sad_Cypress.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Locations Sad Cypress.Modern",
+        "file": "_Poirot_Locations/Poirot_Locations_Sad_Cypress.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Locations Taken At The Flood",
+        "file": "_Poirot_Locations/Poirot_Locations_Taken_at_the_Flood.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Locations Taken At The Flood.Modern",
+        "file": "_Poirot_Locations/Poirot_Locations_Taken_at_the_Flood.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Locations The ABC Murders",
+        "file": "_Poirot_Locations/Poirot_Locations_The_ABC_Murders.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Locations The ABC Murders.Modern",
+        "file": "_Poirot_Locations/Poirot_Locations_The_ABC_Murders.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Locations The Adventure Of The Egyptian Tomb",
+        "file": "_Poirot_Locations/Poirot_Locations_The_Adventure_of_the_Egyptian_Tomb.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Locations The Adventure Of The Egyptian Tomb.Modern",
+        "file": "_Poirot_Locations/Poirot_Locations_The_Adventure_of_the_Egyptian_Tomb.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Locations The Adventure Of The Italian Nobleman",
+        "file": "_Poirot_Locations/Poirot_Locations_The_Adventure_of_the_Italian_Nobleman.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Locations The Adventure Of The Italian Nobleman.Modern",
+        "file": "_Poirot_Locations/Poirot_Locations_The_Adventure_of_the_Italian_Nobleman.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Locations The Big Four",
+        "file": "_Poirot_Locations/Poirot_Locations_The_Big_Four.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Locations The Big Four.Modern",
+        "file": "_Poirot_Locations/Poirot_Locations_The_Big_Four.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Locations The Case Of The Missing Will",
+        "file": "_Poirot_Locations/Poirot_Locations_The_Case_of_the_Missing_Will.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Locations The Case Of The Missing Will.Modern",
+        "file": "_Poirot_Locations/Poirot_Locations_The_Case_of_the_Missing_Will.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Locations The Chocolate Box",
+        "file": "_Poirot_Locations/Poirot_Locations_The_Chocolate_Box.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Locations The Chocolate Box.Modern",
+        "file": "_Poirot_Locations/Poirot_Locations_The_Chocolate_Box.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Locations The Clocks",
+        "file": "_Poirot_Locations/Poirot_Locations_The_Clocks.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Locations The Clocks.Modern",
+        "file": "_Poirot_Locations/Poirot_Locations_The_Clocks.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Locations The Cornish Mystery",
+        "file": "_Poirot_Locations/Poirot_Locations_The_Cornish_Mystery.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Locations The Cornish Mystery.Modern",
+        "file": "_Poirot_Locations/Poirot_Locations_The_Cornish_Mystery.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Locations The Disappearance Of Mr.Davenheim",
+        "file": "_Poirot_Locations/Poirot_Locations_The_Disappearance_of_Mr.Davenheim.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Locations The Disappearance Of Mr.Davenheim.Modern",
+        "file": "_Poirot_Locations/Poirot_Locations_The_Disappearance_of_Mr.Davenheim.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Locations The Double Clue",
+        "file": "_Poirot_Locations/Poirot_Locations_The_Double_Clue.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Locations The Double Clue.Modern",
+        "file": "_Poirot_Locations/Poirot_Locations_The_Double_Clue.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Locations The Dream",
+        "file": "_Poirot_Locations/Poirot_Locations_The_Dream.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Locations The Dream.Modern",
+        "file": "_Poirot_Locations/Poirot_Locations_The_Dream.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Locations The Hollow",
+        "file": "_Poirot_Locations/Poirot_Locations_The_Hollow.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Locations The Hollow.Modern",
+        "file": "_Poirot_Locations/Poirot_Locations_The_Hollow.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Locations The Incredible Theft",
+        "file": "_Poirot_Locations/Poirot_Locations_The_Incredible_Theft.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Locations The Incredible Theft.Modern",
+        "file": "_Poirot_Locations/Poirot_Locations_The_Incredible_Theft.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Locations The Kidnapped Prime Minister",
+        "file": "_Poirot_Locations/Poirot_Locations_The_Kidnapped_Prime_Minister.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Locations The Kidnapped Prime Minister.Modern",
+        "file": "_Poirot_Locations/Poirot_Locations_The_Kidnapped_Prime_Minister.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Locations The King Of Clubs",
+        "file": "_Poirot_Locations/Poirot_Locations_The_King_of_Clubs.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Locations The King Of Clubs.Modern",
+        "file": "_Poirot_Locations/Poirot_Locations_The_King_of_Clubs.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Locations The Labours Of Hercules",
+        "file": "_Poirot_Locations/Poirot_Locations_The_Labours_of_Hercules.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Locations The Labours Of Hercules.Modern",
+        "file": "_Poirot_Locations/Poirot_Locations_The_Labours_of_Hercules.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Locations The Lost Mine",
+        "file": "_Poirot_Locations/Poirot_Locations_The_Lost_Mine.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Locations The Lost Mine.Modern",
+        "file": "_Poirot_Locations/Poirot_Locations_The_Lost_Mine.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Locations The Million Dollar Bond Robbery",
+        "file": "_Poirot_Locations/Poirot_Locations_The_Million_Dollar_Bond_Robbery.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Locations The Million Dollar Bond Robbery.Modern",
+        "file": "_Poirot_Locations/Poirot_Locations_The_Million_Dollar_Bond_Robbery.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Locations The Mysterious Affair At Styles",
+        "file": "_Poirot_Locations/Poirot_Locations_The_Mysterious_Affair_at_Styles.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Locations The Mysterious Affair At Styles.Modern",
+        "file": "_Poirot_Locations/Poirot_Locations_The_Mysterious_Affair_at_Styles.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Locations The Mystery Of The Blue Train",
+        "file": "_Poirot_Locations/Poirot_Locations_The_Mystery_of_the_Blue_Train.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Locations The Mystery Of The Blue Train.Modern",
+        "file": "_Poirot_Locations/Poirot_Locations_The_Mystery_of_the_Blue_Train.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Locations The Plymouth Express",
+        "file": "_Poirot_Locations/Poirot_Locations_The_Plymouth_Express.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Locations The Plymouth Express.Modern",
+        "file": "_Poirot_Locations/Poirot_Locations_The_Plymouth_Express.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Locations The Theft Of The Royal Ruby",
+        "file": "_Poirot_Locations/Poirot_Locations_The_Theft_of_The_Royal_Ruby.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Locations The Theft Of The Royal Ruby.Modern",
+        "file": "_Poirot_Locations/Poirot_Locations_The_Theft_of_The_Royal_Ruby.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Locations The Third Floor Flat",
+        "file": "_Poirot_Locations/Poirot_Locations_The_Third_Floor_Flat.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Locations The Third Floor Flat.Modern",
+        "file": "_Poirot_Locations/Poirot_Locations_The_Third_Floor_Flat.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Locations The Tragedy At Marsdon Manor",
+        "file": "_Poirot_Locations/Poirot_Locations_The_Tragedy_at_Marsdon_Manor.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Locations The Tragedy At Marsdon Manor.Modern",
+        "file": "_Poirot_Locations/Poirot_Locations_The_Tragedy_at_Marsdon_Manor.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Locations The Underdog",
+        "file": "_Poirot_Locations/Poirot_Locations_The_Underdog.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Locations The Underdog.Modern",
+        "file": "_Poirot_Locations/Poirot_Locations_The_Underdog.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Locations The Veiled Lady",
+        "file": "_Poirot_Locations/Poirot_Locations_The_Veiled_Lady.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Locations The Veiled Lady.Modern",
+        "file": "_Poirot_Locations/Poirot_Locations_The_Veiled_Lady.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Locations The Yellow Iris",
+        "file": "_Poirot_Locations/Poirot_Locations_The_Yellow_Iris.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Locations The Yellow Iris.Modern",
+        "file": "_Poirot_Locations/Poirot_Locations_The_Yellow_Iris.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Locations Third Girl",
+        "file": "_Poirot_Locations/Poirot_Locations_Third_Girl.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Locations Third Girl.Modern",
+        "file": "_Poirot_Locations/Poirot_Locations_Third_Girl.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Locations Three Act Tragedy",
+        "file": "_Poirot_Locations/Poirot_Locations_Three_Act_Tragedy.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Locations Three Act Tragedy.Modern",
+        "file": "_Poirot_Locations/Poirot_Locations_Three_Act_Tragedy.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Locations Triangle At Rhodes",
+        "file": "_Poirot_Locations/Poirot_Locations_Triangle_at_Rhodes.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Locations Triangle At Rhodes.Modern",
+        "file": "_Poirot_Locations/Poirot_Locations_Triangle_at_Rhodes.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Locations Wasps Nest",
+        "file": "_Poirot_Locations/Poirot_Locations_Wasps_Nest.html",
+        "hidden": true
+      },
+      {
+        "type": "file",
+        "name": "Poirot Locations Wasps Nest.Modern",
+        "file": "_Poirot_Locations/Poirot_Locations_Wasps_Nest.modern.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Locations",
+        "file": "_Poirot_Locations/Poirot_Locations.html"
+      },
+      {
+        "type": "file",
+        "name": "Poirot Locations.Modern",
+        "file": "_Poirot_Locations/Poirot_Locations.modern.html"
+      }
+    ],
+    "directFile": "_Poirot_Locations/Poirot_Locations.html"
+  },
+  {
+    "type": "dir",
     "name": "Ridley Scott",
     "count": 59,
     "children": [
@@ -15569,7 +15552,7 @@
           },
           {
             "type": "file",
-            "name": "33.The Curse Of The Jade Scorpion.Modern",
+            "name": "The Curse of the Jade Scorpion",
             "file": "_Woody_Allen/Pages/33.The_Curse_Of_The_Jade_Scorpion.modern.html"
           },
           {
@@ -15580,7 +15563,7 @@
           },
           {
             "type": "file",
-            "name": "34.Hollywood Ending.Modern",
+            "name": "Hollywood Ending",
             "file": "_Woody_Allen/Pages/34.Hollywood_Ending.modern.html"
           },
           {
@@ -15591,7 +15574,7 @@
           },
           {
             "type": "file",
-            "name": "35.Anything Else.Modern",
+            "name": "Anything Else",
             "file": "_Woody_Allen/Pages/35.Anything_Else.modern.html"
           },
           {
@@ -15602,7 +15585,7 @@
           },
           {
             "type": "file",
-            "name": "36.Melinda And Melinda.Modern",
+            "name": "Melinda and Melinda",
             "file": "_Woody_Allen/Pages/36.Melinda_And_Melinda.modern.html"
           },
           {
@@ -15613,7 +15596,7 @@
           },
           {
             "type": "file",
-            "name": "37.Match Point.Modern",
+            "name": "Match Point",
             "file": "_Woody_Allen/Pages/37.Match_Point.modern.html"
           },
           {
@@ -15624,7 +15607,7 @@
           },
           {
             "type": "file",
-            "name": "38.Scoop.Modern",
+            "name": "Scoop",
             "file": "_Woody_Allen/Pages/38.Scoop.modern.html"
           },
           {
@@ -15635,7 +15618,7 @@
           },
           {
             "type": "file",
-            "name": "39.Cassandra'S Dream.Modern",
+            "name": "Cassandra's Dream",
             "file": "_Woody_Allen/Pages/39.Cassandra's_Dream.modern.html"
           },
           {
@@ -15657,7 +15640,7 @@
           },
           {
             "type": "file",
-            "name": "40.Vicky Cristina Barcelona.Modern",
+            "name": "Vicky Cristina Barcelona",
             "file": "_Woody_Allen/Pages/40.Vicky_Cristina_Barcelona.modern.html"
           },
           {
@@ -15668,7 +15651,7 @@
           },
           {
             "type": "file",
-            "name": "41.Whatever Works.Modern",
+            "name": "Whatever Works",
             "file": "_Woody_Allen/Pages/41.Whatever_Works.modern.html"
           },
           {
@@ -15679,7 +15662,7 @@
           },
           {
             "type": "file",
-            "name": "42.You Will Meet A Tall Dark Stranger.Modern",
+            "name": "You Will Meet A Tall Dark Stranger",
             "file": "_Woody_Allen/Pages/42.You_Will_Meet_A_Tall_Dark_Stranger.modern.html"
           },
           {
@@ -15690,7 +15673,7 @@
           },
           {
             "type": "file",
-            "name": "43.Midnight In Paris.Modern",
+            "name": "Midnight in Paris",
             "file": "_Woody_Allen/Pages/43.Midnight_In_Paris.modern.html"
           },
           {
@@ -15701,7 +15684,7 @@
           },
           {
             "type": "file",
-            "name": "44.To Rome With Love.Modern",
+            "name": "To Rome With Love",
             "file": "_Woody_Allen/Pages/44.To_Rome_With_Love.modern.html"
           },
           {
@@ -15712,7 +15695,7 @@
           },
           {
             "type": "file",
-            "name": "45.Blue Jasmine.Modern",
+            "name": "Blue Jasmine",
             "file": "_Woody_Allen/Pages/45.Blue_Jasmine.modern.html"
           },
           {
@@ -15723,7 +15706,7 @@
           },
           {
             "type": "file",
-            "name": "46.Magic In The Moonlight.Modern",
+            "name": "Magic In The Moonlight",
             "file": "_Woody_Allen/Pages/46.Magic_In_The_Moonlight.modern.html"
           },
           {
@@ -15734,7 +15717,7 @@
           },
           {
             "type": "file",
-            "name": "47.Irrational Man.Modern",
+            "name": "Irrational Man",
             "file": "_Woody_Allen/Pages/47.Irrational_Man.modern.html"
           },
           {
@@ -15745,7 +15728,7 @@
           },
           {
             "type": "file",
-            "name": "48.Cafe Society.Modern",
+            "name": "Caf&eacute; Society",
             "file": "_Woody_Allen/Pages/48.Cafe_Society.modern.html"
           },
           {
@@ -15756,7 +15739,7 @@
           },
           {
             "type": "file",
-            "name": "49.Wonder Wheel.Modern",
+            "name": "Wonder Wheel",
             "file": "_Woody_Allen/Pages/49.Wonder_Wheel.modern.html"
           },
           {
@@ -15778,7 +15761,7 @@
           },
           {
             "type": "file",
-            "name": "50.A Rainy Day In New York.Modern",
+            "name": "A Rainy Day In New York",
             "file": "_Woody_Allen/Pages/50.A_Rainy_Day_In_New_York.modern.html"
           },
           {
@@ -15789,7 +15772,7 @@
           },
           {
             "type": "file",
-            "name": "51.Rifkins Festival.Modern",
+            "name": "Rifkin's Festival",
             "file": "_Woody_Allen/Pages/51.Rifkins_Festival.modern.html"
           },
           {

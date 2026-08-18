@@ -179,9 +179,9 @@ function walk(dir, relDir, breadcrumb, searchIndex) {
 // chronological diary that should simply start at its first/index page).
 const ENTRY_OVERRIDES = {
   'Wild Thyme Garden Design': 'Wild-Thyme-Garden-Design/index.html',
-  'Poirot Casts': '_ Poirot_Casts/Poirot_Casts.html',
-  'Poirot Editions': '_ Poirot_Editions/Poirot_Editions.html',
-  'Poirot Locations': '_ Poirot_Locations/Poirot_Locations.html',
+  'Poirot Casts': '_Poirot_Casts/Poirot_Casts.html',
+  'Poirot Editions': '_Poirot_Editions/Poirot_Editions.html',
+  'Poirot Locations': '_Poirot_Locations/Poirot_Locations.html',
   Almodovar: '_Almodovar/0.Index.html',
   'Argentina 1999': '_Argentina_1999/Pages/1.Buenos_Aires.html',
   'Book Illustration': '_Book_Illustration/0.index.html',

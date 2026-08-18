@@ -3261,6 +3261,310 @@
   },
   {
     "type": "dir",
+    "name": "European Road Trip 2018",
+    "count": 58,
+    "children": [
+      {
+        "type": "dir",
+        "name": "Pages",
+        "count": 58,
+        "children": [
+          {
+            "type": "file",
+            "name": "Sicily Index",
+            "file": "_European_Road_Trip_2018/Pages/Sicily__Index.html"
+          },
+          {
+            "type": "file",
+            "name": "Sicily Day 1 Folkestone",
+            "file": "_European_Road_Trip_2018/Pages/Sicily_Day-1-Folkestone.html"
+          },
+          {
+            "type": "file",
+            "name": "Sicily Day 2 Reims",
+            "file": "_European_Road_Trip_2018/Pages/Sicily_Day-2-Reims.html"
+          },
+          {
+            "type": "file",
+            "name": "Sicily Day 2b Reims",
+            "file": "_European_Road_Trip_2018/Pages/Sicily_Day-2b-Reims.html"
+          },
+          {
+            "type": "file",
+            "name": "Sicily Day 2c Reims",
+            "file": "_European_Road_Trip_2018/Pages/Sicily_Day-2c-Reims.html"
+          },
+          {
+            "type": "file",
+            "name": "Sicily Day 3 Clermont En Argonne",
+            "file": "_European_Road_Trip_2018/Pages/Sicily_Day-3-Clermont-en-Argonne.html"
+          },
+          {
+            "type": "file",
+            "name": "Sicily Day 4 Metz",
+            "file": "_European_Road_Trip_2018/Pages/Sicily_Day-4-Metz.html"
+          },
+          {
+            "type": "file",
+            "name": "Sicily Day 4b Metz",
+            "file": "_European_Road_Trip_2018/Pages/Sicily_Day-4b-Metz.html"
+          },
+          {
+            "type": "file",
+            "name": "Sicily Day 4c Metz",
+            "file": "_European_Road_Trip_2018/Pages/Sicily_Day-4c-Metz.html"
+          },
+          {
+            "type": "file",
+            "name": "Sicily Day 5 Luxembourg",
+            "file": "_European_Road_Trip_2018/Pages/Sicily_Day-5-Luxembourg.html"
+          },
+          {
+            "type": "file",
+            "name": "Sicily Day 6 Selestat",
+            "file": "_European_Road_Trip_2018/Pages/Sicily_Day-6-Selestat.html"
+          },
+          {
+            "type": "file",
+            "name": "Sicily Day 6b Mulhouse",
+            "file": "_European_Road_Trip_2018/Pages/Sicily_Day-6b-Mulhouse.html"
+          },
+          {
+            "type": "file",
+            "name": "Sicily Day 7 Luzern",
+            "file": "_European_Road_Trip_2018/Pages/Sicily_Day-7-Luzern.html"
+          },
+          {
+            "type": "file",
+            "name": "Sicily Day 7 St.Gotthardt",
+            "file": "_European_Road_Trip_2018/Pages/Sicily_Day-7-St.Gotthardt.html"
+          },
+          {
+            "type": "file",
+            "name": "Sicily Day 8 Lugano",
+            "file": "_European_Road_Trip_2018/Pages/Sicily_Day-8-Lugano.html"
+          },
+          {
+            "type": "file",
+            "name": "Sicily Day 8b Lugano",
+            "file": "_European_Road_Trip_2018/Pages/Sicily_Day-8b-Lugano.html"
+          },
+          {
+            "type": "file",
+            "name": "Sicily Day 9 Lugano",
+            "file": "_European_Road_Trip_2018/Pages/Sicily_Day-9-Lugano.html"
+          },
+          {
+            "type": "file",
+            "name": "Sicily Day 10 Como",
+            "file": "_European_Road_Trip_2018/Pages/Sicily_Day-10-Como.html"
+          },
+          {
+            "type": "file",
+            "name": "Sicily Day 11 Como",
+            "file": "_European_Road_Trip_2018/Pages/Sicily_Day-11-Como.html"
+          },
+          {
+            "type": "file",
+            "name": "Sicily Day 11b Como",
+            "file": "_European_Road_Trip_2018/Pages/Sicily_Day-11b-Como.html"
+          },
+          {
+            "type": "file",
+            "name": "Sicily Day 12 Como",
+            "file": "_European_Road_Trip_2018/Pages/Sicily_Day-12-Como.html"
+          },
+          {
+            "type": "file",
+            "name": "Sicily Day 13 Reggio Emilia",
+            "file": "_European_Road_Trip_2018/Pages/Sicily_Day-13-Reggio-Emilia.html"
+          },
+          {
+            "type": "file",
+            "name": "Sicily Day 14 Florence",
+            "file": "_European_Road_Trip_2018/Pages/Sicily_Day-14-Florence.html"
+          },
+          {
+            "type": "file",
+            "name": "Sicily Day 14b Florence",
+            "file": "_European_Road_Trip_2018/Pages/Sicily_Day-14b-Florence.html"
+          },
+          {
+            "type": "file",
+            "name": "Sicily Day 15 Naples",
+            "file": "_European_Road_Trip_2018/Pages/Sicily_Day-15-Naples.html"
+          },
+          {
+            "type": "file",
+            "name": "Sicily Day 16 Pompeii",
+            "file": "_European_Road_Trip_2018/Pages/Sicily_Day-16-Pompeii.html"
+          },
+          {
+            "type": "file",
+            "name": "Sicily Day 16b Pompeii",
+            "file": "_European_Road_Trip_2018/Pages/Sicily_Day-16b-Pompeii.html"
+          },
+          {
+            "type": "file",
+            "name": "Sicily Day 17 Amalfi Coast",
+            "file": "_European_Road_Trip_2018/Pages/Sicily_Day-17-Amalfi_Coast.html"
+          },
+          {
+            "type": "file",
+            "name": "Sicily Day 18 Rende Messina",
+            "file": "_European_Road_Trip_2018/Pages/Sicily_Day-18-Rende-Messina.html"
+          },
+          {
+            "type": "file",
+            "name": "Sicily Day 19 Marzememi",
+            "file": "_European_Road_Trip_2018/Pages/Sicily_Day-19-Marzememi.html"
+          },
+          {
+            "type": "file",
+            "name": "Sicily Day 19b Pachino",
+            "file": "_European_Road_Trip_2018/Pages/Sicily_Day-19b-Pachino.html"
+          },
+          {
+            "type": "file",
+            "name": "Sicily Day 19c Pachino",
+            "file": "_European_Road_Trip_2018/Pages/Sicily_Day-19c-Pachino.html"
+          },
+          {
+            "type": "file",
+            "name": "Sicily Day 20 Ragusa",
+            "file": "_European_Road_Trip_2018/Pages/Sicily_Day-20-Ragusa.html"
+          },
+          {
+            "type": "file",
+            "name": "Sicily Day 21 Siracusa",
+            "file": "_European_Road_Trip_2018/Pages/Sicily_Day-21-Siracusa.html"
+          },
+          {
+            "type": "file",
+            "name": "Sicily Day 21b Siracusa",
+            "file": "_European_Road_Trip_2018/Pages/Sicily_Day-21b-Siracusa.html"
+          },
+          {
+            "type": "file",
+            "name": "Sicily Day 21c Siracusa",
+            "file": "_European_Road_Trip_2018/Pages/Sicily_Day-21c-Siracusa.html"
+          },
+          {
+            "type": "file",
+            "name": "Sicily Day 22 Noto",
+            "file": "_European_Road_Trip_2018/Pages/Sicily_Day-22-Noto.html"
+          },
+          {
+            "type": "file",
+            "name": "Sicily Day 22b Noto",
+            "file": "_European_Road_Trip_2018/Pages/Sicily_Day-22b-Noto.html"
+          },
+          {
+            "type": "file",
+            "name": "Sicily Day 23 Marzamemi",
+            "file": "_European_Road_Trip_2018/Pages/Sicily_Day-23-Marzamemi.html"
+          },
+          {
+            "type": "file",
+            "name": "Sicily Day 24 Sala Consilina",
+            "file": "_European_Road_Trip_2018/Pages/Sicily_Day-24-Sala_Consilina.html"
+          },
+          {
+            "type": "file",
+            "name": "Sicily Day 24b Sala Consilina",
+            "file": "_European_Road_Trip_2018/Pages/Sicily_Day-24b-Sala_Consilina.html"
+          },
+          {
+            "type": "file",
+            "name": "Sicily Day 25 Albano Laziale",
+            "file": "_European_Road_Trip_2018/Pages/Sicily_Day-25-Albano_Laziale.html"
+          },
+          {
+            "type": "file",
+            "name": "Sicily Day 26 Rome",
+            "file": "_European_Road_Trip_2018/Pages/Sicily_Day-26-Rome.html"
+          },
+          {
+            "type": "file",
+            "name": "Sicily Day 26b Rome",
+            "file": "_European_Road_Trip_2018/Pages/Sicily_Day-26b-Rome.html"
+          },
+          {
+            "type": "file",
+            "name": "Sicily Day 26c Rome",
+            "file": "_European_Road_Trip_2018/Pages/Sicily_Day-26c-Rome.html"
+          },
+          {
+            "type": "file",
+            "name": "Sicily Day 27 Castel Gandolfo",
+            "file": "_European_Road_Trip_2018/Pages/Sicily_Day-27-Castel_Gandolfo.html"
+          },
+          {
+            "type": "file",
+            "name": "Sicily Day 27b Castel Gandolfo",
+            "file": "_European_Road_Trip_2018/Pages/Sicily_Day-27b-Castel_Gandolfo.html"
+          },
+          {
+            "type": "file",
+            "name": "Sicily Day 28 Vagliagli",
+            "file": "_European_Road_Trip_2018/Pages/Sicily_Day-28-Vagliagli.html"
+          },
+          {
+            "type": "file",
+            "name": "Sicily Day 29 Siena",
+            "file": "_European_Road_Trip_2018/Pages/Sicily_Day-29-Siena.html"
+          },
+          {
+            "type": "file",
+            "name": "Sicily Day 29b Siena",
+            "file": "_European_Road_Trip_2018/Pages/Sicily_Day-29b-Siena.html"
+          },
+          {
+            "type": "file",
+            "name": "Sicily Day 29c Siena",
+            "file": "_European_Road_Trip_2018/Pages/Sicily_Day-29c-Siena.html"
+          },
+          {
+            "type": "file",
+            "name": "Sicily Day 30 Carrara",
+            "file": "_European_Road_Trip_2018/Pages/Sicily_Day-30-Carrara.html"
+          },
+          {
+            "type": "file",
+            "name": "Sicily Day 31 Genoa",
+            "file": "_European_Road_Trip_2018/Pages/Sicily_Day-31-Genoa.html"
+          },
+          {
+            "type": "file",
+            "name": "Sicily Day 32 Colombier",
+            "file": "_European_Road_Trip_2018/Pages/Sicily_Day-32-Colombier.html"
+          },
+          {
+            "type": "file",
+            "name": "Sicily Day 33 Colombier",
+            "file": "_European_Road_Trip_2018/Pages/Sicily_Day-33-Colombier.html"
+          },
+          {
+            "type": "file",
+            "name": "Sicily Day 34 Tournon",
+            "file": "_European_Road_Trip_2018/Pages/Sicily_Day-34-Tournon.html"
+          },
+          {
+            "type": "file",
+            "name": "Sicily Day 36 St.Valery",
+            "file": "_European_Road_Trip_2018/Pages/Sicily_Day-36-St.Valery.html"
+          },
+          {
+            "type": "file",
+            "name": "Sicily Day 37 Veules",
+            "file": "_European_Road_Trip_2018/Pages/Sicily_Day-37-Veules.html"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "dir",
     "name": "Florida 1997",
     "count": 7,
     "children": [
@@ -6923,310 +7227,6 @@
       }
     ],
     "directFile": "_Salman_Rushdie/0.Index.html"
-  },
-  {
-    "type": "dir",
-    "name": "Sicily",
-    "count": 58,
-    "children": [
-      {
-        "type": "dir",
-        "name": "Pages",
-        "count": 58,
-        "children": [
-          {
-            "type": "file",
-            "name": "Sicily Index",
-            "file": "_Sicily/Pages/Sicily__Index.html"
-          },
-          {
-            "type": "file",
-            "name": "Sicily Day 1 Folkestone",
-            "file": "_Sicily/Pages/Sicily_Day-1-Folkestone.html"
-          },
-          {
-            "type": "file",
-            "name": "Sicily Day 2 Reims",
-            "file": "_Sicily/Pages/Sicily_Day-2-Reims.html"
-          },
-          {
-            "type": "file",
-            "name": "Sicily Day 2b Reims",
-            "file": "_Sicily/Pages/Sicily_Day-2b-Reims.html"
-          },
-          {
-            "type": "file",
-            "name": "Sicily Day 2c Reims",
-            "file": "_Sicily/Pages/Sicily_Day-2c-Reims.html"
-          },
-          {
-            "type": "file",
-            "name": "Sicily Day 3 Clermont En Argonne",
-            "file": "_Sicily/Pages/Sicily_Day-3-Clermont-en-Argonne.html"
-          },
-          {
-            "type": "file",
-            "name": "Sicily Day 4 Metz",
-            "file": "_Sicily/Pages/Sicily_Day-4-Metz.html"
-          },
-          {
-            "type": "file",
-            "name": "Sicily Day 4b Metz",
-            "file": "_Sicily/Pages/Sicily_Day-4b-Metz.html"
-          },
-          {
-            "type": "file",
-            "name": "Sicily Day 4c Metz",
-            "file": "_Sicily/Pages/Sicily_Day-4c-Metz.html"
-          },
-          {
-            "type": "file",
-            "name": "Sicily Day 5 Luxembourg",
-            "file": "_Sicily/Pages/Sicily_Day-5-Luxembourg.html"
-          },
-          {
-            "type": "file",
-            "name": "Sicily Day 6 Selestat",
-            "file": "_Sicily/Pages/Sicily_Day-6-Selestat.html"
-          },
-          {
-            "type": "file",
-            "name": "Sicily Day 6b Mulhouse",
-            "file": "_Sicily/Pages/Sicily_Day-6b-Mulhouse.html"
-          },
-          {
-            "type": "file",
-            "name": "Sicily Day 7 Luzern",
-            "file": "_Sicily/Pages/Sicily_Day-7-Luzern.html"
-          },
-          {
-            "type": "file",
-            "name": "Sicily Day 7 St.Gotthardt",
-            "file": "_Sicily/Pages/Sicily_Day-7-St.Gotthardt.html"
-          },
-          {
-            "type": "file",
-            "name": "Sicily Day 8 Lugano",
-            "file": "_Sicily/Pages/Sicily_Day-8-Lugano.html"
-          },
-          {
-            "type": "file",
-            "name": "Sicily Day 8b Lugano",
-            "file": "_Sicily/Pages/Sicily_Day-8b-Lugano.html"
-          },
-          {
-            "type": "file",
-            "name": "Sicily Day 9 Lugano",
-            "file": "_Sicily/Pages/Sicily_Day-9-Lugano.html"
-          },
-          {
-            "type": "file",
-            "name": "Sicily Day 10 Como",
-            "file": "_Sicily/Pages/Sicily_Day-10-Como.html"
-          },
-          {
-            "type": "file",
-            "name": "Sicily Day 11 Como",
-            "file": "_Sicily/Pages/Sicily_Day-11-Como.html"
-          },
-          {
-            "type": "file",
-            "name": "Sicily Day 11b Como",
-            "file": "_Sicily/Pages/Sicily_Day-11b-Como.html"
-          },
-          {
-            "type": "file",
-            "name": "Sicily Day 12 Como",
-            "file": "_Sicily/Pages/Sicily_Day-12-Como.html"
-          },
-          {
-            "type": "file",
-            "name": "Sicily Day 13 Reggio Emilia",
-            "file": "_Sicily/Pages/Sicily_Day-13-Reggio-Emilia.html"
-          },
-          {
-            "type": "file",
-            "name": "Sicily Day 14 Florence",
-            "file": "_Sicily/Pages/Sicily_Day-14-Florence.html"
-          },
-          {
-            "type": "file",
-            "name": "Sicily Day 14b Florence",
-            "file": "_Sicily/Pages/Sicily_Day-14b-Florence.html"
-          },
-          {
-            "type": "file",
-            "name": "Sicily Day 15 Naples",
-            "file": "_Sicily/Pages/Sicily_Day-15-Naples.html"
-          },
-          {
-            "type": "file",
-            "name": "Sicily Day 16 Pompeii",
-            "file": "_Sicily/Pages/Sicily_Day-16-Pompeii.html"
-          },
-          {
-            "type": "file",
-            "name": "Sicily Day 16b Pompeii",
-            "file": "_Sicily/Pages/Sicily_Day-16b-Pompeii.html"
-          },
-          {
-            "type": "file",
-            "name": "Sicily Day 17 Amalfi Coast",
-            "file": "_Sicily/Pages/Sicily_Day-17-Amalfi_Coast.html"
-          },
-          {
-            "type": "file",
-            "name": "Sicily Day 18 Rende Messina",
-            "file": "_Sicily/Pages/Sicily_Day-18-Rende-Messina.html"
-          },
-          {
-            "type": "file",
-            "name": "Sicily Day 19 Marzememi",
-            "file": "_Sicily/Pages/Sicily_Day-19-Marzememi.html"
-          },
-          {
-            "type": "file",
-            "name": "Sicily Day 19b Pachino",
-            "file": "_Sicily/Pages/Sicily_Day-19b-Pachino.html"
-          },
-          {
-            "type": "file",
-            "name": "Sicily Day 19c Pachino",
-            "file": "_Sicily/Pages/Sicily_Day-19c-Pachino.html"
-          },
-          {
-            "type": "file",
-            "name": "Sicily Day 20 Ragusa",
-            "file": "_Sicily/Pages/Sicily_Day-20-Ragusa.html"
-          },
-          {
-            "type": "file",
-            "name": "Sicily Day 21 Siracusa",
-            "file": "_Sicily/Pages/Sicily_Day-21-Siracusa.html"
-          },
-          {
-            "type": "file",
-            "name": "Sicily Day 21b Siracusa",
-            "file": "_Sicily/Pages/Sicily_Day-21b-Siracusa.html"
-          },
-          {
-            "type": "file",
-            "name": "Sicily Day 21c Siracusa",
-            "file": "_Sicily/Pages/Sicily_Day-21c-Siracusa.html"
-          },
-          {
-            "type": "file",
-            "name": "Sicily Day 22 Noto",
-            "file": "_Sicily/Pages/Sicily_Day-22-Noto.html"
-          },
-          {
-            "type": "file",
-            "name": "Sicily Day 22b Noto",
-            "file": "_Sicily/Pages/Sicily_Day-22b-Noto.html"
-          },
-          {
-            "type": "file",
-            "name": "Sicily Day 23 Marzamemi",
-            "file": "_Sicily/Pages/Sicily_Day-23-Marzamemi.html"
-          },
-          {
-            "type": "file",
-            "name": "Sicily Day 24 Sala Consilina",
-            "file": "_Sicily/Pages/Sicily_Day-24-Sala_Consilina.html"
-          },
-          {
-            "type": "file",
-            "name": "Sicily Day 24b Sala Consilina",
-            "file": "_Sicily/Pages/Sicily_Day-24b-Sala_Consilina.html"
-          },
-          {
-            "type": "file",
-            "name": "Sicily Day 25 Albano Laziale",
-            "file": "_Sicily/Pages/Sicily_Day-25-Albano_Laziale.html"
-          },
-          {
-            "type": "file",
-            "name": "Sicily Day 26 Rome",
-            "file": "_Sicily/Pages/Sicily_Day-26-Rome.html"
-          },
-          {
-            "type": "file",
-            "name": "Sicily Day 26b Rome",
-            "file": "_Sicily/Pages/Sicily_Day-26b-Rome.html"
-          },
-          {
-            "type": "file",
-            "name": "Sicily Day 26c Rome",
-            "file": "_Sicily/Pages/Sicily_Day-26c-Rome.html"
-          },
-          {
-            "type": "file",
-            "name": "Sicily Day 27 Castel Gandolfo",
-            "file": "_Sicily/Pages/Sicily_Day-27-Castel_Gandolfo.html"
-          },
-          {
-            "type": "file",
-            "name": "Sicily Day 27b Castel Gandolfo",
-            "file": "_Sicily/Pages/Sicily_Day-27b-Castel_Gandolfo.html"
-          },
-          {
-            "type": "file",
-            "name": "Sicily Day 28 Vagliagli",
-            "file": "_Sicily/Pages/Sicily_Day-28-Vagliagli.html"
-          },
-          {
-            "type": "file",
-            "name": "Sicily Day 29 Siena",
-            "file": "_Sicily/Pages/Sicily_Day-29-Siena.html"
-          },
-          {
-            "type": "file",
-            "name": "Sicily Day 29b Siena",
-            "file": "_Sicily/Pages/Sicily_Day-29b-Siena.html"
-          },
-          {
-            "type": "file",
-            "name": "Sicily Day 29c Siena",
-            "file": "_Sicily/Pages/Sicily_Day-29c-Siena.html"
-          },
-          {
-            "type": "file",
-            "name": "Sicily Day 30 Carrara",
-            "file": "_Sicily/Pages/Sicily_Day-30-Carrara.html"
-          },
-          {
-            "type": "file",
-            "name": "Sicily Day 31 Genoa",
-            "file": "_Sicily/Pages/Sicily_Day-31-Genoa.html"
-          },
-          {
-            "type": "file",
-            "name": "Sicily Day 32 Colombier",
-            "file": "_Sicily/Pages/Sicily_Day-32-Colombier.html"
-          },
-          {
-            "type": "file",
-            "name": "Sicily Day 33 Colombier",
-            "file": "_Sicily/Pages/Sicily_Day-33-Colombier.html"
-          },
-          {
-            "type": "file",
-            "name": "Sicily Day 34 Tournon",
-            "file": "_Sicily/Pages/Sicily_Day-34-Tournon.html"
-          },
-          {
-            "type": "file",
-            "name": "Sicily Day 36 St.Valery",
-            "file": "_Sicily/Pages/Sicily_Day-36-St.Valery.html"
-          },
-          {
-            "type": "file",
-            "name": "Sicily Day 37 Veules",
-            "file": "_Sicily/Pages/Sicily_Day-37-Veules.html"
-          }
-        ]
-      }
-    ]
   },
   {
     "type": "dir",

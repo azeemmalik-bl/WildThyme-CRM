@@ -66,12 +66,21 @@ function transform(html) {
   });
 
   // Strip inline event handlers and presentational body attributes; the
-  // href/src that these handlers duplicated stays untouched.
+  // href/src that these handlers duplicated stays untouched. Capture the
+  // colors first -- these carry real page-specific design intent (the
+  // client hand-picked a background/text/link palette per page) and get
+  // reapplied as an inline style + scoped <style> block by wrapDocument(),
+  // rather than just discarded.
   $('*').each((_, el) => {
     if (!el.attribs) return;
     for (const attr of JS_HANDLER_ATTRS) delete el.attribs[attr];
   });
-  for (const attr of PRESENTATIONAL_BODY_ATTRS) $('body').removeAttr(attr);
+  const colors = {};
+  for (const attr of PRESENTATIONAL_BODY_ATTRS) {
+    const val = $('body').attr(attr);
+    if (val) colors[attr] = val;
+    $('body').removeAttr(attr);
+  }
   $('body').addClass('legacy-content');
 
   // A cell that was purely a spacer in the old 2D table grid (no text, no
@@ -114,11 +123,20 @@ function transform(html) {
     $table.replaceWith($container);
   });
 
-  // Legacy image-map coordinates (usemap) were tuned to old fixed image sizes
-  // and mean nothing once the image scales fluidly -- drop the now-broken
-  // map/usemap pairing but keep the image itself intact.
-  $('img[usemap]').removeAttr('usemap');
-  $('map').remove();
+  // Legacy pages typically accumulate several leftover, unreferenced <map>
+  // blocks from old edits -- those are dead weight and get dropped. But a
+  // <map> that IS still referenced by a matching img[usemap="#name"] is
+  // real, working navigation (e.g. a clickable world map), not cruft --
+  // keep both the map and the usemap attribute intact for those.
+  const referencedMapNames = new Set();
+  $('img[usemap]').each((_, el) => {
+    const name = $(el).attr('usemap').replace(/^#/, '');
+    referencedMapNames.add(name);
+  });
+  $('map').each((_, el) => {
+    const name = $(el).attr('name');
+    if (!referencedMapNames.has(name)) $(el).remove();
+  });
 
   $('img').each((_, el) => {
     $(el).addClass('img-fluid');
@@ -126,10 +144,26 @@ function transform(html) {
 
   const bodyHtml = $('body').html() || '';
   const title = $('title').text().trim() || 'Untitled';
-  return { bodyHtml, title };
+  return { bodyHtml, title, colors };
 }
 
-function wrapDocument(title, bodyHtml) {
+// Turns the captured bgcolor/text/link/alink/vlink/background attributes
+// back into an inline style + scoped <style> block, so each page keeps the
+// designer-chosen palette it originally had instead of falling back to one
+// generic look site-wide.
+function wrapDocument(title, bodyHtml, colors = {}) {
+  const bodyStyleParts = [];
+  if (colors.bgcolor) bodyStyleParts.push(`background-color: ${colors.bgcolor}`);
+  if (colors.background) bodyStyleParts.push(`background-image: url('${colors.background}')`);
+  if (colors.text) bodyStyleParts.push(`color: ${colors.text}`);
+  const bodyStyleAttr = bodyStyleParts.length ? ` style="${bodyStyleParts.join('; ')}"` : '';
+
+  const linkRules = [];
+  if (colors.link) linkRules.push(`a { color: ${colors.link}; }`);
+  if (colors.vlink) linkRules.push(`a:visited { color: ${colors.vlink}; }`);
+  if (colors.alink) linkRules.push(`a:active { color: ${colors.alink}; }`);
+  const linkStyleBlock = linkRules.length ? `<style>\n${linkRules.join('\n')}\n</style>\n` : '';
+
   return `<!doctype html>
 <html lang="en">
 <head>
@@ -138,8 +172,8 @@ function wrapDocument(title, bodyHtml) {
 <title>${title}</title>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 <link rel="stylesheet" href="/assets/content.css">
-</head>
-<body>
+${linkStyleBlock}</head>
+<body class="legacy-content"${bodyStyleAttr}>
 ${bodyHtml}
 </body>
 </html>
@@ -188,7 +222,7 @@ function main() {
 
     if (apply) {
       const outPath = file.replace(HTML_RE, '.modern.html');
-      fs.writeFileSync(outPath, wrapDocument(result.title, result.bodyHtml), 'utf8');
+      fs.writeFileSync(outPath, wrapDocument(result.title, result.bodyHtml, result.colors), 'utf8');
     }
     converted++;
   }
@@ -201,4 +235,6 @@ function main() {
   }
 }
 
-main();
+if (require.main === module) main();
+
+module.exports = { transform, wrapDocument };

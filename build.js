@@ -69,7 +69,9 @@ function titleCaseFromFilename(name) {
 function walk(dir, relDir, breadcrumb, searchIndex) {
   const entries = fs.readdirSync(dir, { withFileTypes: true }).sort((a, b) => {
     if (a.isDirectory() !== b.isDirectory()) return a.isDirectory() ? -1 : 1;
-    return a.name.localeCompare(b.name);
+    // { numeric: true } makes embedded numbers compare by value, not by
+    // character, so "Day-2" sorts before "Day-10" instead of after it.
+    return a.name.localeCompare(b.name, undefined, { numeric: true });
   });
 
   const children = [];

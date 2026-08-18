@@ -40,6 +40,30 @@ function normalizeText(str) {
 // Legacy GoLive/Dreamweaver cruft that carries no content of its own.
 const JS_HANDLER_ATTRS = ['onload', 'onclick', 'onmouseover', 'onmouseout', 'onmousedown', 'onmouseup'];
 const PRESENTATIONAL_BODY_ATTRS = ['bgcolor', 'link', 'alink', 'vlink', 'text', 'background'];
+const PRESENTATIONAL_COLOR_ATTRS = new Set(['bgcolor', 'link', 'alink', 'vlink', 'text']); // excludes 'background' (an image URL, not a color)
+
+// Legacy HTML tolerates a bare hex triplet/sextet without the leading '#'
+// (e.g. color="ac3c30") -- valid there, but invalid CSS, which silently
+// drops the whole declaration rather than erroring. Add the '#' back so
+// the color actually renders instead of quietly falling back to inherited.
+function normalizeColor(value) {
+  if (!value) return value;
+  const trimmed = value.trim();
+  if (/^[0-9a-fA-F]{3}$/.test(trimmed) || /^[0-9a-fA-F]{6}$/.test(trimmed)) return `#${trimmed}`;
+  return trimmed;
+}
+
+// Legacy <font size> uses an absolute 1-7 scale (or +N/-N relative to a
+// base of 3) with no CSS equivalent -- map it to the same em values
+// browsers historically rendered each size as, so a page that used size="5"
+// or "6" for emphasis doesn't collapse to the same size as everything else.
+const FONT_SIZE_EM = { 1: '0.625em', 2: '0.8em', 3: '1em', 4: '1.125em', 5: '1.5em', 6: '2em', 7: '3em' };
+function resolveFontSize(sizeAttr) {
+  const trimmed = (sizeAttr || '').trim();
+  const n = /^[+-]\d+$/.test(trimmed) ? 3 + parseInt(trimmed, 10) : parseInt(trimmed, 10);
+  if (!Number.isFinite(n)) return null;
+  return FONT_SIZE_EM[Math.max(1, Math.min(7, n))];
+}
 
 function transform(html) {
   const $ = cheerio.load(html, { decodeEntities: false });
@@ -65,9 +89,11 @@ function transform(html) {
     const $el = $(el);
     const color = $el.attr('color');
     const face = $el.attr('face');
+    const size = resolveFontSize($el.attr('size'));
     const styleParts = [];
-    if (color) styleParts.push(`color: ${color}`);
+    if (color) styleParts.push(`color: ${normalizeColor(color)}`);
     if (face) styleParts.push(`font-family: ${face}`);
+    if (size) styleParts.push(`font-size: ${size}`);
     if (styleParts.length === 0) {
       $el.replaceWith($el.contents());
       return;
@@ -96,7 +122,7 @@ function transform(html) {
   const colors = {};
   for (const attr of PRESENTATIONAL_BODY_ATTRS) {
     const val = $('body').attr(attr);
-    if (val) colors[attr] = val;
+    if (val) colors[attr] = PRESENTATIONAL_COLOR_ATTRS.has(attr) ? normalizeColor(val) : val;
     $('body').removeAttr(attr);
   }
   $('body').addClass('legacy-content');
@@ -127,6 +153,40 @@ function transform(html) {
     return Number.isFinite(w) && Number.isFinite(h) && w <= 150 && h <= 150;
   }
 
+  // Turns a set of relative weights (pixel widths, colspans, or badge/
+  // non-badge ratios) into Bootstrap column spans that always sum to
+  // exactly 12. Rounding each cell's share independently (naive
+  // Math.round) can push the row's total to 13+, which silently wraps
+  // whichever cell doesn't fit onto its own line -- e.g. a 5-cell row of
+  // 2+3+3+3+2 = 13 wraps the last cell down, making a right-hand badge
+  // look like it landed on the left instead. This uses the largest-
+  // remainder method to distribute the 12 columns exactly.
+  function distributeSpans(weights) {
+    const total = weights.reduce((a, b) => a + b, 0) || weights.length;
+    const raw = weights.map((w) => (w / total) * 12);
+    const spans = raw.map((r) => Math.max(1, Math.floor(r)));
+    let sum = spans.reduce((a, b) => a + b, 0);
+    const remainders = raw.map((r, i) => ({ i, frac: r - Math.floor(r) }));
+
+    if (sum < 12) {
+      remainders.sort((a, b) => b.frac - a.frac);
+      for (let k = 0; sum < 12; k++) {
+        spans[remainders[k % remainders.length].i]++;
+        sum++;
+      }
+    } else if (sum > 12) {
+      remainders.sort((a, b) => a.frac - b.frac);
+      for (let k = 0; sum > 12 && k < spans.length * 4; k++) {
+        const idx = remainders[k % remainders.length].i;
+        if (spans[idx] > 1) {
+          spans[idx]--;
+          sum--;
+        }
+      }
+    }
+    return spans;
+  }
+
   // Convert layout tables into Bootstrap rows/cols. This is a structural
   // transform only -- cell contents move verbatim into the new column divs.
   $('table').each((_, tableEl) => {
@@ -154,37 +214,41 @@ function transform(html) {
       if ($allCells.length === 0) return;
       const $cells = $allCells.filter((_, c) => !isCellEmpty($(c)));
       if ($cells.length === 0) return;
-      const $bsRow = $('<div class="row gy-2"></div>');
+      // HTML <td> defaults to vertical-align: middle, so a short caption
+      // cell next to a much taller image cell was always vertically
+      // centered against it "for free" in the original table. Bootstrap's
+      // flex row doesn't replicate that on its own (content top-aligns by
+      // default) -- align-items-center restores that original behavior
+      // rather than guessing at a new layout.
+      const $bsRow = $('<div class="row gy-2 align-items-center"></div>');
 
       // Prefer pixel `width` (this row's own, or borrowed from an exemplar
-      // sibling) over colspan when computing Bootstrap column proportions.
+      // sibling) over colspan or the badge heuristic below when computing
+      // Bootstrap column proportions -- it's real design intent, whereas
       // colspan-only math treats a narrow "-" separator column the same as
-      // the wide name/role columns beside it -- splitting the row into equal
-      // thirds and wasting a third of the width on a single dash, which is
-      // exactly what made these lists look sparse and misaligned.
+      // the wide name/role columns beside it, and the badge heuristic is
+      // only a fallback guess for when no width data exists at all.
       const ownWidths = $cells.toArray().map((c) => parseInt($(c).attr('width'), 10));
       const ownHaveWidth = ownWidths.every((w) => Number.isFinite(w) && w > 0);
       const widths = ownHaveWidth ? ownWidths : exemplarWidthsByCellCount.get($cells.length);
-      const totalWidth = widths ? widths.reduce((a, b) => a + b, 0) : 0;
 
       const badgeFlags = $cells.toArray().map((c) => isBadgeCell($(c)));
       const badgeCount = badgeFlags.filter(Boolean).length;
       const hasMixedBadge = badgeCount > 0 && badgeCount < $cells.length;
-      const nonBadgeSpan = hasMixedBadge ? Math.max(1, Math.round((12 - badgeCount * 2) / ($cells.length - badgeCount))) : 0;
+
+      let weights;
+      if (widths) {
+        weights = widths;
+      } else if (hasMixedBadge) {
+        weights = badgeFlags.map((isBadge) => (isBadge ? 1 : 5));
+      } else {
+        weights = $cells.toArray().map((c) => parseInt($(c).attr('colspan'), 10) || 1);
+      }
+      const spans = distributeSpans(weights);
 
       $cells.each((i, cellEl) => {
         const $cell = $(cellEl);
-        let span;
-        if (hasMixedBadge) {
-          span = badgeFlags[i] ? 2 : nonBadgeSpan;
-        } else if (widths) {
-          span = Math.max(1, Math.round((widths[i] / totalWidth) * 12));
-        } else {
-          const colspan = parseInt($cell.attr('colspan'), 10) || 1;
-          const totalUnits = $cells.toArray().reduce((sum, c) => sum + (parseInt($(c).attr('colspan'), 10) || 1), 0);
-          span = Math.max(1, Math.round((colspan / totalUnits) * 12));
-        }
-        const $col = $(`<div class="col-12 col-md-${span}"></div>`);
+        const $col = $(`<div class="col-12 col-md-${spans[i]}"></div>`);
         $col.append($cell.contents());
         $bsRow.append($col);
       });

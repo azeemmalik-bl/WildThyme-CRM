@@ -22,6 +22,24 @@
 </header>
 
 <main id="app" hidden>
+  <section id="site-settings-pane">
+    <h2>Site Settings</h2>
+    <label for="font-select">Sitewide default font (body text)</label>
+    <select id="font-select">
+      <option value="'Georgia', 'Segoe UI', system-ui, serif">Georgia</option>
+      <option value="'Verdana', Arial, Helvetica, sans-serif">Verdana</option>
+      <option value="'Times New Roman', Times, serif">Times New Roman</option>
+      <option value="Arial, Helvetica, sans-serif">Arial</option>
+      <option value="__custom__">Custom…</option>
+    </select>
+    <input id="font-custom" type="text" placeholder="e.g. 'American Typewriter', Cambria, serif" hidden>
+    <p class="field-hint">Only applies to pages that don't already set their own font.</p>
+    <div class="save-row">
+      <button id="font-save-btn" type="button">Save font</button>
+      <span id="font-save-status"></span>
+    </div>
+  </section>
+
   <section id="picker-pane">
     <input id="page-search" type="search" placeholder="Search pages by title…" autocomplete="off">
     <ul id="page-results"></ul>

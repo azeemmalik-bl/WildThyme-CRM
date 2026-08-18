@@ -26,6 +26,10 @@
     images: document.getElementById('images'),
     saveBtn: document.getElementById('save-btn'),
     saveStatus: document.getElementById('save-status'),
+    fontSelect: document.getElementById('font-select'),
+    fontCustom: document.getElementById('font-custom'),
+    fontSaveBtn: document.getElementById('font-save-btn'),
+    fontSaveStatus: document.getElementById('font-save-status'),
   };
 
   // ---- path helpers (mirrors how content pages reference their own images) ----
@@ -75,6 +79,7 @@
     els.app.hidden = false;
     els.loggedOutMsg.hidden = true;
     if (!state.searchIndex.length) loadPickerData();
+    loadSiteSettings();
   }
 
   function showLoggedOut() {
@@ -398,6 +403,70 @@
         els.saveBtn.disabled = false;
       });
   });
+
+  // ---- site settings (sitewide default font) ----
+
+  function loadSiteSettings() {
+    authedFetch('/.netlify/functions/admin-get-site-settings')
+      .then(handleJsonResponse)
+      .then(function (data) {
+        applyFontToControls(data.fontFamily);
+      })
+      .catch(function (err) {
+        setFontSaveStatus('');
+        setStatus('Failed to load site settings: ' + err.message);
+      });
+  }
+
+  function applyFontToControls(fontFamily) {
+    var matched = false;
+    Array.prototype.forEach.call(els.fontSelect.options, function (opt) {
+      if (opt.value === fontFamily) matched = true;
+    });
+    if (matched) {
+      els.fontSelect.value = fontFamily;
+      els.fontCustom.hidden = true;
+    } else {
+      els.fontSelect.value = '__custom__';
+      els.fontCustom.hidden = false;
+      els.fontCustom.value = fontFamily;
+    }
+  }
+
+  els.fontSelect.addEventListener('change', function () {
+    els.fontCustom.hidden = els.fontSelect.value !== '__custom__';
+    if (!els.fontCustom.hidden) els.fontCustom.focus();
+  });
+
+  els.fontSaveBtn.addEventListener('click', function () {
+    var fontFamily = els.fontSelect.value === '__custom__' ? els.fontCustom.value.trim() : els.fontSelect.value;
+    if (!fontFamily) {
+      setFontSaveStatus('Enter a font family first.');
+      return;
+    }
+    els.fontSaveBtn.disabled = true;
+    setFontSaveStatus('Saving…');
+    authedFetch('/.netlify/functions/admin-save-site-settings', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ fontFamily: fontFamily }),
+    })
+      .then(handleJsonResponse)
+      .then(function () {
+        setFontSaveStatus('Saved — publishing now, usually live within about a minute.');
+      })
+      .catch(function (err) {
+        setFontSaveStatus('');
+        setStatus('Save failed: ' + err.message);
+      })
+      .then(function () {
+        els.fontSaveBtn.disabled = false;
+      });
+  });
+
+  function setFontSaveStatus(msg) {
+    els.fontSaveStatus.textContent = msg;
+  }
 
   function setStatus(msg) {
     els.status.textContent = msg;

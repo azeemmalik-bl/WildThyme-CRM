@@ -93,6 +93,22 @@ function transform(html) {
     return text.length === 0;
   }
 
+  // A cell holding nothing but one small decorative image (e.g. a year
+  // stamp) next to a cell with a much larger photo/poster is a common
+  // pattern. The original tables usually gave both cells an equal colspan
+  // regardless of the badge's tiny actual size, which -- once responsive --
+  // leaves the badge floating in a mostly-empty half-width column instead
+  // of sitting snugly beside the image. Detect it and size the badge's
+  // column to just fit it, giving the rest of the row to the larger image.
+  function isBadgeCell($cell) {
+    const $imgs = $cell.find('img');
+    if ($imgs.length !== 1) return false;
+    if (normalizeText($cell.text()).length > 0) return false;
+    const w = parseInt($imgs.first().attr('width'), 10);
+    const h = parseInt($imgs.first().attr('height'), 10);
+    return Number.isFinite(w) && Number.isFinite(h) && w <= 150 && h <= 150;
+  }
+
   // Convert layout tables into Bootstrap rows/cols. This is a structural
   // transform only -- cell contents move verbatim into the new column divs.
   $('table').each((_, tableEl) => {
@@ -133,10 +149,17 @@ function transform(html) {
       const widths = ownHaveWidth ? ownWidths : exemplarWidthsByCellCount.get($cells.length);
       const totalWidth = widths ? widths.reduce((a, b) => a + b, 0) : 0;
 
+      const badgeFlags = $cells.toArray().map((c) => isBadgeCell($(c)));
+      const badgeCount = badgeFlags.filter(Boolean).length;
+      const hasMixedBadge = badgeCount > 0 && badgeCount < $cells.length;
+      const nonBadgeSpan = hasMixedBadge ? Math.max(1, Math.round((12 - badgeCount * 2) / ($cells.length - badgeCount))) : 0;
+
       $cells.each((i, cellEl) => {
         const $cell = $(cellEl);
         let span;
-        if (widths) {
+        if (hasMixedBadge) {
+          span = badgeFlags[i] ? 2 : nonBadgeSpan;
+        } else if (widths) {
           span = Math.max(1, Math.round((widths[i] / totalWidth) * 12));
         } else {
           const colspan = parseInt($cell.attr('colspan'), 10) || 1;

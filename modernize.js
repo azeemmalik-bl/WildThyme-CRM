@@ -127,6 +127,25 @@ function transform(html) {
   }
   $('body').addClass('legacy-content');
 
+  // Legacy <img border="N"> inside a link rendered with the link's own
+  // color as its border in old browsers -- a "this thumbnail is
+  // clickable" visual cue -- but modern browsers don't reliably reproduce
+  // that inherited-color behavior, silently rendering a default/invisible
+  // border instead. Make the intended color explicit rather than leaving
+  // it to inheritance.
+  const borderColor = colors.link || colors.text;
+  if (borderColor) {
+    $('img[border]').each((_, el) => {
+      const $img = $(el);
+      const width = parseInt($img.attr('border'), 10);
+      if (!Number.isFinite(width) || width <= 0) return;
+      $img.removeAttr('border');
+      const existing = $img.attr('style');
+      const styleStr = `border: ${width}px solid ${borderColor}`;
+      $img.attr('style', existing ? `${existing}; ${styleStr}` : styleStr);
+    });
+  }
+
   // A cell that was purely a spacer in the old 2D table grid (no text, no
   // image, no link) has nothing worth keeping once we stack vertically --
   // it only existed to hold column alignment. Dropping it entirely avoids
@@ -297,6 +316,18 @@ function wrapDocument(title, bodyHtml, colors = {}) {
   if (colors.link) linkRules.push(`a { color: ${colors.link}; }`);
   if (colors.vlink) linkRules.push(`a:visited { color: ${colors.vlink}; }`);
   if (colors.alink) linkRules.push(`a:active { color: ${colors.alink}; }`);
+  // content.css hardcodes headings to a dark color for its own light-theme
+  // default -- on any page restoring a dark background, that fixed dark
+  // color renders dark-on-dark and headings just disappear. Override with
+  // the same selector content.css uses (same specificity, later in the
+  // cascade = wins) so headings stay legible against this page's own
+  // restored background.
+  if (colors.text) {
+    linkRules.push(
+      'body.legacy-content h1, body.legacy-content h2, body.legacy-content h3, ' +
+        `body.legacy-content h4, body.legacy-content h5, body.legacy-content h6 { color: ${colors.text}; }`
+    );
+  }
   const linkStyleBlock = linkRules.length ? `<style>\n${linkRules.join('\n')}\n</style>\n` : '';
 
   return `<!doctype html>
@@ -372,4 +403,4 @@ function main() {
 
 if (require.main === module) main();
 
-module.exports = { transform, wrapDocument };
+module.exports = { transform, wrapDocument, normalizeColor };

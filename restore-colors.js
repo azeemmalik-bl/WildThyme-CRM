@@ -22,11 +22,12 @@ const fs = require('fs');
 const path = require('path');
 const { execSync } = require('child_process');
 const cheerio = require('cheerio');
-const { transform, wrapDocument } = require('./modernize.js');
+const { transform, wrapDocument, normalizeColor } = require('./modernize.js');
 
 const ORIGIN_COMMIT = '9a172bce';
 const HAND_REBUILT_RE = /^content\/(_Twin_Peaks|_Woody_Allen)\//;
 const PRESENTATIONAL_BODY_ATTRS = ['bgcolor', 'link', 'alink', 'vlink', 'text', 'background'];
+const PRESENTATIONAL_COLOR_ATTRS = new Set(['bgcolor', 'link', 'alink', 'vlink', 'text']);
 
 function gitShow(relPath) {
   const out = execSync(`git show ${ORIGIN_COMMIT}:"${relPath}"`, { maxBuffer: 1024 * 1024 * 20 });
@@ -38,30 +39,51 @@ function captureColors(html) {
   const colors = {};
   for (const attr of PRESENTATIONAL_BODY_ATTRS) {
     const v = $('body').attr(attr);
-    if (v) colors[attr] = v;
+    if (v) colors[attr] = PRESENTATIONAL_COLOR_ATTRS.has(attr) ? normalizeColor(v) : v;
   }
   return colors;
 }
 
-// Returns null if the page was already patched by a prior run (has a style
-// attribute on body already) -- keeps this script safe to re-run without
-// piling up duplicate <style> blocks in <head> each time.
+const HEADING_SELECTOR =
+  'body.legacy-content h1, body.legacy-content h2, body.legacy-content h3, ' +
+  'body.legacy-content h4, body.legacy-content h5, body.legacy-content h6';
+
+// Returns null if the page has nothing left to do (already has both the
+// body color patch AND the heading-color fix from a prior run) -- keeps
+// this script safe to re-run without piling up duplicate <style> blocks.
+// Checked separately (not just "does body have a style attribute") so a
+// follow-up run can add the heading fix alone to pages a prior run already
+// color-patched, without re-adding their link-color rules a second time.
 function patchColorsOnly(liveHtml, colors) {
   const $ = cheerio.load(liveHtml, { decodeEntities: false });
-  if ($('body').attr('style')) return null;
-  $('body').addClass('legacy-content');
+  const alreadyColorPatched = !!$('body').attr('style');
+  const hasHeadingFix = $('head style').toArray().some((el) => $(el).html().includes('body.legacy-content h6'));
 
-  const styleParts = [];
-  if (colors.bgcolor) styleParts.push(`background-color: ${colors.bgcolor}`);
-  if (colors.background) styleParts.push(`background-image: url('${colors.background}')`);
-  if (colors.text) styleParts.push(`color: ${colors.text}`);
-  if (styleParts.length) $('body').attr('style', styleParts.join('; '));
+  if (alreadyColorPatched && hasHeadingFix) return null;
 
-  const linkRules = [];
-  if (colors.link) linkRules.push(`a { color: ${colors.link}; }`);
-  if (colors.vlink) linkRules.push(`a:visited { color: ${colors.vlink}; }`);
-  if (colors.alink) linkRules.push(`a:active { color: ${colors.alink}; }`);
-  if (linkRules.length) $('head').append(`<style>\n${linkRules.join('\n')}\n</style>`);
+  if (!alreadyColorPatched) {
+    $('body').addClass('legacy-content');
+
+    const styleParts = [];
+    if (colors.bgcolor) styleParts.push(`background-color: ${colors.bgcolor}`);
+    if (colors.background) styleParts.push(`background-image: url('${colors.background}')`);
+    if (colors.text) styleParts.push(`color: ${colors.text}`);
+    if (styleParts.length) $('body').attr('style', styleParts.join('; '));
+
+    const linkRules = [];
+    if (colors.link) linkRules.push(`a { color: ${colors.link}; }`);
+    if (colors.vlink) linkRules.push(`a:visited { color: ${colors.vlink}; }`);
+    if (colors.alink) linkRules.push(`a:active { color: ${colors.alink}; }`);
+    if (linkRules.length) $('head').append(`<style>\n${linkRules.join('\n')}\n</style>`);
+  }
+
+  // content.css hardcodes headings to a dark color for its own light-theme
+  // default -- on a page with a restored dark background, that renders
+  // dark-on-dark and headings just disappear. Override with the same
+  // selector content.css uses (same specificity, later in the cascade wins).
+  if (!hasHeadingFix && colors.text) {
+    $('head').append(`<style>\n${HEADING_SELECTOR} { color: ${colors.text}; }\n</style>`);
+  }
 
   return $.html();
 }
@@ -103,6 +125,17 @@ function main() {
       errors.push({ rawPath, reason: `git show failed: ${err.message}` });
       continue;
     }
+    // The git-history snapshot predates the Poirot folder rename (see the
+    // "Remove accidental Chips upload; rename Poirot folders..." commit),
+    // so every re-run of this script was silently reintroducing the old,
+    // now-broken "_ Poirot_*" (space) paths into freshly regenerated pages.
+    // Also fixes a genuine pre-existing typo in the original site itself
+    // ("../ _Poirot_Episodes" with a stray space) while we're in here.
+    originalHtml = originalHtml
+      .replace(/_ Poirot_Casts/g, '_Poirot_Casts')
+      .replace(/_ Poirot_Editions/g, '_Poirot_Editions')
+      .replace(/_ Poirot_Locations/g, '_Poirot_Locations')
+      .replace(/\/\s+_Poirot_Episodes/g, '/_Poirot_Episodes');
 
     const isHandRebuilt = HAND_REBUILT_RE.test(livePath);
 

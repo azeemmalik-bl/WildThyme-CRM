@@ -156,6 +156,64 @@ function transform(html) {
     return text.length === 0;
   }
 
+  // Most empty cells are just incidental "<td>&nbsp;</td>" padding with no
+  // colspan of their own -- dropping those entirely (as isCellEmpty above
+  // does) is correct, they carry no real layout intent. But an empty cell
+  // that DOES carry an explicit colspan>1 (e.g. the wide gap deliberately
+  // separating a pair of nav arrows at a row's far edges) is real design
+  // intent and needs to keep reserving that space, or its siblings silently
+  // grow to fill the row and lose their real proportions. A bare `width` on
+  // an empty cell, without a colspan, is deliberately NOT treated as
+  // meaningful here -- those are typically tiny cosmetic pixel dividers
+  // between an image and its caption, and including them inflates that
+  // row's kept-cell count enough to spuriously collide with an unrelated
+  // row shape sharing the same count in exemplarWidthsByCellCount below
+  // (which matches purely by count, not by row shape).
+  function isMeaningfulSpacer($cell) {
+    if (!isCellEmpty($cell)) return false;
+    const colspan = parseInt($cell.attr('colspan'), 10);
+    return Number.isFinite(colspan) && colspan > 1;
+  }
+
+  // The recurring page-nav row (a left arrow, a title spanning several
+  // columns, a right arrow) almost never has its own per-cell `width` on
+  // every cell (typically only the two arrow cells do, not the title), so
+  // it falls back to exemplarWidthsByCellCount -- a table-wide map keyed
+  // purely by cell COUNT, blind to what the row actually is. Any other
+  // unrelated 3-cell row elsewhere in the same table that happens to carry
+  // real widths on all 3 of its cells (e.g. a "label - value" credits row)
+  // gets borrowed here, often squashing the title down to a sliver. A nav
+  // row is reliably identifiable by its arrow images, so give it its own
+  // reliable signal -- colspan, which is what the original page itself used
+  // to size the title -- instead of gambling on an unrelated exemplar.
+  // Different sections name their nav-arrow images differently --
+  // Arrow-left.jpg, Arrow-L.png, Arrow_Right.jpg, Arrow-Back.jpg all show
+  // up across the site for the exact same "previous/next page" role.
+  // Deliberately narrower than a bare /Arrow/i match: filenames like
+  // Arrow-Roxy.jpg, Arrow-link.jpg, or Arrow_poster.jpg aren't page
+  // navigation at all, and getting misclassified as a nav row would wrongly
+  // force whatever row they're in through the symmetric-outer-columns path.
+  function isArrowNavRow($cells) {
+    return $cells.toArray().some((c) =>
+      $(c)
+        .find('img')
+        .toArray()
+        .some((img) => /Arrow[-_](L(eft)?|R(ight)?|Back|Forward)\b/i.test($(img).attr('src') || ''))
+    );
+  }
+
+  // A recurring "label - value" credits row (Directed by / - / Gerald
+  // Thomas) is reliably identifiable by its literal "-" middle cell. Its
+  // label/value pixel widths (e.g. 387 vs 412) are almost always just
+  // copy-paste noise from the original authoring, not real design intent,
+  // but that noise is enough to put the dash a few percent off page-center
+  // -- so even though the row's own container is genuinely centered, the
+  // visible label-dash-value text reads as unbalanced under a centered
+  // heading above it. Force the label and value to mirror each other.
+  function isLabelDashRow($cells) {
+    return $cells.length === 3 && normalizeText($cells.eq(1).text()) === '-';
+  }
+
   // A cell holding nothing but one small decorative image (e.g. a year
   // stamp) next to a cell with a much larger photo/poster is a common
   // pattern. The original tables usually gave both cells an equal colspan
@@ -211,7 +269,15 @@ function transform(html) {
   $('table').each((_, tableEl) => {
     const $table = $(tableEl);
     const $rows = $table.children('tr').length ? $table.children('tr') : $table.find('> tbody > tr');
-    const $container = $('<div class="container-fluid legacy-table px-0"></div>');
+    // A leftover ancestor `<div align="center">` -- the legacy trick for
+    // centering a fixed-width <table> on the page -- has nothing left to
+    // center once the table becomes a fluid Bootstrap container, but its
+    // text-align:center still inherits down into every cell's paragraphs
+    // that don't set their own alignment, silently centering body text that
+    // was left-aligned in the original render. Reset it explicitly here;
+    // any cell/paragraph with its own align="center" is unaffected since an
+    // element's own explicit alignment always wins over an inherited value.
+    const $container = $('<div class="container-fluid legacy-table px-0" style="text-align: left"></div>');
 
     // Legacy tables often repeat a "label - value" row shape many times
     // (cast lists, crew lists, itineraries...), but only the first
@@ -221,25 +287,252 @@ function transform(html) {
     // share the same shape but lack their own width data.
     const exemplarWidthsByCellCount = new Map();
     $rows.each((_, rowEl) => {
-      const $cells = $(rowEl).children('td, th').filter((_, c) => !isCellEmpty($(c)));
+      const $cells = $(rowEl)
+        .children('td, th')
+        .filter((_, c) => !isCellEmpty($(c)) || isMeaningfulSpacer($(c)));
       if ($cells.length === 0 || exemplarWidthsByCellCount.has($cells.length)) return;
       const widths = $cells.toArray().map((c) => parseInt($(c).attr('width'), 10));
       if (widths.every((w) => Number.isFinite(w) && w > 0)) exemplarWidthsByCellCount.set($cells.length, widths);
     });
 
+    // A single-surviving-cell heading row (e.g. "PLOT", "MUSIC:", "PLUS")
+    // could originally have been sitting in the label column's own raw
+    // position (just a right-aligned label, no dash/value that row), the
+    // dash column's position (a short centered word occupying that narrow
+    // slot), or a genuinely spanning colspan>1 heading -- and each needs
+    // different treatment (right-aligned in column 1, centered in column
+    // 2, or centered spanning all 3) to land where it actually sat in the
+    // original. Filtering already collapsed the row down to one cell by
+    // the time it's classified, losing that positional context, so record
+    // which RAW child-index of a <tr> the label/dash/value cells occupy in
+    // a normal 3-cell row of this table up front, to compare against later.
+    let labelRawIndex = null;
+    let dashRawIndex = null;
+    $rows.each((_, rowEl) => {
+      if (labelRawIndex !== null) return;
+      const $raw = $(rowEl).children('td, th');
+      const $kept = $raw.filter((_, c) => !isCellEmpty($(c)) || isMeaningfulSpacer($(c)));
+      if (!isLabelDashRow($kept)) return;
+      const rawArr = $raw.toArray();
+      labelRawIndex = rawArr.indexOf($kept.get(0));
+      dashRawIndex = rawArr.indexOf($kept.get(1));
+    });
+
+    // Consecutive "label - value" credits rows (Directed by / Produced by
+    // / ... , or a whole cast list) are buffered here and flushed together
+    // as one CSS Grid block, rather than each becoming its own Bootstrap
+    // row. Percentage-based Bootstrap columns must pick a width big enough
+    // for the widest content anywhere in that column across the WHOLE
+    // table (via exemplarWidthsByCellCount) or otherwise guess -- for a
+    // one-character "-" that leaves a wide, unnecessary gap on both sides
+    // of the dash. A grid's columns instead auto-size to the widest cell
+    // actually in that column, so the dash column shrinks to just fit "-"
+    // while the label/value columns still line up exactly down every row.
+    // A section heading (e.g. "Cast") interrupting a run of label-dash rows
+    // -- one kept cell, no image -- is buffered as a full-span pass-through
+    // item instead of flushing, so e.g. the credits block above "Cast" and
+    // the cast list below it share ONE grid and stay aligned with each
+    // other, matching how they shared a single table (and so a single set
+    // of column widths) in the original. Flushing on every heading would
+    // otherwise restart the auto-sizing per section, letting unrelated
+    // sections (a short "Release date" label vs a long character name)
+    // drift out of alignment with each other for no real reason.
+    let labelDashBuffer = [];
+    // A heading row seen while inside a label-dash run is held here
+    // UNCOMMITTED rather than merged in immediately -- we don't yet know if
+    // it's a real section break within the same credits/cast block (Cast,
+    // sandwiched between two runs of label-dash rows) or the start of
+    // unrelated content after the block ends (a Plot paragraph, a new
+    // image row). Only get committed into the grid once a further
+    // label-dash row actually confirms the run continues; otherwise, on
+    // any other row, they're flushed back out as ordinary standalone rows,
+    // so they never get to accidentally absorb the rest of the page's
+    // unrelated content into one runaway-wide grid.
+    let pendingHeadings = [];
+    const unwrapAlignDiv = ($cell) => {
+      const $wrap = $cell.children('div[align]').first();
+      return $wrap.length ? $wrap.html() : $cell.html();
+    };
+    // A short single-cell row ("PLOT", "MUSIC:", "PLUS") is a real section
+    // marker worth trying to keep aligned with its neighboring label-dash
+    // rows. A long one is ordinary prose (a Plot synopsis paragraph) that
+    // also happens to reduce to one kept cell -- treating that as a
+    // heading candidate would force-center normal paragraph text if no
+    // label-dash row happens to follow it. The length cutoff is what tells
+    // the two apart; genuine headings in this pattern are always a few
+    // words.
+    function isSimpleHeadingRow($cells) {
+      return (
+        $cells.length === 1 &&
+        $cells.first().find('img').length === 0 &&
+        normalizeText($cells.first().text()).length <= 60
+      );
+    }
+    function flushLabelDashBuffer() {
+      if (labelDashBuffer.length === 0) return;
+      const rowsHtml = labelDashBuffer
+        .map((item) => {
+          if (item.heading === undefined) {
+            return (
+              `<div style="text-align: right">${item.label}</div>` +
+              `<div style="text-align: center">${item.dash}</div>` +
+              `<div style="text-align: left">${item.value}</div>`
+            );
+          }
+          // A heading's ORIGINAL slot decides how it should sit here: one
+          // spanning multiple original columns (colspan>1, e.g. "Cast") is
+          // a real centered section break -- span the whole grid. One that
+          // occupied the label column's own raw position (e.g. "MUSIC:",
+          // "FILM REFERENCES:") stays right-aligned there, in line with
+          // every other label. One that occupied the dash column's own
+          // position (e.g. "PLUS", "PLOT" -- a short word centered in that
+          // narrow slot) stays centered there instead of spanning or
+          // jumping to the label side. Label/dash-slot items still emit
+          // ALL 3 grid cells (2 of them empty) rather than just their own
+          // div -- a lone div with no explicit grid-column just consumes
+          // whatever cell auto-placement hands it next, which then shoves
+          // every real label/dash/value in the following rows sideways by
+          // one column for the rest of the grid.
+          if (item.slot === 'label') return `<div style="text-align: right">${item.heading}</div><div></div><div></div>`;
+          if (item.slot === 'dash') return `<div></div><div style="text-align: center">${item.heading}</div><div></div>`;
+          return `<div style="grid-column: 1 / -1; text-align: center;">${item.heading}</div>`;
+        })
+        .join('');
+      // Left (label) and right (value) columns auto-size independently to
+      // their own widest content -- fine within one row, but across an
+      // entire credits+cast block the labels ("Directed by") are typically
+      // much shorter than the values (character names), so the two
+      // columns end up very different widths. That pushes the dash off to
+      // one side of the block's overall center, so a heading centered
+      // across the whole block (like "Cast") no longer lines up with it.
+      // Give both outer columns the same minimum width (the longer of the
+      // two sides' own longest entry, approximated in `ch` units) so they
+      // grow roughly in step and the dash stays near true center.
+      // Capped at 40 -- a genuine label/character-name pair is always
+      // short, so this is just balancing "Directed by" against "Gerald
+      // Thomas". A value that's actually a full sentence (a film
+      // reference note, a synopsis-style credit) would otherwise set this
+      // "minimum" width to that sentence's entire length, forcing BOTH
+      // outer columns to never shrink below e.g. 198ch and blowing the
+      // whole grid out past the page -- long values are meant to wrap
+      // within their own column, not dictate the label column's width.
+      const plainLen = (html) => normalizeText($('<div>').html(html || '').text()).length;
+      const maxOuterChars = Math.min(
+        40,
+        Math.max(1, ...labelDashBuffer.filter((item) => item.heading === undefined).flatMap((item) => [plainLen(item.label), plainLen(item.value)]))
+      );
+      // Without a width limit of its own, a value that's a full sentence
+      // (not just a short character name) just keeps the "max-content"
+      // column growing to fit that sentence on one line, pushing the
+      // whole grid wider than the page instead of wrapping. Capping the
+      // grid's own box lets the grid track-sizing algorithm shrink that
+      // column back down under space pressure and wrap normally, the way
+      // any of these auto/max-content tracks already can once the grid
+      // itself isn't allowed to grow without bound.
+      const $grid = $(
+        `<div style="display: grid; grid-template-columns: minmax(${maxOuterChars}ch, max-content) auto ` +
+          `minmax(${maxOuterChars}ch, max-content); column-gap: 0.5em; row-gap: 10px; justify-content: center; ` +
+          // As a flex item (inside the .d-flex wrapper below), this box
+          // defaults to min-width:auto, which sizes it to its own
+          // max-content and overrides max-width entirely -- min-width:0
+          // is what actually lets max-width take effect and the value
+          // column wrap.
+          `max-width: 100%; min-width: 0;"></div>`
+      );
+      $grid.html(rowsHtml);
+      $container.append($('<div class="d-flex justify-content-center my-2"></div>').append($grid));
+      labelDashBuffer = [];
+    }
+    function flushPendingHeadingsStandalone() {
+      for (const item of pendingHeadings) {
+        const style = item.slot === 'label' ? 'text-align: right' : 'text-align: center';
+        $container.append($(`<div style="${style}"></div>`).html(item.heading));
+      }
+      pendingHeadings = [];
+    }
+
     $rows.each((_, rowEl) => {
       const $row = $(rowEl);
       const $allCells = $row.children('td, th');
       if ($allCells.length === 0) return;
-      const $cells = $allCells.filter((_, c) => !isCellEmpty($(c)));
+      // Truly incidental empty "<td>&nbsp;</td>" padding (no width, no
+      // colspan) is dropped entirely, same as before -- it carries no real
+      // layout intent. An empty cell that DOES carry an explicit width or
+      // colspan>1 is kept (as isMeaningfulSpacer above), since that's real
+      // design intent (e.g. the wide gap deliberately separating a pair of
+      // nav arrows at a row's far edges) that would otherwise be lost,
+      // leaving the remaining cells to split the full 12 columns between
+      // them instead of keeping their real proportions.
+      let $cells = $allCells.filter((_, c) => !isCellEmpty($(c)) || isMeaningfulSpacer($(c)));
       if ($cells.length === 0) return;
-      // HTML <td> defaults to vertical-align: middle, so a short caption
-      // cell next to a much taller image cell was always vertically
-      // centered against it "for free" in the original table. Bootstrap's
-      // flex row doesn't replicate that on its own (content top-aligns by
-      // default) -- align-items-center restores that original behavior
-      // rather than guessing at a new layout.
-      const $bsRow = $('<div class="row gy-2 align-items-center"></div>');
+
+      if (isLabelDashRow($cells)) {
+        for (const item of pendingHeadings) labelDashBuffer.push({ heading: item.heading, slot: item.slot });
+        pendingHeadings = [];
+        labelDashBuffer.push({
+          label: unwrapAlignDiv($cells.eq(0)),
+          dash: unwrapAlignDiv($cells.eq(1)),
+          value: unwrapAlignDiv($cells.eq(2)),
+        });
+        return;
+      }
+      if (isSimpleHeadingRow($cells)) {
+        const colspan = parseInt($cells.eq(0).attr('colspan'), 10);
+        const rawIndex = $allCells.toArray().indexOf($cells.get(0));
+        let slot = 'span';
+        if (!(Number.isFinite(colspan) && colspan > 1)) {
+          if (labelRawIndex !== null && rawIndex === labelRawIndex) slot = 'label';
+          else if (dashRawIndex !== null && rawIndex === dashRawIndex) slot = 'dash';
+        }
+        pendingHeadings.push({ heading: unwrapAlignDiv($cells.eq(0)), slot });
+        return;
+      }
+      flushLabelDashBuffer();
+      flushPendingHeadingsStandalone();
+
+      // A nav row's arrows are meant to hug the true edges of the browser
+      // window, but this page's body has its own long-standing
+      // max-width:1100px + margin:0 auto (a readability setting, applied
+      // site-wide) -- any Bootstrap percentage column lives INSIDE that
+      // already-centered, narrower box, so no amount of column-span math
+      // can ever get an arrow past that box's own edge out to the real
+      // viewport edge. Nav rows need to visually break out of it entirely:
+      // render as a flex row stretched to the full viewport width (the
+      // standard "full-bleed" trick -- 100vw sized, then shifted left by
+      // half that width from the container's own horizontal center), with
+      // justify-content:space-between naturally pushing the first/last
+      // cell to those true edges and any middle cell (a title, or nothing)
+      // sitting centered between them.
+      if (isArrowNavRow($cells)) {
+        const $bleed = $(
+          '<div style="width: 100vw; position: relative; left: 50%; margin-left: -50vw; ' +
+            'display: flex; justify-content: space-between; align-items: center; ' +
+            'padding: 0 1rem; box-sizing: border-box;"></div>'
+        );
+        $cells.each((_, cellEl) => {
+          const $cell = $(cellEl);
+          if (isCellEmpty($cell)) {
+            $bleed.append('<div></div>');
+            return;
+          }
+          $bleed.append($('<div></div>').append(unwrapAlignDiv($cell)));
+        });
+        $container.append($bleed);
+        return;
+      }
+
+      // HTML <td> defaults to vertical-align: middle absent any override,
+      // so that's the right default once stacked into a Bootstrap row too.
+      // But an explicit valign="top" (common on rows pairing a short image
+      // with a much taller text cell, so the image stays flush with the
+      // text's first line rather than drifting down to its middle) is real
+      // authored intent and needs to survive the conversion, not get
+      // silently overridden by a blanket default.
+      const rowValign = ($row.attr('valign') || $cells.first().attr('valign') || 'middle').toLowerCase();
+      const alignItemsClass =
+        { top: 'align-items-start', bottom: 'align-items-end', middle: 'align-items-center' }[rowValign] ||
+        'align-items-center';
+      const $bsRow = $(`<div class="row gy-2 ${alignItemsClass}"></div>`);
 
       // Prefer pixel `width` (this row's own, or borrowed from an exemplar
       // sibling) over colspan or the badge heuristic below when computing
@@ -247,6 +540,9 @@ function transform(html) {
       // colspan-only math treats a narrow "-" separator column the same as
       // the wide name/role columns beside it, and the badge heuristic is
       // only a fallback guess for when no width data exists at all.
+      // (Nav rows never reach here at all -- they return early above, via
+      // their own full-bleed flex layout instead of these Bootstrap
+      // columns.)
       const ownWidths = $cells.toArray().map((c) => parseInt($(c).attr('width'), 10));
       const ownHaveWidth = ownWidths.every((w) => Number.isFinite(w) && w > 0);
       const widths = ownHaveWidth ? ownWidths : exemplarWidthsByCellCount.get($cells.length);
@@ -261,18 +557,68 @@ function transform(html) {
       } else if (hasMixedBadge) {
         weights = badgeFlags.map((isBadge) => (isBadge ? 1 : 5));
       } else {
-        weights = $cells.toArray().map((c) => parseInt($(c).attr('colspan'), 10) || 1);
+        // Some legacy pages carry a malformed negative colspan (e.g.
+        // colspan="-2", a stray authoring artifact browsers just clamp to
+        // 1) -- `parseInt(...) || 1` doesn't catch that, since -2 is
+        // truthy, so it would pass the negative straight through as a
+        // weight and corrupt the whole row's proportions. Clamp to >=1.
+        weights = $cells.toArray().map((c) => Math.max(1, parseInt($(c).attr('colspan'), 10) || 1));
       }
       const spans = distributeSpans(weights);
 
       $cells.each((i, cellEl) => {
         const $cell = $(cellEl);
+        // An empty spacer cell has no content worth stacking on mobile (see
+        // isCellEmpty above), but its width still needs to hold its place
+        // in the desktop grid (that's the whole point of keeping it in the
+        // weights above) -- render it as a column that reserves that space
+        // on desktop but disappears entirely on the mobile stacked layout,
+        // rather than leaving a blank block between real content there.
+        if (isCellEmpty($cell)) {
+          $bsRow.append($(`<div class="d-none d-md-block col-md-${spans[i]}"></div>`));
+          return;
+        }
         const $col = $(`<div class="col-12 col-md-${spans[i]}"></div>`);
-        $col.append($cell.contents());
+        // A small decorative badge (e.g. a "1993" year-label graphic)
+        // paired beside a much bigger poster/photo was usually centered
+        // within its OWN narrow column in the original -- fine when that
+        // column's width was chosen to just fit the badge, but our badge
+        // heuristic above already sizes this column tightly to the badge,
+        // so centering it just adds an arbitrary bit of blank margin on
+        // both sides instead of sitting flush against the poster beside
+        // it. Left-align it instead, regardless of what the original cell
+        // said, so the badge visually anchors to its neighboring image.
+        if (isBadgeCell($cell)) {
+          // The badge's own content is very likely wrapped in its original
+          // <div align="center"> -- that inner element's own alignment
+          // would otherwise still win over this outer text-align:left.
+          $cell.find('div[align]').attr('align', 'left');
+          $col.append($('<div style="text-align: left"></div>').append($cell.contents()));
+          $bsRow.append($col);
+          return;
+        }
+        // A cell holding nothing but an image, with no alignment wrapper of
+        // its own, relied entirely on the ambient text-align:center from
+        // the legacy wrapping div/table (now reset to left, to stop it
+        // leaking into unrelated body paragraphs) to center itself in its
+        // column -- exactly like its sibling image cells that DO have an
+        // explicit align="center" wrapper. Add that wrapper back so bare
+        // and explicitly-wrapped image cells render the same way.
+        const isBareImageOnly =
+          normalizeText($cell.text()).length === 0 &&
+          $cell.find('img').length > 0 &&
+          $cell.children('div[align], p[align]').length === 0;
+        if (isBareImageOnly) {
+          $col.append($('<div style="text-align: center"></div>').append($cell.contents()));
+        } else {
+          $col.append($cell.contents());
+        }
         $bsRow.append($col);
       });
       $container.append($bsRow);
     });
+    flushLabelDashBuffer();
+    flushPendingHeadingsStandalone();
 
     $table.replaceWith($container);
   });
@@ -312,10 +658,16 @@ function wrapDocument(title, bodyHtml, colors = {}) {
   if (colors.text) bodyStyleParts.push(`color: ${colors.text}`);
   const bodyStyleAttr = bodyStyleParts.length ? ` style="${bodyStyleParts.join('; ')}"` : '';
 
+  // content.css hardcodes a default link color via `body.legacy-content a`
+  // -- a bare `a { color: ... }` override (lower specificity) always loses
+  // to that regardless of cascade order, silently keeping the generic blue
+  // link color on every page that had its own link/vlink/alink instead of
+  // the page's own designer-chosen color. Match content.css's own selector
+  // so the override actually wins.
   const linkRules = [];
-  if (colors.link) linkRules.push(`a { color: ${colors.link}; }`);
-  if (colors.vlink) linkRules.push(`a:visited { color: ${colors.vlink}; }`);
-  if (colors.alink) linkRules.push(`a:active { color: ${colors.alink}; }`);
+  if (colors.link) linkRules.push(`body.legacy-content a { color: ${colors.link}; }`);
+  if (colors.vlink) linkRules.push(`body.legacy-content a:visited { color: ${colors.vlink}; }`);
+  if (colors.alink) linkRules.push(`body.legacy-content a:active { color: ${colors.alink}; }`);
   // content.css hardcodes headings to a dark color for its own light-theme
   // default -- on any page restoring a dark background, that fixed dark
   // color renders dark-on-dark and headings just disappear. Override with

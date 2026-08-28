@@ -41,6 +41,29 @@ function captureColors(html) {
     const v = $('body').attr(attr);
     if (v) colors[attr] = PRESENTATIONAL_COLOR_ATTRS.has(attr) ? normalizeColor(v) : v;
   }
+  // Some pages never set a body-level `text` attribute at all -- instead
+  // nearly every individual element carries its own explicit
+  // <font color>. Without a body `text` color to capture, the hand-rebuilt
+  // page ends up with a captured bgcolor but no matching text color,
+  // falling back to content.css's default dark gray -- invisible against
+  // a dark/black restored background. Infer a reasonable default from
+  // whichever font color appears most often across the page.
+  if (!colors.text) {
+    const counts = new Map();
+    $('font[color]').each((_, el) => {
+      const c = normalizeColor($(el).attr('color'));
+      counts.set(c, (counts.get(c) || 0) + 1);
+    });
+    let best = null;
+    let bestCount = 0;
+    for (const [c, count] of counts) {
+      if (count > bestCount) {
+        best = c;
+        bestCount = count;
+      }
+    }
+    if (best) colors.text = best;
+  }
   return colors;
 }
 
@@ -48,34 +71,54 @@ const HEADING_SELECTOR =
   'body.legacy-content h1, body.legacy-content h2, body.legacy-content h3, ' +
   'body.legacy-content h4, body.legacy-content h5, body.legacy-content h6';
 
-// Returns null if the page has nothing left to do (already has both the
-// body color patch AND the heading-color fix from a prior run) -- keeps
+// Returns null if the page has nothing left to do (body already has a
+// bgcolor/background/text style, a link-color rule for each of
+// link/vlink/alink it should have, AND the heading-color fix) -- keeps
 // this script safe to re-run without piling up duplicate <style> blocks.
-// Checked separately (not just "does body have a style attribute") so a
-// follow-up run can add the heading fix alone to pages a prior run already
-// color-patched, without re-adding their link-color rules a second time.
+// Each piece is checked independently (not just "does body have a style
+// attribute") so a follow-up run can add e.g. a text color a previous run
+// never had available (colors.text used to only come from a body `text`
+// attribute; it can now also be inferred from font-color usage -- see
+// captureColors) without re-adding bgcolor/link rules a second time.
 function patchColorsOnly(liveHtml, colors) {
   const $ = cheerio.load(liveHtml, { decodeEntities: false });
-  const alreadyColorPatched = !!$('body').attr('style');
+  const bodyStyle = $('body').attr('style') || '';
   const hasHeadingFix = $('head style').toArray().some((el) => $(el).html().includes('body.legacy-content h6'));
+  const existingLinkRules = $('head style')
+    .toArray()
+    .map((el) => $(el).html())
+    .join('\n');
 
-  if (alreadyColorPatched && hasHeadingFix) return null;
+  const missingBgColor = colors.bgcolor && !/background-color\s*:/.test(bodyStyle);
+  const missingBackground = colors.background && !/background-image\s*:/.test(bodyStyle);
+  const missingText = colors.text && !/(?<!background-)color\s*:/.test(bodyStyle);
+  const missingLink = colors.link && !existingLinkRules.includes('body.legacy-content a {');
+  const missingVlink = colors.vlink && !existingLinkRules.includes('body.legacy-content a:visited');
+  const missingAlink = colors.alink && !existingLinkRules.includes('body.legacy-content a:active');
 
-  if (!alreadyColorPatched) {
-    $('body').addClass('legacy-content');
-
-    const styleParts = [];
-    if (colors.bgcolor) styleParts.push(`background-color: ${colors.bgcolor}`);
-    if (colors.background) styleParts.push(`background-image: url('${colors.background}')`);
-    if (colors.text) styleParts.push(`color: ${colors.text}`);
-    if (styleParts.length) $('body').attr('style', styleParts.join('; '));
-
-    const linkRules = [];
-    if (colors.link) linkRules.push(`a { color: ${colors.link}; }`);
-    if (colors.vlink) linkRules.push(`a:visited { color: ${colors.vlink}; }`);
-    if (colors.alink) linkRules.push(`a:active { color: ${colors.alink}; }`);
-    if (linkRules.length) $('head').append(`<style>\n${linkRules.join('\n')}\n</style>`);
+  if (!missingBgColor && !missingBackground && !missingText && !missingLink && !missingVlink && !missingAlink && hasHeadingFix) {
+    return null;
   }
+
+  $('body').addClass('legacy-content');
+  if (missingBgColor || missingBackground || missingText) {
+    const styleParts = bodyStyle ? [bodyStyle] : [];
+    if (missingBgColor) styleParts.push(`background-color: ${colors.bgcolor}`);
+    if (missingBackground) styleParts.push(`background-image: url('${colors.background}')`);
+    if (missingText) styleParts.push(`color: ${colors.text}`);
+    $('body').attr('style', styleParts.join('; '));
+  }
+
+  // content.css hardcodes a default link color via `body.legacy-content
+  // a` -- a bare `a { color: ... }` override (lower specificity) always
+  // loses to that regardless of cascade order, silently keeping the
+  // generic blue link color instead of this page's own link/vlink/alink.
+  // Match content.css's own selector so the override actually wins.
+  const linkRules = [];
+  if (missingLink) linkRules.push(`body.legacy-content a { color: ${colors.link}; }`);
+  if (missingVlink) linkRules.push(`body.legacy-content a:visited { color: ${colors.vlink}; }`);
+  if (missingAlink) linkRules.push(`body.legacy-content a:active { color: ${colors.alink}; }`);
+  if (linkRules.length) $('head').append(`<style>\n${linkRules.join('\n')}\n</style>`);
 
   // content.css hardcodes headings to a dark color for its own light-theme
   // default -- on a page with a restored dark background, that renders

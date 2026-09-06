@@ -37,6 +37,11 @@ body.legacy-content .legacy-table {
 	margin-bottom: 1rem;
 }
 
+/* Restore grid lines for table-based layouts */
+body.legacy-content .legacy-table .row > [class^="col-"] {
+	border: 1px solid rgba(0,0,0,0.15);
+}
+
 body.legacy-content hr {
 	margin: 2rem 0;
 	border-color: #ddd;

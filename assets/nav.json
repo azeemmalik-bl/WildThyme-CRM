@@ -631,19 +631,15 @@
   {
     "type": "dir",
     "name": "Bette Davis",
-    "count": 2,
+    "count": 1,
     "children": [
       {
         "type": "file",
-        "name": "Film Posters",
-        "file": "_Bette_Davis/Film_Posters.html"
-      },
-      {
-        "type": "file",
-        "name": "Filmography",
+        "name": "Bette Davis Filmography",
         "file": "_Bette_Davis/Filmography.html"
       }
-    ]
+    ],
+    "directFile": "_Bette_Davis/Filmography.html"
   },
   {
     "type": "dir",
@@ -7798,7 +7794,7 @@
               },
               {
                 "type": "file",
-                "name": "Twin Peaks: The Return &ndash; 9. This Is The Chair",
+                "name": "Twin Peaks: The Return – 9. This Is The Chair",
                 "file": "_Twin_Peaks/Pages/Episodes/Twin_Peaks_Return-9.html"
               },
               {
@@ -7848,7 +7844,7 @@
               },
               {
                 "type": "file",
-                "name": "Twin Peaks: The Return &ndash; 1. My Log Has A Message For You",
+                "name": "Twin Peaks: The Return – 1. My Log Has A Message For You",
                 "file": "_Twin_Peaks/Pages/Episodes/Twin_Peaks_Return-Blank.html"
               },
               {
@@ -7868,72 +7864,72 @@
               },
               {
                 "type": "file",
-                "name": "Twin Peaks recap: episode four &ndash; nobody said it would be easy viewing",
+                "name": "Twin Peaks recap: episode four – nobody said it would be easy viewing",
                 "file": "_Twin_Peaks/Pages/Episodes/Twin_Peaks_Return-Guardian-4.html"
               },
               {
                 "type": "file",
-                "name": "Twin Peaks recap: episode five &ndash; is anyone here even human?",
+                "name": "Twin Peaks recap: episode five – is anyone here even human?",
                 "file": "_Twin_Peaks/Pages/Episodes/Twin_Peaks_Return-Guardian-5.html"
               },
               {
                 "type": "file",
-                "name": "Twin Peaks recap: episode six &ndash; we've waited over 25 years for this moment",
+                "name": "Twin Peaks recap: episode six – we've waited over 25 years for this moment",
                 "file": "_Twin_Peaks/Pages/Episodes/Twin_Peaks_Return-Guardian-6.html"
               },
               {
                 "type": "file",
-                "name": "Twin Peaks recap: episode seven &ndash; welcome back, Agent Cooper!",
+                "name": "Twin Peaks recap: episode seven – welcome back, Agent Cooper!",
                 "file": "_Twin_Peaks/Pages/Episodes/Twin_Peaks_Return-Guardian-7.html"
               },
               {
                 "type": "file",
-                "name": "Twin Peaks recap: episode eight &ndash; the most mind-melting, majestic outing yet",
+                "name": "Twin Peaks recap: episode eight – the most mind-melting, majestic outing yet",
                 "file": "_Twin_Peaks/Pages/Episodes/Twin_Peaks_Return-Guardian-8.html"
               },
               {
                 "type": "file",
-                "name": "Twin Peaks recap: episode nine &ndash; stop fretting, we're finally getting answers!",
+                "name": "Twin Peaks recap: episode nine – stop fretting, we're finally getting answers!",
                 "file": "_Twin_Peaks/Pages/Episodes/Twin_Peaks_Return-Guardian-9.html"
               },
               {
                 "type": "file",
-                "name": "Twin Peaks recap: episode 10 &ndash; Dougie gets a work-out",
+                "name": "Twin Peaks recap: episode 10 – Dougie gets a work-out",
                 "file": "_Twin_Peaks/Pages/Episodes/Twin_Peaks_Return-Guardian-10.html"
               },
               {
                 "type": "file",
-                "name": "Twin Peaks recap: episode 11 &ndash; cherry pie and a black hole vortex in the sky",
+                "name": "Twin Peaks recap: episode 11 – cherry pie and a black hole vortex in the sky",
                 "file": "_Twin_Peaks/Pages/Episodes/Twin_Peaks_Return-Guardian-11.html"
               },
               {
                 "type": "file",
-                "name": "Twin Peaks recap: episode 12 &ndash; well somebody took their time!",
+                "name": "Twin Peaks recap: episode 12 – well somebody took their time!",
                 "file": "_Twin_Peaks/Pages/Episodes/Twin_Peaks_Return-Guardian-12.html"
               },
               {
                 "type": "file",
-                "name": "Twin Peaks recap: episode 13 &ndash; a welcome jolt of clarity!",
+                "name": "Twin Peaks recap: episode 13 – a welcome jolt of clarity!",
                 "file": "_Twin_Peaks/Pages/Episodes/Twin_Peaks_Return-Guardian-13.html"
               },
               {
                 "type": "file",
-                "name": "Twin Peaks recap: episode 14 &ndash; David Bowie's back, and more small miracles",
+                "name": "Twin Peaks recap: episode 14 – David Bowie's back, and more small miracles",
                 "file": "_Twin_Peaks/Pages/Episodes/Twin_Peaks_Return-Guardian-14.html"
               },
               {
                 "type": "file",
-                "name": "Twin Peaks recap: episode 15 &ndash; the most fist-pumping TV of the year so far",
+                "name": "Twin Peaks recap: episode 15 – the most fist-pumping TV of the year so far",
                 "file": "_Twin_Peaks/Pages/Episodes/Twin_Peaks_Return-Guardian-15.html"
               },
               {
                 "type": "file",
-                "name": "Twin Peaks &ndash; Guardian Recap: Episode 16",
+                "name": "Twin Peaks – Guardian Recap: Episode 16",
                 "file": "_Twin_Peaks/Pages/Episodes/Twin_Peaks_Return-Guardian-16.html"
               },
               {
                 "type": "file",
-                "name": "Twin Peaks &ndash; Guardian Recap: Episodes 17 & 18",
+                "name": "Twin Peaks – Guardian Recap: Episodes 17 & 18",
                 "file": "_Twin_Peaks/Pages/Episodes/Twin_Peaks_Return-Guardian-17 & 18.html"
               },
               {
@@ -7943,7 +7939,7 @@
               },
               {
                 "type": "file",
-                "name": "Twin Peaks &ndash; Rolling Stone Recap: Episodes 1 & 2",
+                "name": "Twin Peaks – Rolling Stone Recap: Episodes 1 & 2",
                 "file": "_Twin_Peaks/Pages/Episodes/Twin_Peaks_Return-Rolling-Stone-1 & 2.html"
               },
               {

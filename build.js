@@ -26,7 +26,9 @@ function decodeEntities(str) {
     .replace(/&lt;/gi, '<')
     .replace(/&gt;/gi, '>')
     .replace(/&quot;/gi, '"')
-    .replace(/&#39;/g, "'");
+    .replace(/&#39;/g, "'")
+    .replace(/&ndash;/gi, '–')
+    .replace(/&mdash;/gi, '—');
 }
 
 function extractText(html) {

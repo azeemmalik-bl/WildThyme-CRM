@@ -3,3 +3,6 @@
 
 # Node dependencies (build tooling only)
 node_modules
+
+# Original client files (local reference only)
+Philip/

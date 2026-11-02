@@ -21,9 +21,19 @@
       if (node.type === 'dir') {
         indexFileMeta(node.children, [...ancestry, node.name]);
       } else {
-        fileMeta.set(node.file, { title: node.name, ancestry });
+        fileMeta.set(node.file, { title: node.name, ancestry, modern: !!node.modern });
       }
     });
+  }
+
+  // Desktop shows each page exactly as originally built; phones get the
+  // mobile-optimized "<name>.modern.html" twin where one exists.
+  const mobileQuery = window.matchMedia('(max-width: 767.98px)');
+
+  function viewerSrc(file) {
+    const meta = fileMeta.get(file);
+    const useModern = mobileQuery.matches && meta && meta.modern;
+    return 'content/' + (useModern ? file.replace(/\.html?$/i, '.modern.html') : file);
   }
 
   function resolveDir(targetPath) {
@@ -130,7 +140,7 @@
     if (openFile) {
       gridEl.classList.add('hidden');
       viewer.classList.remove('hidden');
-      viewer.src = 'content/' + openFile;
+      viewer.src = viewerSrc(openFile);
     } else {
       viewer.classList.add('hidden');
       viewer.src = 'about:blank';
@@ -156,8 +166,17 @@
 
   function syncFromIframe() {
     try {
-      const pathname = viewer.contentWindow.location.pathname;
+      const loaded = viewer.contentWindow.location.pathname;
+      const pathname = decodeURIComponent(loaded).replace(/\.modern(\.html?)$/i, '$1');
       const match = [...fileMeta.keys()].find((file) => pathname.endsWith('/content/' + file) || pathname.endsWith(file));
+      // Links inside a page point at the plain filenames, so following one on
+      // a phone lands on the desktop original — swap to the right version.
+      if (match) {
+        const wanted = viewerSrc(match);
+        if (!decodeURIComponent(loaded).endsWith(wanted)) {
+          viewer.contentWindow.location.replace(new URL(wanted, window.location.href).href);
+        }
+      }
       if (match && match !== openFile) {
         openFile = match;
         path = fileMeta.get(match).ancestry;
@@ -172,6 +191,12 @@
   }
 
   viewer.addEventListener('load', syncFromIframe);
+
+  // Crossing the breakpoint (rotating a tablet, resizing a window) reloads
+  // the open page in the version that fits.
+  mobileQuery.addEventListener('change', () => {
+    if (openFile) viewer.src = viewerSrc(openFile);
+  });
 
   brandEls.forEach((el) => {
     el.addEventListener('click', (e) => {

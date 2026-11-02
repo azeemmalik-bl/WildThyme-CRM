@@ -494,8 +494,11 @@
           body: JSON.stringify({ file: state.currentFile, edits: edits, images: images }),
         }).then(handleJsonResponse);
       })
-      .then(function () {
-        setSaveStatus('Saved — publishing now, usually live within about a minute.');
+      .then(function (result) {
+        var skipped = (result && result.desktopNotUpdated) || 0;
+        setSaveStatus(skipped
+          ? 'Saved — publishing now. ' + skipped + ' change(s) could only be applied to the mobile version; the desktop page needs a manual update for those.'
+          : 'Saved — publishing now, usually live within about a minute.');
         // Reload the page's current state so re-saving reflects what was just written.
         return openPage(state.currentFile, els.editorTitle.textContent);
       })

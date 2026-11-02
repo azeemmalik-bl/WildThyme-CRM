@@ -61,3 +61,15 @@ body.legacy-content blockquote {
 	padding-left: 1rem;
 	color: #55524c;
 }
+
+/* The Poirot Casts / Locations / Editions pages put their "Location
+   Photos", "Poirot Editions" and "Cast List" link banners side by side in
+   one <p>; the original 500px-wide table forced them to stack, but the
+   wider modern layout lets them sit in a row. Stack them again. */
+body.legacy-content a > img[src$="/_Location_Photos.jpg"],
+body.legacy-content a > img[src$="/_Poirot_Editions.jpg"],
+body.legacy-content a > img[src$="/_Cast_List.jpg"] {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}

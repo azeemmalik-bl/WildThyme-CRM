@@ -6,6 +6,7 @@ const path = require('path');
 const CONTENT_DIR = path.join(__dirname, 'content');
 const ASSETS_DIR = path.join(__dirname, 'assets');
 const HTML_EXT = new Set(['.html', '.htm']);
+const MODERN_RE = /\.modern\.html?$/i;
 
 function extractTitle(html, fallback) {
   const titleMatch = html.match(/<title[^>]*>([\s\S]*?)<\/title>/i);
@@ -99,11 +100,20 @@ function walk(dir, relDir, breadcrumb, searchIndex) {
     } else {
       const ext = path.extname(entry.name).toLowerCase();
       if (!HTML_EXT.has(ext)) continue;
+      // "<name>.modern.html" is the mobile-optimized twin of "<name>.html" —
+      // not a page of its own. The viewer swaps to it on small screens.
+      if (MODERN_RE.test(entry.name)) continue;
       const html = fs.readFileSync(fullPath, 'utf8');
       const filenameTitle = titleCaseFromFilename(entry.name);
+      // Titles were cleaned up on the modern twin, so prefer its <title> for
+      // nav labels; links still come from the original the desktop shows.
+      const modernPath = fullPath.replace(/\.html?$/i, '.modern.html');
+      const hasModern = fs.existsSync(modernPath);
+      const titleHtml = hasModern ? fs.readFileSync(modernPath, 'utf8') : html;
       fileBuffer.push({
         relPath,
-        rawTitle: extractTitle(html, filenameTitle),
+        hasModern,
+        rawTitle: extractTitle(titleHtml, filenameTitle),
         filenameTitle,
         text: extractText(html),
         links: extractLinks(html),
@@ -145,10 +155,11 @@ function walk(dir, relDir, breadcrumb, searchIndex) {
   }
   const hiddenPaths = hub ? hub.linkTargets : new Set();
 
-  fileBuffer.forEach(({ relPath, rawTitle, filenameTitle, text }) => {
+  fileBuffer.forEach(({ relPath, hasModern, rawTitle, filenameTitle, text }) => {
     const isDuplicate = titleCounts.get(rawTitle.toLowerCase()) > 1;
     const title = isDuplicate ? filenameTitle : rawTitle;
     const node = { type: 'file', name: title, file: relPath };
+    if (hasModern) node.modern = true;
     if (hiddenPaths.has(relPath)) node.hidden = true;
     children.push(node);
     searchIndex.push({

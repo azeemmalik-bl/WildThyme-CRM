@@ -1,6 +1,6 @@
 const { requireUser } = require('./lib/auth');
 const { getFile, putFile, ConflictError } = require('./lib/github');
-const { collectEditables, applyEdits } = require('./lib/page-editor');
+const { collectEditables, applyEdits, mirrorEdits, modernTwinPath } = require('./lib/page-editor');
 const { sanitizeHtml } = require('./lib/sanitize-html');
 
 exports.handler = async (event, context) => {
@@ -21,16 +21,27 @@ exports.handler = async (event, context) => {
     return json(400, { error: 'Nothing to save.' });
   }
 
-  const repoPath = `content/${file}`;
+  // Edits are made against the mobile-optimized twin when one exists (see
+  // admin-get-page.js), then mirrored onto the original desktop page.
+  const origPath = `content/${file}`;
+  const twinPath = modernTwinPath(origPath);
   let current;
+  let repoPath = twinPath;
   try {
-    current = await getFile(repoPath);
+    current = await getFile(twinPath);
+    if (!current) {
+      repoPath = origPath;
+      current = await getFile(origPath);
+    }
   } catch (err) {
     return json(502, { error: `Failed to read current file from GitHub: ${err.message}` });
   }
   if (!current) return json(404, { error: `File not found: ${file}` });
+  const hasTwin = repoPath === twinPath;
 
-  const { $ } = collectEditables(current.content);
+  const { $, blocks, images: currentImages } = collectEditables(current.content);
+  const oldTextByPath = new Map(blocks.map((b) => [b.path, b.text]));
+  const oldSrcByPath = new Map(currentImages.map((im) => [im.path, im.src]));
   // Never write client-supplied HTML into a page unsanitized -- this becomes
   // part of a publicly served, committed file.
   const sanitizedEdits = (edits || []).map((e) => ({ path: e.path, newHtml: sanitizeHtml(e.newHtml) }));
@@ -51,7 +62,31 @@ exports.handler = async (event, context) => {
     return json(502, { error: `Failed to save to GitHub: ${err.message}` });
   }
 
-  return json(200, { ok: true });
+  if (!hasTwin) return json(200, { ok: true });
+
+  // Mirror onto the desktop original. The mobile save above has already
+  // landed, so a failure here is reported as a warning, not an error.
+  const textEdits = sanitizedEdits
+    .filter((e) => oldTextByPath.has(e.path))
+    .map((e) => ({ oldText: oldTextByPath.get(e.path), newHtml: e.newHtml }));
+  const imageEdits = (images || [])
+    .filter((im) => oldSrcByPath.has(im.path))
+    .map((im) => ({ oldSrc: oldSrcByPath.get(im.path), newSrc: im.newSrc, newAlt: im.newAlt }));
+  let desktopNotUpdated = textEdits.length + imageEdits.length;
+  try {
+    const original = await getFile(origPath);
+    if (original) {
+      const mirrored = mirrorEdits(original.content, textEdits, imageEdits);
+      if (mirrored.changed) {
+        await putFile(origPath, Buffer.from(mirrored.html, 'utf8'), original.sha, message);
+      }
+      desktopNotUpdated = mirrored.unmatched.length;
+    }
+  } catch (err) {
+    console.error('Mirroring edit to desktop page failed:', err);
+  }
+
+  return json(200, { ok: true, desktopNotUpdated });
 };
 
 function json(statusCode, obj) {

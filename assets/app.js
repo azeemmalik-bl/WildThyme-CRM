@@ -10,6 +10,12 @@
   let navTree = [];
   let searchIndex = [];
   const fileMeta = new Map(); // file -> { title, ancestry: [folder names] }
+  const fileKeys = new Map(); // normalized page path -> file
+
+  // "_I_Claudius/2.Family.modern.html", "_i_claudius/2.family" -> same key.
+  function normalizePageKey(p) {
+    return p.toLowerCase().replace(/\.modern(\.html?)?$/, '').replace(/\.html?$/, '');
+  }
 
   // Current view state: either browsing a folder (path = ancestry of folder
   // names from root) or viewing a file (openFile = relative file path).
@@ -22,6 +28,7 @@
         indexFileMeta(node.children, [...ancestry, node.name]);
       } else {
         fileMeta.set(node.file, { title: node.name, ancestry, modern: !!node.modern });
+        fileKeys.set(normalizePageKey(node.file), node.file);
       }
     });
   }
@@ -166,15 +173,18 @@
 
   function syncFromIframe() {
     try {
-      const loaded = viewer.contentWindow.location.pathname;
-      const pathname = decodeURIComponent(loaded).replace(/\.modern(\.html?)$/i, '$1');
-      const match = [...fileMeta.keys()].find((file) => pathname.endsWith('/content/' + file) || pathname.endsWith(file));
+      // Netlify's pretty URLs serve pages lowercased and without ".html", so
+      // compare paths in a normalized form rather than literally.
+      const loaded = decodeURIComponent(viewer.contentWindow.location.pathname);
+      const loadedIsModern = /\.modern(\.html?)?$/i.test(loaded);
+      const pageKey = normalizePageKey(loaded.replace(/^.*\/content\//i, ''));
+      const match = fileKeys.get(pageKey);
       // Links inside a page point at the plain filenames, so following one on
       // a phone lands on the desktop original — swap to the right version.
       if (match) {
-        const wanted = viewerSrc(match);
-        if (!decodeURIComponent(loaded).endsWith(wanted)) {
-          viewer.contentWindow.location.replace(new URL(wanted, window.location.href).href);
+        const wantModern = mobileQuery.matches && fileMeta.get(match).modern;
+        if (loadedIsModern !== !!wantModern) {
+          viewer.contentWindow.location.replace(new URL(viewerSrc(match), window.location.href).href);
         }
       }
       if (match && match !== openFile) {
